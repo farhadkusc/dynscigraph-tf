@@ -1,0 +1,55 @@
+{
+  "package": "dynscigraph-tf",
+  "package_version": "0.2.3",
+  "profile": "smoke",
+  "host": "hds-ssx0maqdcfqj",
+  "ran_on_wulver": false,
+  "purpose": "Sensitivity of the public-data cutoff ranker to horizon and to the logistic negative-sample seed.",
+  "not_a_measurement_of": "NJIT hardware, incident lead time, or the concept paper's pending historical table.",
+  "n_jobs": 2,
+  "workers": 2,
+  "elapsed_sec": 1.909,
+  "summary": [
+    {
+      "cutoff": "2024-12-31",
+      "horizon_days": 365,
+      "n_seeds": 2,
+      "graph_ap": 0.006616,
+      "graph_ap_span": 0.0,
+      "logistic_ap_mean": 0.002174,
+      "logistic_ap_min": 0.002113,
+      "logistic_ap_max": 0.002234,
+      "fraction_logistic_beats_graph": 0.0,
+      "n_future": 145,
+      "base_rate": 0.002207
+    }
+  ],
+  "jobs": [
+    {
+      "cutoff": "2024-12-31",
+      "horizon_days": 365,
+      "seed": 0,
+      "graph_ap": 0.006616,
+      "logistic_ap": 0.002234,
+      "degree_ap": 0.004786,
+      "random_ap": 0.00234,
+      "base_rate": 0.002207,
+      "n_future": 145,
+      "n_candidates": 65689,
+      "n_train_pos": 653
+    },
+    {
+      "cutoff": "2024-12-31",
+      "horizon_days": 365,
+      "seed": 1,
+      "graph_ap": 0.006616,
+      "logistic_ap": 0.002113,
+      "degree_ap": 0.004786,
+      "random_ap": 0.002125,
+      "base_rate": 0.002207,
+      "n_future": 145,
+      "n_candidates": 65689,
+      "n_train_pos": 653
+    }
+  ]
+}

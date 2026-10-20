@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: Kabir
     given-names: Md Farhad
-version: 0.2.2
+version: 0.2.3
 date-released: 2026-10-20
 repository-code: "https://github.com/farhadkusc/dynscigraph-tf"
 abstract: >-

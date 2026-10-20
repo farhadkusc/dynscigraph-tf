@@ -1,6 +1,6 @@
 # Technical report
 
-**Version 0.2.2.** Author: Md Farhad Kabir.
+**Version 0.2.3.** Author: Md Farhad Kabir.
 
 ## Question
 

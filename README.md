@@ -2,7 +2,7 @@
 
 Temporal link prediction for documented cyber relationships, evaluated on public data.
 
-Author: **Md Farhad Kabir**. Package **0.2.2**.
+Author: **Md Farhad Kabir**. Package **0.2.3**.
 
 Two tasks, both retrospective. Nothing in a test window is used to build features for that window.
 
@@ -59,3 +59,7 @@ Grey Harbor (`SYN-EXERCISE-GREY-HARBOR`) is the dummy attack inject in `data/dum
 ## What this is not
 
 Not a trained temporal GNN on live ISAC text. Not a claim about incident lead time. The concept paper's historical-cutoff table stays empty until that experiment is run; this package is the public-data experiment that can be run today.
+
+## NJIT Wulver
+
+`lab/njit/` is the heavy job: 1,536 cutoff fits (3 cutoffs, 4 horizons, 128 seeds) submitted with `sbatch lab/njit/wulver.sbatch` on the NJIT cluster. Instructions are in [lab/njit/README.md](lab/njit/README.md). `lab/njit/results/smoke.json` is only the two-job check.
