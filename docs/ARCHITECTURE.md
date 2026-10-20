@@ -2,12 +2,13 @@
 
 ```mermaid
 flowchart LR
-  A[Structured feeds<br/>MITRE, NVD, EPSS] --> C[Ontology filter]
-  B[Unstructured reports] --> C
-  C --> D[Monthly snapshots G_1 .. G_t]
-  D --> E[Temporal encoder<br/>relation-typed messages + decay]
-  E --> F[Edge decoder]
-  F --> G[Ranked edges + confidence bins]
+  A[ATT&CK STIX relationships] --> B[created timestamp]
+  B --> C[Graph at cutoff T]
+  C --> D[Bridge count and degree]
+  D --> E[Rank absent group-technique pairs]
+  F[EPSS daily file] --> H[Drop CVEs already in KEV]
+  G[CISA KEV dateAdded] --> I[Label: added within 365 days]
+  H --> I
 ```
 
-The checked-in encoder is a NumPy message-passing model with the same interfaces as the TGNN in the concept paper: per-relation aggregation, a temporal state, and an edge head `g(h_u, h_v, r)`. Swapping the encoder for a PyTorch Geometric temporal GNN does not change the benchmark harness.
+The encoder in the concept paper is a temporal GNN. The score here is the two graph statistics that survived a comparison with that GNN's obvious stand-in (a seven-feature logistic). Replacing the score with a PyTorch temporal GNN should keep the same cutoff code and the same JSON fields.

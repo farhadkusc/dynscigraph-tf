@@ -1,6 +1,7 @@
-"""DynSciGraph-TF reference prototype."""
+"""DynSciGraph-TF research prototype, v0.2.0.
 
-from .model import ForecastResult, ThreatForecaster, run_retrospective
+Temporal link prediction on public MITRE ATT&CK relationship timestamps,
+and an EPSS-versus-CISA-KEV check on public score files.
+"""
 
-__all__ = ["ForecastResult", "ThreatForecaster", "run_retrospective"]
-__version__ = "0.1.0"
+__version__ = "0.2.0"

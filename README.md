@@ -1,44 +1,48 @@
 # DynSciGraph-TF
 
-Temporal knowledge-graph forecasting prototype for pre-incident cyber threat prediction in U.S. critical infrastructure.
+Temporal link prediction for documented cyber relationships, evaluated on public data.
 
-Author: **Md Farhad Kabir**
+Author: **Md Farhad Kabir**. Package **0.2.0**.
 
-This repository is the runnable reference package for the DynSciGraph-TF concept: schema-constrained extraction, a cybersecurity temporal encoder, an edge decoder, and calibrated ranking. The forecasting task is
+Two tasks, both retrospective. Nothing in a test window is used to build features for that window.
 
-\[
-P(E_{t+\Delta}\setminus E_t \mid G_1,\ldots,G_t)
-\]
+## 1. ATT&CK group → technique
 
-## What is in the package
+Source: MITRE ATT&CK Enterprise STIX (`enterprise-attack.json`, fetched 2026-10-19). The timestamp is the relationship's STIX `created` field: the day the link was **added to ATT&CK**, not the day of an intrusion.
 
-| Path | Role |
-| --- | --- |
-| `src/dynscigraph/model.py` | World model, ontology filter, temporal encoder, logistic decoder, baselines, metrics |
-| `benchmarks/run_benchmark.py` | Retrospective cutoff experiment; writes `benchmarks/results/synthetic_validation.json` |
-| `docs/TECHNICAL_REPORT.md` | Architecture, metrics, and how to read the numbers |
-| `docs/ARCHITECTURE.md` | Pipeline diagram |
-| `tests/test_model.py` | Monotonicity, schema rejection, forecast-vs-reactive check |
+Question: for pairs that are absent on a cutoff, which ones does ATT&CK add in the next 365 days? Endpoints that do not exist yet at the cutoff are excluded. That is the cold-start the knowledge base actually has; it is reported as a smaller positive set, not hidden.
 
-## Run
+The ranker is a fixed graph score: `log(1 + malware-bridge count) + 0.35 * log(1 + technique degree)`. The bridge counts malware that the group already uses and that already use the technique. The 0.35 is a constant, not fit on the test year. A logistic combination of seven features is reported next to it and does not win.
+
+| Cutoff | Future links | Base rate | Graph AP | Logistic AP | Degree AP | Random AP | Graph P@10 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2022-12-31 | 94 | 0.0020 | 0.0098 | 0.0040 | 0.0049 | 0.0019 | 0.10 |
+| 2023-12-31 | 187 | 0.0035 | 0.0085 | 0.0050 | 0.0072 | 0.0036 | 0.00 |
+| 2024-12-31 | 145 | 0.0022 | 0.0066 | 0.0021 | 0.0048 | 0.0021 | 0.00 |
+
+Average precision of the fixed score is about 2–5× the base rate and ahead of degree on every cutoff. The seven-feature logistic, fit only on the prior year, does not beat it, and on 2024 it does not beat random. Precision@10 is 0.10 on one cutoff and 0 on the other two. That is the result. It is not an operational early-warning number.
+
+## 2. EPSS file versus later CISA KEV
+
+Universe: CVEs in the EPSS daily file that are not already in [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) on that date. Score: the published EPSS probability, unfitted. Label: KEV `dateAdded` within 365 days.
+
+| Score date | Later KEV adds | Base rate | AP | Lift vs base | P@10 | P@100 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2024-06-01 | 69 | 0.000278 | 0.0031 | 11× | 0.00 | 0.02 |
+| 2025-06-01 | 92 | 0.000329 | 0.0395 | 120× | 0.30 | 0.08 |
+
+Both windows were chosen as the June 1 files on hand before Precision@10 was inspected. The 2024 window has ranking lift and no hit in the top 10. The 2025 window puts 3 of the next year's KEV entries in the top 10.
+
+## Reproduce
 
 ```bash
-python3 -m pip install -r requirements.txt
-python3 -m unittest tests/test_model.py
+python3 -m unittest tests/test_public.py
 python3 benchmarks/run_benchmark.py
+python3 benchmarks/plot_results.py
 ```
 
-## Honest scope
+The figure is [docs/figures/results.svg](docs/figures/results.svg). Derived ATT&CK tables and the two EPSS gzip files are in the repository so the benchmark does not download 50 MB on every run. `data/SOURCES.md` has the upstream URLs, the catalog version, and the fetch date.
 
-The benchmark is a **synthetic retrospective**. A planted affinity process reveals edges over 24 months. The model is trained only on months `0..18` and scored on edges that first appear in the next 90 days. It does **not** train on MITRE ATT&CK, NVD, or EPSS dumps. Those sources are the planned Phase-1 corpus in the concept paper. Do not cite the JSON numbers as operational detection performance.
+## What this is not
 
-## Layout of the model
-
-1. **Schema filter.** An edge is kept only if `(source type, relation, target type)` is in the ontology (`uses`, `exploits`, `targets`, `chains-with`).
-2. **Temporal encoder.** Each month, a node state is a decayed mix of its previous state and relation-scaled neighbor means.
-3. **Decoder.** Pair features (elementwise interaction, both endpoints, relation id, dot product) are scored by L2-regularized logistic regression fit on edges born before the cutoff versus sampled negatives.
-4. **Metrics.** Precision@10, Recall@50, F1 at the top-50 operating point, lead time, and binned calibration error.
-
-## License
-
-MIT. See `LICENSE`.
+Not a trained temporal GNN on live ISAC text. Not a claim about incident lead time. The concept paper's historical-cutoff table stays empty until that experiment is run; this package is the public-data experiment that can be run today.

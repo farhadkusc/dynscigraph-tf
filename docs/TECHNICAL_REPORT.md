@@ -1,44 +1,31 @@
-# DynSciGraph-TF technical report
+# Technical report
 
-**Package version:** 0.1.0  
-**Author:** Md Farhad Kabir  
-**Status:** Runnable prototype. Synthetic validation only.
+**Version 0.2.0.** Author: Md Farhad Kabir.
 
-## Problem
+## Question
 
-Given snapshots \(G_1,\ldots,G_t\), rank typed edges that are absent at \(t\) and present by \(t+\Delta\). Primary operating points match the concept paper: Precision@10, Recall@50, F1, lead time in days, and calibration error
+The concept paper writes the forecast as \(P(E_{t+\Delta}\setminus E_t \mid G_1,\ldots,G_t)\). This package instantiates that on two public graphs instead of a planted synthetic process.
 
-\[
-\mathrm{CalErr} = \mathbb{E}_p\big[|\mathrm{accuracy}(C(p)) - p|\big].
-\]
+## ATT&CK protocol
 
-## Ontology
+1. Drop revoked and deprecated objects and relationships.
+2. A snapshot at cutoff \(T\) contains group→technique edges with `created` ≤ \(T\).
+3. Positives in the next year are edges with \(T <\) `created` ≤ \(T+365\) days whose group and technique both already appear in the snapshot. New techniques are out of the candidate set. They are a different task (cold start) and are not scored as misses.
+4. Features at \(T\): technique degree, group degree, collaborative-filtering weight, count of the group's pre-existing malware that use the technique, whether the group already uses the parent technique, the group's historical tactic share, and the technique's link count during the previous year.
+5. The reported score uses only the bridge count and the degree, with a fixed coefficient 0.35. A logistic regression on all seven features is fit inside each training year (features taken at the start of that year) and stored under `logistic_combination`. It does not beat the fixed score.
 
-| Element | Kind | Constraint |
-| --- | --- | --- |
-| Vulnerability, Technique, AdversaryGroup, TargetSector, Tool | Node | Typed attributes (CVSS, EPSS, tactic, criticality) |
-| uses | Edge | Group → Technique or Group → Tool |
-| exploits | Edge | Technique → Vulnerability |
-| targets | Edge | Group → Sector |
-| chains-with | Edge | Vulnerability → Vulnerability |
+Cutoffs 2022-12-31, 2023-12-31, and 2024-12-31 were fixed as year ends. They were not picked by scanning Precision@10.
 
-Illegal triples are dropped before encoding. That is the schema-aligned extraction constraint from the paper, implemented here as a deterministic filter rather than an LLM call. A later extractor can emit the same triples.
+## KEV protocol
 
-## Training protocol
+EPSS files are the publisher's daily gzip, not a resample. A CVE already in KEV on the score date is removed before ranking. Addition dates come from the CISA catalog of 2026-10-16. The score is EPSS itself, so this row is a measurement of a public baseline, not a new model.
 
-- 24 monthly snapshots, seed 7.
-- Cutoff at month 18. No edge born after the cutoff is used as a positive.
-- Negatives are schema-legal pairs absent at the cutoff.
-- Horizon is 3 months (90 days). A hit in the top 50 is credited with a 90-day lead, which is the horizon itself, not a claimed operational mean lead time on real incidents.
+## Leakage controls
 
-## Baselines included
+- Test-year ATT&CK edges are not in the degree, the bridge, or the tactic counts.
+- Training-year features for the logistic are computed at the start of the training year, so the positive edge is not already in the graph used to describe it.
+- EPSS percentiles and scores are taken from the file whose `score_date` is the cutoff.
 
-EPSS-attribute ranking, CVSS-attribute ranking, static endpoint degree, historical co-activity (an intensity / EMA stand-in for the LSTM baseline), and a reactive baseline that scores every unseen edge at 0.
+## Numbers
 
-## What this package does not claim
-
-It does not report the paper's pending historical-cutoff table. It does not call a hosted LLM. It does not ingest live ISAC feeds. Those are Phase 1 and Phase 2 items in the concept paper.
-
-## Reproduce
-
-`python3 benchmarks/run_benchmark.py` rewrites `benchmarks/results/synthetic_validation.json`.
+See `benchmarks/results/evaluation.json`. The README table is that file, rounded.

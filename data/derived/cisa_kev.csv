@@ -1,0 +1,1749 @@
+cve,date_added,ransomware,vendor,product
+CVE-2026-102764,2026-10-16,Unknown,BeyondTrust,Remote Support
+CVE-2025-61624,2026-10-16,Unknown,Fortinet,Multiple Products
+CVE-2026-21589,2026-10-15,Unknown,Atlassian,Multiple Products
+CVE-2026-105134,2026-10-14,Unknown,Ahsay,AhsayCBS
+CVE-2026-76519,2026-10-14,Unknown,Cisco,Secure Email Gateway
+CVE-2026-105133,2026-10-14,Unknown,Ahsay,AhsayCBS
+CVE-2026-0322,2026-10-14,Unknown,Palo Alto Networks,PAN-OS
+CVE-2026-104935,2026-10-13,Unknown,Ivanti,Connect Secure
+CVE-2026-96951,2026-10-13,Unknown,Microsoft,Windows
+CVE-2015-5477,2026-10-08,Unknown,ISC,BIND
+CVE-2016-3081,2026-10-08,Unknown,Apache,Struts
+CVE-2023-22894,2026-10-08,Unknown,Strapi,Strapi
+CVE-2021-3199,2026-10-08,Unknown,ONLYOFFICE,Docs
+CVE-2015-3306,2026-10-08,Unknown,ProFTPD,ProFTPD
+CVE-2026-88779,2026-10-04,Unknown,Citrix,NetScaler
+CVE-2026-102490,2026-10-02,Unknown,Zammad GmbH,Zammad
+CVE-2026-102489,2026-10-02,Unknown,Zammad GmbH,Zammad
+CVE-2026-104286,2026-10-01,Unknown,Fortinet,FortiMail
+CVE-2026-76504,2026-09-30,Unknown,Cisco,Catalyst SD-WAN Manager
+CVE-2026-86950,2026-09-29,Unknown,Apple,Multiple Products
+CVE-2026-88772,2026-09-27,Unknown,Citrix,NetScaler
+CVE-2026-88771,2026-09-27,Unknown,Citrix,NetScaler
+CVE-2026-67279,2026-09-25,Unknown,MikroTik,RouterOS
+CVE-2026-65660,2026-09-25,Unknown,Microsoft,SharePoint
+CVE-2026-87902,2026-09-25,Unknown,WordPress,Core
+CVE-2026-5430,2026-09-24,Unknown,WSO2,Multiple Products
+CVE-2026-71362,2026-09-24,Unknown,Adobe,Commerce and Magento 
+CVE-2026-93952,2026-09-22,Unknown,Arista,VeloCloud Orchestrator
+CVE-2026-94127,2026-09-22,Unknown,F5,BIG-IP APM
+CVE-2026-93616,2026-09-22,Unknown,Check Point,Multiple Products
+CVE-2026-85102,2026-09-22,Unknown,Check Point,Multiple Products
+CVE-2026-7273,2026-09-21,Unknown,Zyxel,GS1900 Series Switches
+CVE-2025-39964,2026-09-18,Unknown,Linux,Kernel
+CVE-2026-53266,2026-09-18,Unknown,Linux,Kernel
+CVE-2025-39682,2026-09-18,Unknown,Linux,Kernel
+CVE-2026-58704,2026-09-16,Unknown,Google,Pixel
+CVE-2026-76460,2026-09-16,Unknown,Cisco,Identity Services Engine
+CVE-2026-87886,2026-09-16,Unknown,Acronis,Backup
+CVE-2026-76461,2026-09-14,Unknown,Cisco,Secure Email Gateway
+CVE-2026-84869,2026-09-11,Unknown,ConnectWise,ScreenConnect
+CVE-2026-42016,2026-09-11,Unknown,JFrog,Artifactory
+CVE-2026-42018,2026-09-11,Unknown,JFrog,Artifactory
+CVE-2026-85706,2026-09-11,Unknown,GitLab,Community Edition and Enterprise Edition
+CVE-2026-86060,2026-09-10,Unknown,MikroTik,RouterOS
+CVE-2026-67277,2026-09-10,Unknown,MikroTik,RouterOS
+CVE-2026-19490,2026-09-09,Unknown,Citrix,NetScaler
+CVE-2025-25249,2026-09-09,Unknown,Fortinet,Multiple Products
+CVE-2026-87491,2026-09-09,Unknown,Google,Chromium V8
+CVE-2026-20079,2026-09-09,Unknown,Cisco,Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management
+CVE-2026-75650,2026-09-08,Unknown,Adobe,Commerce and Magento
+CVE-2026-81963,2026-09-08,Unknown,Microsoft,Windows
+CVE-2026-86218,2026-09-08,Unknown,N-able,N-central
+CVE-2026-85880,2026-09-08,Unknown,Microsoft,Windows
+CVE-2026-85046,2026-09-04,Unknown,Google,Chromium V8
+CVE-2026-59822,2026-09-02,Unknown,BerriAI,LiteLLM
+CVE-2026-48710,2026-09-02,Unknown,Kludex,Starlette
+CVE-2026-49869,2026-09-02,Unknown,Kestra,Kestra OSS
+CVE-2026-82329,2026-09-02,Unknown,JFrog,Artifactory
+CVE-2026-9586,2026-09-02,Unknown,Sangoma,Switchvox
+CVE-2026-83548,2026-09-02,Unknown,SonicWall,SMA1000 Appliances
+CVE-2026-83549,2026-09-02,Unknown,SonicWall,SMA1000 Appliances
+CVE-2026-82078,2026-08-31,Unknown,PaperCut,NG/MF
+CVE-2026-81578,2026-08-31,Unknown,PaperCut,NG/MF
+CVE-2023-49105,2026-08-27,Unknown,ownCloud,ownCloud
+CVE-2026-53362,2026-08-27,Unknown,Linux,Kernel
+CVE-2026-66384,2026-08-27,Unknown,JFrog,Artifactory
+CVE-2021-23758,2026-08-26,Unknown,Ajax.NET Professional,Ajax.NET Professional
+CVE-2015-3246,2026-08-26,Unknown,Red Hat,Libuser
+CVE-2015-5287,2026-08-26,Unknown,Red Hat,Automatic Bug Reporting Tool
+CVE-2022-0995,2026-08-26,Unknown,Linux,Kernel
+CVE-2026-8452,2026-08-26,Unknown,Citrix,NetScaler ADC and NetScaler Gateway
+CVE-2019-1068,2026-08-26,Unknown,Microsoft,SQL Server
+CVE-2026-60004,2026-08-25,Unknown,Gitea,Gitea
+CVE-2026-21962,2026-08-24,Unknown,Oracle,HTTP Server and Oracle Weblogic Server Proxy Plug-in
+CVE-2026-73570,2026-08-21,Unknown,Synacor,Zimbra Collaboration Suite (ZCS)
+CVE-2026-72530,2026-08-20,Unknown,TrueConf,Server
+CVE-2026-72529,2026-08-20,Unknown,TrueConf,Server
+CVE-2026-64849,2026-08-19,Unknown,MLflow,MLflow
+CVE-2026-33824,2026-08-18,Unknown,Microsoft,Internet Key Exchange (IKE) Service Extensions
+CVE-2026-59310,2026-08-18,Known,Broadcom,VMware vCenter
+CVE-2026-55040,2026-08-18,Unknown,Microsoft,SharePoint
+CVE-2026-65400,2026-08-18,Unknown,Apple,macOS
+CVE-2025-62593,2026-08-17,Unknown,Ray-Project,Ray
+CVE-2026-20349,2026-08-11,Unknown,Cisco,Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) 
+CVE-2026-68820,2026-08-11,Unknown,Microsoft,Windows Ancillary Function Driver for WinSock 
+CVE-2026-72898,2026-08-11,Unknown,Metabase,Metabase
+CVE-2026-8037,2026-08-07,Unknown,Progress,LoadMaster
+CVE-2026-63077,2026-08-05,Known,JetBrains,TeamCity
+CVE-2026-18556,2026-08-04,Unknown,N-able,N-central
+CVE-2026-34486,2026-08-04,Unknown,Apache,Tomcat
+CVE-2026-9198,2026-08-04,Unknown,IBM,Langflow
+CVE-2026-18577,2026-08-03,Unknown,N-able,N-central
+CVE-2026-20316,2026-07-29,Known,Cisco,Secure Firewall Management Center (FMC)
+CVE-2025-68686,2026-07-27,Unknown,Fortinet,FortiOS
+CVE-2026-16812,2026-07-27,Unknown,Arista,VeloCloud Orchestrator
+CVE-2026-16232,2026-07-22,Unknown,Check Point,SmartConsole
+CVE-2026-50522,2026-07-22,Unknown,Microsoft,SharePoint
+CVE-2026-60137,2026-07-21,Unknown,WordPress,Core
+CVE-2026-63030,2026-07-21,Unknown,WordPress,Core
+CVE-2026-0770,2026-07-21,Unknown,Langflow,Langflow
+CVE-2021-27137,2026-07-21,Unknown,DD-WRT,DD-WRT
+CVE-2026-58644,2026-07-16,Unknown,Microsoft,SharePoint
+CVE-2026-25089,2026-07-16,Unknown,Fortinet,FortiSandbox
+CVE-2026-39808,2026-07-16,Unknown,Fortinet,FortiSandbox
+CVE-2026-46817,2026-07-15,Unknown,Oracle,E-Business Suite
+CVE-2023-4346,2026-07-15,Unknown,KNX Association,KNX Protocol Connection Authorization Option 1
+CVE-2026-56155,2026-07-14,Unknown,Microsoft,Active Directory Federation Services
+CVE-2026-56164,2026-07-14,Unknown,Microsoft,SharePoint Server
+CVE-2026-15409,2026-07-14,Known,SonicWall,SMA1000 Appliances
+CVE-2026-15410,2026-07-14,Known,SonicWall,SMA1000 Appliances
+CVE-2008-4128,2026-07-13,Unknown,Cisco,IOS
+CVE-2026-56291,2026-07-10,Unknown,Balbooa,Forms
+CVE-2026-48939,2026-07-10,Unknown,iCagenda,iCagenda
+CVE-2026-48908,2026-07-07,Unknown,JoomShaper,SP Page Builder
+CVE-2026-55255,2026-07-07,Unknown,Langflow,Langflow
+CVE-2026-56290,2026-07-07,Unknown,Joomlack,Page Builder
+CVE-2026-48282,2026-07-07,Unknown,Adobe,ColdFusion
+CVE-2026-45659,2026-07-01,Known,Microsoft,SharePoint Server
+CVE-2026-48558,2026-06-29,Unknown,SimpleHelp ,SimpleHelp
+CVE-2026-12569,2026-06-25,Known,PTC,Windchill and FlexPLM
+CVE-2026-20230,2026-06-25,Unknown,Cisco,Unified Communications Manager
+CVE-2025-67038,2026-06-23,Unknown,Lantronix,EDS5000
+CVE-2026-34910,2026-06-23,Unknown,Ubiquiti,UniFi OS
+CVE-2026-34909,2026-06-23,Unknown,Ubiquiti,UniFi OS
+CVE-2026-34908,2026-06-23,Unknown,Ubiquiti,UniFi OS
+CVE-2026-20253,2026-06-18,Unknown,Splunk,Enterprise
+CVE-2026-48907,2026-06-16,Unknown,Widget Factory,Joomla Content Editor 
+CVE-2026-54420,2026-06-15,Unknown,LiteSpeed,cPanel Plugin
+CVE-2026-20262,2026-06-15,Unknown,Cisco,Catalyst SD-WAN Manager
+CVE-2026-35273,2026-06-12,Known,Oracle, PeopleSoft Enterprise PeopleTools
+CVE-2026-10520,2026-06-11,Unknown,Ivanti,Sentry
+CVE-2026-11645,2026-06-09,Unknown,Google,Chromium V8
+CVE-2026-7473,2026-06-09,Unknown,Arista,Extensible Operating System
+CVE-2026-20245,2026-06-09,Unknown,Cisco,Catalyst SD-WAN Manager
+CVE-2026-42271,2026-06-08,Unknown,BerriAI,LiteLLM
+CVE-2026-50751,2026-06-08,Known,Check Point,Security Gateway
+CVE-2026-28318,2026-06-05,Unknown,SolarWinds,Serv-U
+CVE-2026-45247,2026-06-03,Unknown,Mirasvit,Mirasvit Full Page Cache Warmer
+CVE-2022-0492,2026-06-02,Unknown,Linux,Kernel
+CVE-2025-48595,2026-06-02,Unknown,Android,Framework
+CVE-2024-21182,2026-06-01,Unknown,Oracle,WebLogic Server
+CVE-2026-0257,2026-05-29,Known,Palo Alto Networks,PAN-OS
+CVE-2026-48027,2026-05-27,Known,Nx,Nx Console
+CVE-2026-45321,2026-05-27,Known,TanStack,TanStack
+CVE-2026-8398,2026-05-27,Unknown,Daemon,Daemon Tools Lite
+CVE-2026-48172,2026-05-26,Unknown,LiteSpeed,cPanel Plugin
+CVE-2026-9082,2026-05-22,Unknown,Drupal,Core
+CVE-2025-34291,2026-05-21,Unknown,Langflow,Langflow
+CVE-2026-34926,2026-05-21,Unknown,Trend Micro,Apex One
+CVE-2008-4250,2026-05-20,Unknown,Microsoft,Windows
+CVE-2009-1537,2026-05-20,Unknown,Microsoft,DirectX
+CVE-2009-3459,2026-05-20,Unknown,Adobe,Acrobat and Reader
+CVE-2010-0249,2026-05-20,Unknown,Microsoft,Internet Explorer
+CVE-2010-0806,2026-05-20,Unknown,Microsoft,Internet Explorer
+CVE-2026-41091,2026-05-20,Unknown,Microsoft,Defender
+CVE-2026-45498,2026-05-20,Unknown,Microsoft,Defender
+CVE-2026-42897,2026-05-15,Unknown,Microsoft,Microsoft
+CVE-2026-20182,2026-05-14,Unknown,Cisco,Catalyst SD-WAN
+CVE-2026-42208,2026-05-08,Unknown,BerriAI,LiteLLM
+CVE-2026-6973,2026-05-07,Unknown,Ivanti,Endpoint Manager Mobile (EPMM)
+CVE-2026-0300,2026-05-06,Unknown,Palo Alto Networks,PAN-OS
+CVE-2026-31431,2026-05-01,Unknown,Linux,Kernel
+CVE-2026-41940,2026-04-30,Known,WebPros,cPanel & WHM and WP2 (WordPress Squared)
+CVE-2024-1708,2026-04-28,Known,ConnectWise,ScreenConnect
+CVE-2026-32202,2026-04-28,Unknown,Microsoft,Windows
+CVE-2025-29635,2026-04-24,Unknown,D-Link,DIR-823X
+CVE-2024-7399,2026-04-24,Unknown,Samsung,MagicINFO 9 Server
+CVE-2024-57728,2026-04-24,Known,SimpleHelp ,SimpleHelp
+CVE-2024-57726,2026-04-24,Known,SimpleHelp ,SimpleHelp
+CVE-2026-39987,2026-04-23,Unknown,Marimo,Marimo
+CVE-2026-33825,2026-04-22,Known,Microsoft,Defender
+CVE-2026-20122,2026-04-20,Unknown,Cisco,Catalyst SD-WAN Manger
+CVE-2026-20133,2026-04-20,Unknown,Cisco,Catalyst SD-WAN Manager
+CVE-2025-2749,2026-04-20,Unknown,Kentico,Kentico Xperience
+CVE-2023-27351,2026-04-20,Known,PaperCut,NG/MF
+CVE-2025-48700,2026-04-20,Unknown,Synacor,Zimbra Collaboration Suite (ZCS)
+CVE-2026-20128,2026-04-20,Unknown,Cisco,Catalyst SD-WAN Manager
+CVE-2025-32975,2026-04-20,Unknown,Quest,KACE Systems Management Appliance (SMA)
+CVE-2024-27199,2026-04-20,Known,JetBrains,TeamCity
+CVE-2026-34197,2026-04-16,Unknown,Apache,ActiveMQ
+CVE-2009-0238,2026-04-14,Unknown,Microsoft,Office
+CVE-2026-32201,2026-04-14,Unknown,Microsoft,SharePoint Server
+CVE-2012-1854,2026-04-13,Unknown,Microsoft,Visual Basic for Applications (VBA)
+CVE-2025-60710,2026-04-13,Known,Microsoft,Windows
+CVE-2023-21529,2026-04-13,Known,Microsoft,Exchange Server
+CVE-2023-36424,2026-04-13,Unknown,Microsoft,Windows
+CVE-2020-9715,2026-04-13,Unknown,Adobe,Acrobat
+CVE-2026-21643,2026-04-13,Unknown,Fortinet,FortiClient EMS
+CVE-2026-34621,2026-04-13,Unknown,Adobe,Acrobat and Reader
+CVE-2026-1340,2026-04-08,Unknown,Ivanti,Endpoint Manager Mobile (EPMM)
+CVE-2026-35616,2026-04-06,Unknown,Fortinet,FortiClient EMS
+CVE-2026-3502,2026-04-02,Unknown,TrueConf,Client
+CVE-2026-5281,2026-04-01,Unknown,Google,Dawn
+CVE-2026-3055,2026-03-30,Unknown,Citrix,NetScaler
+CVE-2025-53521,2026-03-27,Unknown,F5,BIG-IP
+CVE-2026-33634,2026-03-26,Unknown,Aquasecurity,Trivy
+CVE-2026-33017,2026-03-25,Unknown,Langflow,Langflow
+CVE-2025-32432,2026-03-20,Unknown,Craft CMS,Craft CMS
+CVE-2025-54068,2026-03-20,Unknown,Laravel,Livewire
+CVE-2025-43510,2026-03-20,Unknown,Apple,Multiple Products
+CVE-2025-43520,2026-03-20,Unknown,Apple,Multiple Products
+CVE-2025-31277,2026-03-20,Unknown,Apple,Multiple Products
+CVE-2026-20131,2026-03-19,Known,Cisco,Secure Firewall Management Center (FMC)
+CVE-2025-66376,2026-03-18,Unknown,Synacor,Zimbra Collaboration Suite (ZCS)
+CVE-2026-20963,2026-03-18,Unknown,Microsoft,SharePoint
+CVE-2025-47813,2026-03-16,Unknown,Wing FTP Server,Wing FTP Server
+CVE-2026-3910,2026-03-13,Unknown,Google,Chromium V8
+CVE-2026-3909,2026-03-13,Unknown,Google,Skia
+CVE-2025-68613,2026-03-11,Unknown,n8n,n8n
+CVE-2021-22054,2026-03-09,Unknown,Omnissa,Workspace One UEM
+CVE-2025-26399,2026-03-09,Known,SolarWinds,Web Help Desk
+CVE-2026-1603,2026-03-09,Unknown,Ivanti, Endpoint Manager (EPM)
+CVE-2017-7921,2026-03-05,Unknown,Hikvision,Multiple Products
+CVE-2021-22681,2026-03-05,Unknown,Rockwell,Multiple Products
+CVE-2023-43000,2026-03-05,Unknown,Apple,Multiple Products
+CVE-2021-30952,2026-03-05,Unknown,Apple,Multiple Products
+CVE-2023-41974,2026-03-05,Unknown,Apple,iOS and iPadOS
+CVE-2026-22719,2026-03-03,Unknown,Broadcom,VMware Aria Operations
+CVE-2026-21385,2026-03-03,Unknown,Qualcomm,Multiple Chipsets
+CVE-2022-20775,2026-02-25,Unknown,Cisco,SD-WAN
+CVE-2026-20127,2026-02-25,Unknown,Cisco,Catalyst SD-WAN Controller and Manager
+CVE-2026-25108,2026-02-24,Unknown,Soliton Systems K.K,FileZen
+CVE-2025-49113,2026-02-20,Unknown,Roundcube,Webmail
+CVE-2025-68461,2026-02-20,Unknown,Roundcube,Webmail
+CVE-2021-22175,2026-02-18,Unknown,GitLab,GitLab
+CVE-2026-22769,2026-02-18,Unknown,Dell,RecoverPoint for Virtual Machines (RP4VMs)
+CVE-2020-7796,2026-02-17,Unknown,Synacor,Zimbra Collaboration Suite
+CVE-2024-7694,2026-02-17,Unknown,TeamT5,ThreatSonar Anti-Ransomware
+CVE-2008-0015,2026-02-17,Unknown,Microsoft,Windows
+CVE-2026-2441,2026-02-17,Unknown,Google,Chromium
+CVE-2026-1731,2026-02-13,Known,BeyondTrust,Remote Support (RS) and Privileged Remote Access (PRA)
+CVE-2026-20700,2026-02-12,Unknown,Apple,Multiple Products
+CVE-2024-43468,2026-02-12,Unknown,Microsoft,Configuration Manager
+CVE-2025-15556,2026-02-12,Unknown,Notepad++,Notepad++
+CVE-2025-40536,2026-02-12,Unknown,SolarWinds,Web Help Desk
+CVE-2026-21513,2026-02-10,Unknown,Microsoft,Windows
+CVE-2026-21525,2026-02-10,Unknown,Microsoft,Windows
+CVE-2026-21510,2026-02-10,Unknown,Microsoft,Windows
+CVE-2026-21533,2026-02-10,Unknown,Microsoft,Windows
+CVE-2026-21519,2026-02-10,Unknown,Microsoft,Windows
+CVE-2026-21514,2026-02-10,Unknown,Microsoft,Office
+CVE-2025-11953,2026-02-05,Unknown,React Native Community,CLI
+CVE-2026-24423,2026-02-05,Known,SmarterTools,SmarterMail
+CVE-2021-39935,2026-02-03,Unknown,GitLab,Community and Enterprise Editions
+CVE-2025-64328,2026-02-03,Unknown,Sangoma,FreePBX 
+CVE-2019-19006,2026-02-03,Unknown,Sangoma,FreePBX
+CVE-2025-40551,2026-02-03,Unknown,SolarWinds,Web Help Desk
+CVE-2026-1281,2026-01-29,Unknown,Ivanti,Endpoint Manager Mobile (EPMM)
+CVE-2026-24858,2026-01-27,Unknown,Fortinet,Multiple Products
+CVE-2018-14634,2026-01-26,Unknown,Linux,Kernel
+CVE-2025-52691,2026-01-26,Known,SmarterTools,SmarterMail
+CVE-2026-23760,2026-01-26,Known,SmarterTools,SmarterMail
+CVE-2026-24061,2026-01-26,Unknown,GNU,InetUtils
+CVE-2026-21509,2026-01-26,Unknown,Microsoft,Office
+CVE-2024-37079,2026-01-23,Unknown,Broadcom,VMware vCenter Server
+CVE-2025-68645,2026-01-22,Unknown,Synacor, Zimbra Collaboration Suite (ZCS)
+CVE-2025-34026,2026-01-22,Unknown,Versa,Concerto
+CVE-2025-31125,2026-01-22,Unknown,Vite,Vitejs
+CVE-2025-54313,2026-01-22,Unknown,Prettier,eslint-config-prettier
+CVE-2026-20045,2026-01-21,Unknown,Cisco,Unified Communications Manager
+CVE-2026-20805,2026-01-13,Unknown,Microsoft,Windows
+CVE-2025-8110,2026-01-12,Unknown,Gogs,Gogs
+CVE-2009-0556,2026-01-07,Unknown,Microsoft,Office
+CVE-2025-37164,2026-01-07,Unknown,Hewlett Packard Enterprise (HPE),OneView
+CVE-2025-14847,2025-12-29,Unknown,MongoDB,MongoDB and MongoDB Server
+CVE-2023-52163,2025-12-22,Unknown,Digiever,DS-2105 Pro
+CVE-2025-14733,2025-12-19,Known,WatchGuard,Firebox
+CVE-2025-59374,2025-12-17,Unknown,ASUS,Live Update
+CVE-2025-40602,2025-12-17,Unknown,SonicWall,SMA1000 appliance
+CVE-2025-20393,2025-12-17,Unknown,Cisco,Multiple Products
+CVE-2025-59718,2025-12-16,Unknown,Fortinet,Multiple Products
+CVE-2025-14611,2025-12-15,Unknown,Gladinet,CentreStack and Triofox
+CVE-2025-43529,2025-12-15,Unknown,Apple,Multiple Products
+CVE-2018-4063,2025-12-12,Unknown,Sierra Wireless,AirLink ALEOS
+CVE-2025-14174,2025-12-12,Unknown,Google,Chromium
+CVE-2025-58360,2025-12-11,Unknown,OSGeo,GeoServer
+CVE-2025-6218,2025-12-09,Unknown,RARLAB,WinRAR
+CVE-2025-62221,2025-12-09,Unknown,Microsoft,Windows
+CVE-2022-37055,2025-12-08,Unknown,D-Link,Routers
+CVE-2025-66644,2025-12-08,Unknown,Array Networks ,ArrayOS AG
+CVE-2025-55182,2025-12-05,Known,Meta,React Server Components
+CVE-2021-26828,2025-12-03,Unknown,OpenPLC,ScadaBR
+CVE-2025-48633,2025-12-02,Unknown,Android,Framework
+CVE-2025-48572,2025-12-02,Unknown,Android,Framework
+CVE-2021-26829,2025-11-28,Unknown,OpenPLC,ScadaBR
+CVE-2025-61757,2025-11-21,Unknown,Oracle,Fusion Middleware
+CVE-2025-13223,2025-11-19,Unknown,Google,Chromium V8
+CVE-2025-58034,2025-11-18,Unknown,Fortinet,FortiWeb
+CVE-2025-64446,2025-11-14,Unknown,Fortinet,FortiWeb
+CVE-2025-12480,2025-11-12,Unknown,Gladinet,Triofox
+CVE-2025-62215,2025-11-12,Unknown,Microsoft,Windows
+CVE-2025-9242,2025-11-12,Unknown,WatchGuard,Firebox
+CVE-2025-21042,2025-11-10,Unknown,Samsung,Mobile Devices
+CVE-2025-48703,2025-11-04,Unknown,CWP,Control Web Panel
+CVE-2025-11371,2025-11-04,Unknown,Gladinet,CentreStack and Triofox
+CVE-2025-41244,2025-10-30,Unknown,Broadcom,VMware Aria Operations and VMware Tools
+CVE-2025-24893,2025-10-30,Unknown,XWiki,Platform
+CVE-2025-6204,2025-10-28,Unknown,Dassault Systèmes,DELMIA Apriso
+CVE-2025-6205,2025-10-28,Unknown,Dassault Systèmes,DELMIA Apriso
+CVE-2025-54236,2025-10-24,Unknown,Adobe,Commerce and Magento
+CVE-2025-59287,2025-10-24,Unknown,Microsoft,Windows
+CVE-2025-61932,2025-10-22,Unknown,Motex,LANSCOPE Endpoint Manager
+CVE-2022-48503,2025-10-20,Unknown,Apple,Multiple Products
+CVE-2025-2746,2025-10-20,Unknown,Kentico,Xperience CMS
+CVE-2025-2747,2025-10-20,Unknown,Kentico,Xperience CMS
+CVE-2025-33073,2025-10-20,Unknown,Microsoft,Windows
+CVE-2025-61884,2025-10-20,Known,Oracle,E-Business Suite
+CVE-2025-54253,2025-10-15,Unknown,Adobe,Experience Manager (AEM) Forms
+CVE-2025-47827,2025-10-14,Unknown,IGEL,IGEL OS
+CVE-2025-24990,2025-10-14,Unknown,Microsoft,Windows
+CVE-2025-59230,2025-10-14,Unknown,Microsoft,Windows
+CVE-2016-7836,2025-10-14,Unknown,SKYSEA,Client View
+CVE-2021-43798,2025-10-09,Unknown,Grafana Labs,Grafana
+CVE-2025-27915,2025-10-07,Unknown,Synacor,Zimbra Collaboration Suite (ZCS)
+CVE-2021-22555,2025-10-06,Unknown,Linux,Kernel
+CVE-2010-3962,2025-10-06,Unknown,Microsoft,Internet Explorer
+CVE-2021-43226,2025-10-06,Known,Microsoft,Windows
+CVE-2013-3918,2025-10-06,Unknown,Microsoft,Windows
+CVE-2011-3402,2025-10-06,Unknown,Microsoft,Windows
+CVE-2010-3765,2025-10-06,Unknown,Mozilla,Multiple Products
+CVE-2025-61882,2025-10-06,Known,Oracle,E-Business Suite
+CVE-2014-6278,2025-10-02,Unknown,GNU,GNU Bash
+CVE-2017-1000353,2025-10-02,Unknown,Jenkins,Jenkins
+CVE-2015-7755,2025-10-02,Unknown,Juniper,ScreenOS
+CVE-2025-21043,2025-10-02,Unknown,Samsung,Mobile Devices
+CVE-2025-4008,2025-10-02,Unknown,Smartbedded,Meteobridge
+CVE-2025-32463,2025-09-29,Unknown,Sudo,Sudo
+CVE-2025-59689,2025-09-29,Unknown,Libraesva,Email Security Gateway
+CVE-2025-10035,2025-09-29,Known,Fortra,GoAnywhere MFT
+CVE-2025-20352,2025-09-29,Unknown,Cisco,IOS and IOS XE
+CVE-2021-21311,2025-09-29,Unknown,Adminer,Adminer
+CVE-2025-20362,2025-09-25,Unknown,Cisco,Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense
+CVE-2025-20333,2025-09-25,Unknown,Cisco,Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense
+CVE-2025-10585,2025-09-23,Unknown,Google,Chromium V8
+CVE-2025-5086,2025-09-11,Unknown,Dassault Systèmes,DELMIA Apriso
+CVE-2025-38352,2025-09-04,Unknown,Linux,Kernel
+CVE-2025-48543,2025-09-04,Unknown,Android,Runtime
+CVE-2025-53690,2025-09-04,Unknown,Sitecore,Multiple Products
+CVE-2023-50224,2025-09-03,Unknown,TP-Link,TL-WR841N
+CVE-2025-9377,2025-09-03,Unknown,TP-Link,Multiple Routers
+CVE-2020-24363,2025-09-02,Unknown,TP-Link,TL-WA855RE
+CVE-2025-55177,2025-09-02,Unknown,Meta Platforms,WhatsApp
+CVE-2025-57819,2025-08-29,Unknown,Sangoma,FreePBX
+CVE-2025-7775,2025-08-26,Unknown,Citrix,NetScaler
+CVE-2025-48384,2025-08-25,Unknown,Git,Git
+CVE-2024-8068,2025-08-25,Unknown,Citrix,Session Recording
+CVE-2024-8069,2025-08-25,Unknown,Citrix,Session Recording
+CVE-2025-43300,2025-08-21,Unknown,Apple,"iOS, iPadOS, and macOS"
+CVE-2025-54948,2025-08-18,Unknown,Trend Micro,Apex One
+CVE-2025-8876,2025-08-13,Unknown,N-able,N-Central
+CVE-2025-8875,2025-08-13,Unknown,N-able,N-Central
+CVE-2025-8088,2025-08-12,Known,RARLAB,WinRAR
+CVE-2007-0671,2025-08-12,Unknown,Microsoft,Office
+CVE-2013-3893,2025-08-12,Unknown,Microsoft,Internet Explorer
+CVE-2020-25078,2025-08-05,Unknown,D-Link,DCS-2530L and DCS-2670L Devices
+CVE-2020-25079,2025-08-05,Unknown,D-Link,DCS-2530L and DCS-2670L Devices
+CVE-2022-40799,2025-08-05,Unknown,D-Link,DNR-322L
+CVE-2023-2533,2025-07-28,Unknown,PaperCut,NG/MF
+CVE-2025-20337,2025-07-28,Unknown,Cisco,Identity Services Engine
+CVE-2025-20281,2025-07-28,Unknown,Cisco,Identity Services Engine
+CVE-2025-2775,2025-07-22,Unknown,SysAid,SysAid On-Prem
+CVE-2025-2776,2025-07-22,Unknown,SysAid,SysAid On-Prem
+CVE-2025-6558,2025-07-22,Unknown,Google,Chromium
+CVE-2025-54309,2025-07-22,Unknown,CrushFTP,CrushFTP
+CVE-2025-49704,2025-07-22,Known,Microsoft,SharePoint
+CVE-2025-49706,2025-07-22,Known,Microsoft,SharePoint
+CVE-2025-53770,2025-07-20,Known,Microsoft,SharePoint
+CVE-2025-25257,2025-07-18,Unknown,Fortinet,FortiWeb
+CVE-2025-47812,2025-07-14,Unknown,Wing FTP Server,Wing FTP Server
+CVE-2025-5777,2025-07-10,Known,Citrix,NetScaler ADC and Gateway
+CVE-2019-9621,2025-07-07,Unknown,Synacor,Zimbra Collaboration Suite (ZCS)
+CVE-2019-5418,2025-07-07,Unknown,Rails,Ruby on Rails
+CVE-2016-10033,2025-07-07,Unknown,PHP,PHPMailer
+CVE-2014-3931,2025-07-07,Unknown,Looking Glass,Multi-Router Looking Glass (MRLG)
+CVE-2025-6554,2025-07-02,Unknown,Google,Chromium V8
+CVE-2025-48928,2025-07-01,Unknown,TeleMessage,TM SGNL
+CVE-2025-48927,2025-07-01,Unknown,TeleMessage,TM SGNL
+CVE-2025-6543,2025-06-30,Unknown,Citrix,NetScaler ADC and Gateway
+CVE-2019-6693,2025-06-25,Known,Fortinet,FortiOS
+CVE-2024-0769,2025-06-25,Unknown,D-Link,DIR-859 Router
+CVE-2024-54085,2025-06-25,Unknown,AMI,MegaRAC SPx
+CVE-2023-0386,2025-06-17,Unknown,Linux,Kernel
+CVE-2023-33538,2025-06-16,Unknown,TP-Link,Multiple Routers
+CVE-2025-43200,2025-06-16,Unknown,Apple,Multiple Products
+CVE-2025-33053,2025-06-10,Unknown,Microsoft,Windows
+CVE-2025-24016,2025-06-10,Unknown,Wazuh,Wazuh Server
+CVE-2024-42009,2025-06-09,Unknown,Roundcube,Webmail
+CVE-2025-32433,2025-06-09,Unknown,Erlang,Erlang/OTP
+CVE-2025-5419,2025-06-05,Unknown,Google,Chromium V8
+CVE-2025-21479,2025-06-03,Unknown,Qualcomm,Multiple Chipsets
+CVE-2025-21480,2025-06-03,Unknown,Qualcomm,Multiple Chipsets
+CVE-2025-27038,2025-06-03,Unknown,Qualcomm,Multiple Chipsets
+CVE-2021-32030,2025-06-02,Unknown,ASUS,Routers
+CVE-2025-3935,2025-06-02,Unknown,ConnectWise,ScreenConnect
+CVE-2025-35939,2025-06-02,Unknown,Craft CMS,Craft CMS
+CVE-2024-56145,2025-06-02,Unknown,Craft CMS,Craft CMS
+CVE-2023-39780,2025-06-02,Unknown,ASUS,RT-AX55 Routers
+CVE-2025-4632,2025-05-22,Unknown,Samsung,MagicINFO 9 Server
+CVE-2023-38950,2025-05-19,Unknown,ZKTeco,BioTime
+CVE-2024-27443,2025-05-19,Unknown,Synacor,Zimbra Collaboration Suite (ZCS)
+CVE-2025-27920,2025-05-19,Unknown,Srimax,Output Messenger
+CVE-2024-11182,2025-05-19,Unknown,MDaemon,Email Server
+CVE-2025-4428,2025-05-19,Unknown,Ivanti,Endpoint Manager Mobile (EPMM)
+CVE-2025-4427,2025-05-19,Unknown,Ivanti,Endpoint Manager Mobile (EPMM)
+CVE-2025-42999,2025-05-15,Known,SAP,NetWeaver
+CVE-2024-12987,2025-05-15,Unknown,DrayTek,Vigor Routers
+CVE-2025-32756,2025-05-14,Unknown,Fortinet,Multiple Products
+CVE-2025-32709,2025-05-13,Unknown,Microsoft,Windows
+CVE-2025-30397,2025-05-13,Unknown,Microsoft,Windows
+CVE-2025-32706,2025-05-13,Unknown,Microsoft,Windows
+CVE-2025-32701,2025-05-13,Unknown,Microsoft,Windows
+CVE-2025-30400,2025-05-13,Unknown,Microsoft,Windows
+CVE-2025-47729,2025-05-12,Unknown,TeleMessage,TM SGNL
+CVE-2024-11120,2025-05-07,Unknown,GeoVision,Multiple Devices
+CVE-2024-6047,2025-05-07,Unknown,GeoVision,Multiple Devices
+CVE-2025-27363,2025-05-06,Unknown,FreeType,FreeType
+CVE-2025-3248,2025-05-05,Known,Langflow,Langflow
+CVE-2025-34028,2025-05-02,Unknown,Commvault,Command Center
+CVE-2024-58136,2025-05-02,Unknown,Yiiframework,Yii
+CVE-2024-38475,2025-05-01,Unknown,Apache,HTTP Server
+CVE-2023-44221,2025-05-01,Unknown,SonicWall,SMA100 Appliances
+CVE-2025-31324,2025-04-29,Known,SAP,NetWeaver
+CVE-2025-1976,2025-04-28,Unknown,Broadcom,Brocade Fabric OS
+CVE-2025-42599,2025-04-28,Unknown,Qualitia,Active! Mail
+CVE-2025-3928,2025-04-28,Unknown,Commvault,Web Server
+CVE-2025-24054,2025-04-17,Unknown,Microsoft,Windows
+CVE-2025-31201,2025-04-17,Unknown,Apple,Multiple Products
+CVE-2025-31200,2025-04-17,Unknown,Apple,Multiple Products
+CVE-2021-20035,2025-04-16,Unknown,SonicWall,SMA100 Appliances
+CVE-2024-53150,2025-04-09,Unknown,Linux,Kernel
+CVE-2024-53197,2025-04-09,Unknown,Linux,Kernel
+CVE-2025-29824,2025-04-08,Known,Microsoft,Windows
+CVE-2025-30406,2025-04-08,Unknown,Gladinet,CentreStack
+CVE-2025-31161,2025-04-07,Known,CrushFTP,CrushFTP
+CVE-2025-22457,2025-04-04,Known,Ivanti,"Connect Secure, Policy Secure, and ZTA Gateways"
+CVE-2025-24813,2025-04-01,Unknown,Apache,Tomcat
+CVE-2024-20439,2025-03-31,Unknown,Cisco,Smart Licensing Utility
+CVE-2025-2783,2025-03-27,Unknown,Google,Chromium Mojo
+CVE-2019-9875,2025-03-26,Unknown,Sitecore,CMS and Experience Platform (XP)
+CVE-2019-9874,2025-03-26,Unknown,Sitecore,CMS and Experience Platform (XP)
+CVE-2025-30154,2025-03-24,Unknown,reviewdog,action-setup GitHub Action
+CVE-2017-12637,2025-03-19,Unknown,SAP,NetWeaver
+CVE-2024-48248,2025-03-19,Unknown,NAKIVO,Backup and Replication
+CVE-2025-1316,2025-03-19,Unknown,Edimax,IC-7100 IP Camera
+CVE-2025-30066,2025-03-18,Unknown,tj-actions,changed-files GitHub Action
+CVE-2025-24472,2025-03-18,Known,Fortinet,FortiOS and FortiProxy
+CVE-2025-21590,2025-03-13,Unknown,Juniper,Junos OS
+CVE-2025-24201,2025-03-13,Unknown,Apple,Multiple Products
+CVE-2025-24993,2025-03-11,Unknown,Microsoft,Windows
+CVE-2025-24991,2025-03-11,Unknown,Microsoft,Windows
+CVE-2025-24985,2025-03-11,Unknown,Microsoft,Windows
+CVE-2025-24984,2025-03-11,Unknown,Microsoft,Windows
+CVE-2025-24983,2025-03-11,Unknown,Microsoft,Windows
+CVE-2025-26633,2025-03-11,Known,Microsoft,Windows
+CVE-2024-13161,2025-03-10,Unknown,Ivanti,Endpoint Manager (EPM)
+CVE-2024-13160,2025-03-10,Unknown,Ivanti,Endpoint Manager (EPM)
+CVE-2024-13159,2025-03-10,Unknown,Ivanti,Endpoint Manager (EPM)
+CVE-2024-57968,2025-03-10,Unknown,Advantive,VeraCore
+CVE-2025-25181,2025-03-10,Unknown,Advantive,VeraCore
+CVE-2025-22226,2025-03-04,Unknown,VMware,"ESXi, Workstation, and Fusion"
+CVE-2025-22225,2025-03-04,Known,VMware,ESXi
+CVE-2025-22224,2025-03-04,Unknown,VMware,ESXi and Workstation
+CVE-2024-50302,2025-03-04,Unknown,Linux,Kernel
+CVE-2024-4885,2025-03-03,Unknown,Progress,WhatsUp Gold
+CVE-2018-8639,2025-03-03,Known,Microsoft,Windows
+CVE-2022-43769,2025-03-03,Unknown,Hitachi Vantara,Pentaho Business Analytics (BA) Server
+CVE-2022-43939,2025-03-03,Unknown,Hitachi Vantara,Pentaho Business Analytics (BA) Server
+CVE-2023-20118,2025-03-03,Unknown,Cisco,Small Business RV Series Routers
+CVE-2023-34192,2025-02-25,Unknown,Synacor,Zimbra Collaboration Suite (ZCS)
+CVE-2024-49035,2025-02-25,Unknown,Microsoft,Partner Center
+CVE-2024-20953,2025-02-24,Unknown,Oracle,Agile Product Lifecycle Management (PLM)
+CVE-2017-3066,2025-02-24,Unknown,Adobe,ColdFusion
+CVE-2025-24989,2025-02-21,Unknown,Microsoft,Power Pages
+CVE-2025-0111,2025-02-20,Unknown,Palo Alto Networks,PAN-OS
+CVE-2025-23209,2025-02-20,Unknown,Craft CMS,Craft CMS
+CVE-2025-0108,2025-02-18,Unknown,Palo Alto Networks,PAN-OS
+CVE-2024-53704,2025-02-18,Known,SonicWall,SonicOS
+CVE-2024-57727,2025-02-13,Known,SimpleHelp ,SimpleHelp
+CVE-2025-24200,2025-02-12,Unknown,Apple,iOS and iPadOS
+CVE-2024-41710,2025-02-12,Unknown,Mitel,SIP Phones
+CVE-2024-40891,2025-02-11,Unknown,Zyxel,DSL CPE Devices
+CVE-2024-40890,2025-02-11,Unknown,Zyxel,DSL CPE Devices
+CVE-2025-21418,2025-02-11,Unknown,Microsoft,Windows
+CVE-2025-21391,2025-02-11,Unknown,Microsoft,Windows
+CVE-2025-0994,2025-02-07,Unknown,Trimble,Cityworks
+CVE-2020-15069,2025-02-06,Unknown,Sophos,XG Firewall
+CVE-2020-29574,2025-02-06,Known,Sophos,CyberoamOS
+CVE-2024-21413,2025-02-06,Unknown,Microsoft,Office Outlook
+CVE-2022-23748,2025-02-06,Unknown,Audinate,Dante Discovery
+CVE-2025-0411,2025-02-06,Unknown,7-Zip,7-Zip
+CVE-2024-53104,2025-02-05,Unknown,Linux,Kernel
+CVE-2018-19410,2025-02-04,Unknown,Paessler,PRTG Network Monitor
+CVE-2018-9276,2025-02-04,Unknown,Paessler,PRTG Network Monitor
+CVE-2024-29059,2025-02-04,Unknown,Microsoft,.NET Framework
+CVE-2024-45195,2025-02-04,Unknown,Apache,OFBiz
+CVE-2025-24085,2025-01-29,Unknown,Apple,Multiple Products
+CVE-2025-23006,2025-01-24,Known,SonicWall,SMA1000 Appliances
+CVE-2020-11023,2025-01-23,Unknown,JQuery,JQuery
+CVE-2024-50603,2025-01-16,Unknown,Aviatrix,Controllers
+CVE-2025-21335,2025-01-14,Unknown,Microsoft,Windows
+CVE-2025-21334,2025-01-14,Unknown,Microsoft,Windows
+CVE-2025-21333,2025-01-14,Unknown,Microsoft,Windows
+CVE-2024-55591,2025-01-14,Known,Fortinet,FortiOS and FortiProxy
+CVE-2023-48365,2025-01-13,Known,Qlik,Sense
+CVE-2024-12686,2025-01-13,Unknown,BeyondTrust,Privileged Remote Access (PRA) and Remote Support (RS)
+CVE-2025-0282,2025-01-08,Known,Ivanti,"Connect Secure, Policy Secure, and ZTA Gateways"
+CVE-2020-2883,2025-01-07,Unknown,Oracle,WebLogic Server
+CVE-2024-55550,2025-01-07,Known,Mitel,MiCollab
+CVE-2024-41713,2025-01-07,Known,Mitel,MiCollab
+CVE-2024-3393,2024-12-30,Unknown,Palo Alto Networks,PAN-OS
+CVE-2021-44207,2024-12-23,Unknown,Acclaim Systems,USAHERDS
+CVE-2024-12356,2024-12-19,Unknown,BeyondTrust,Privileged Remote Access (PRA) and Remote Support (RS) 
+CVE-2021-40407,2024-12-18,Unknown,Reolink,RLC-410W IP Camera
+CVE-2019-11001,2024-12-18,Unknown,Reolink,Multiple IP Cameras
+CVE-2022-23227,2024-12-18,Unknown,NUUO,NVRmini2 Devices
+CVE-2018-14933,2024-12-18,Unknown,NUUO,NVRmini Devices
+CVE-2024-55956,2024-12-17,Known,Cleo,Multiple Products
+CVE-2024-35250,2024-12-16,Unknown,Microsoft,Windows
+CVE-2024-20767,2024-12-16,Unknown,Adobe,ColdFusion
+CVE-2024-50623,2024-12-13,Known,Cleo,Multiple Products
+CVE-2024-49138,2024-12-10,Unknown,Microsoft,Windows
+CVE-2024-51378,2024-12-04,Known,CyberPersons,CyberPanel
+CVE-2024-11667,2024-12-03,Known,Zyxel,Multiple Firewalls
+CVE-2024-11680,2024-12-03,Unknown,ProjectSend,ProjectSend
+CVE-2023-45727,2024-12-03,Unknown,North Grid,Proself
+CVE-2023-28461,2024-11-25,Known,Array Networks ,AG/vxAG ArrayOS
+CVE-2024-21287,2024-11-21,Unknown,Oracle,Agile Product Lifecycle Management (PLM)
+CVE-2024-44309,2024-11-21,Unknown,Apple,Multiple Products
+CVE-2024-44308,2024-11-21,Unknown,Apple,Multiple Products
+CVE-2024-38813,2024-11-20,Unknown,VMware,vCenter Server
+CVE-2024-38812,2024-11-20,Unknown,VMware,vCenter Server
+CVE-2024-9474,2024-11-18,Known,Palo Alto Networks,PAN-OS
+CVE-2024-0012,2024-11-18,Known,Palo Alto Networks,PAN-OS
+CVE-2024-1212,2024-11-18,Unknown,Progress,Kemp LoadMaster
+CVE-2024-9465,2024-11-14,Unknown,Palo Alto Networks,Expedition
+CVE-2024-9463,2024-11-14,Unknown,Palo Alto Networks,Expedition
+CVE-2021-26086,2024-11-12,Unknown,Atlassian,Jira Server and Data Center
+CVE-2014-2120,2024-11-12,Unknown,Cisco,Adaptive Security Appliance (ASA)
+CVE-2021-41277,2024-11-12,Unknown,Metabase,Metabase
+CVE-2024-43451,2024-11-12,Unknown,Microsoft,Windows
+CVE-2024-49039,2024-11-12,Known,Microsoft,Windows
+CVE-2019-16278,2024-11-07,Unknown,Nostromo,nhttpd
+CVE-2024-51567,2024-11-07,Known,CyberPersons,CyberPanel
+CVE-2024-43093,2024-11-07,Unknown,Android,Framework
+CVE-2024-5910,2024-11-07,Unknown,Palo Alto Networks,Expedition
+CVE-2024-8956,2024-11-04,Unknown,PTZOptics,PT30X-SDI/NDI Cameras
+CVE-2024-8957,2024-11-04,Unknown,PTZOptics,PT30X-SDI/NDI Cameras
+CVE-2024-37383,2024-10-24,Unknown,Roundcube,Webmail
+CVE-2024-20481,2024-10-24,Unknown,Cisco,Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)
+CVE-2024-47575,2024-10-23,Unknown,Fortinet,FortiManager
+CVE-2024-38094,2024-10-22,Known,Microsoft,SharePoint
+CVE-2024-9537,2024-10-21,Unknown,ScienceLogic,SL1
+CVE-2024-40711,2024-10-17,Known,Veeam,Backup & Replication
+CVE-2024-28987,2024-10-15,Unknown,SolarWinds,Web Help Desk
+CVE-2024-9680,2024-10-15,Known,Mozilla,Firefox
+CVE-2024-30088,2024-10-15,Known,Microsoft,Windows 
+CVE-2024-9380,2024-10-09,Unknown,Ivanti,Cloud Services Appliance (CSA)
+CVE-2024-9379,2024-10-09,Unknown,Ivanti,Cloud Services Appliance (CSA)
+CVE-2024-23113,2024-10-09,Unknown,Fortinet,Multiple Products
+CVE-2024-43573,2024-10-08,Unknown,Microsoft,Windows
+CVE-2024-43572,2024-10-08,Unknown,Microsoft,Windows
+CVE-2024-43047,2024-10-08,Unknown,Qualcomm,Multiple Chipsets 
+CVE-2024-45519,2024-10-03,Unknown,Synacor,Zimbra Collaboration Suite (ZCS)
+CVE-2024-29824,2024-10-02,Unknown,Ivanti,Endpoint Manager (EPM)
+CVE-2019-0344,2024-09-30,Unknown,SAP,Commerce Cloud
+CVE-2020-15415,2024-09-30,Unknown,DrayTek,Multiple Vigor Routers
+CVE-2023-25280,2024-09-30,Unknown,D-Link,DIR-820 Router
+CVE-2024-7593,2024-09-24,Unknown,Ivanti,Virtual Traffic Manager
+CVE-2024-8963,2024-09-19,Unknown,Ivanti,Cloud Services Appliance (CSA)
+CVE-2020-14644,2024-09-18,Unknown,Oracle,WebLogic Server
+CVE-2022-21445,2024-09-18,Unknown,Oracle,ADF Faces
+CVE-2020-0618,2024-09-18,Known,Microsoft,SQL Server
+CVE-2024-27348,2024-09-18,Unknown,Apache,HugeGraph-Server
+CVE-2014-0502,2024-09-17,Unknown,Adobe,Flash Player
+CVE-2013-0648,2024-09-17,Unknown,Adobe,Flash Player
+CVE-2013-0643,2024-09-17,Unknown,Adobe,Flash Player
+CVE-2014-0497,2024-09-17,Unknown,Adobe,Flash Player
+CVE-2024-6670,2024-09-16,Known,Progress,WhatsUp Gold
+CVE-2024-43461,2024-09-16,Unknown,Microsoft,Windows
+CVE-2024-8190,2024-09-13,Unknown,Ivanti,Cloud Services Appliance
+CVE-2024-38217,2024-09-10,Unknown,Microsoft,Windows
+CVE-2024-38014,2024-09-10,Unknown,Microsoft,Windows
+CVE-2024-38226,2024-09-10,Unknown,Microsoft,Publisher
+CVE-2024-40766,2024-09-09,Known,SonicWall,SonicOS
+CVE-2017-1000253,2024-09-09,Known,Linux,Kernel
+CVE-2016-3714,2024-09-09,Unknown,ImageMagick,ImageMagick
+CVE-2024-7262,2024-09-03,Unknown,Kingsoft,WPS Office
+CVE-2021-20124,2024-09-03,Unknown,DrayTek,VigorConnect
+CVE-2021-20123,2024-09-03,Unknown,DrayTek,VigorConnect
+CVE-2024-7965,2024-08-28,Unknown,Google,Chromium V8
+CVE-2024-38856,2024-08-27,Unknown,Apache,OFBiz
+CVE-2024-7971,2024-08-26,Unknown,Google,Chromium V8
+CVE-2024-39717,2024-08-23,Unknown,Versa,Director
+CVE-2021-31196,2024-08-21,Unknown,Microsoft,Exchange Server
+CVE-2022-0185,2024-08-21,Unknown,Linux,Kernel
+CVE-2021-33045,2024-08-21,Unknown,Dahua,IP Camera Firmware
+CVE-2021-33044,2024-08-21,Unknown,Dahua,IP Camera Firmware
+CVE-2024-23897,2024-08-19,Known,Jenkins,Jenkins Command Line Interface (CLI)
+CVE-2024-28986,2024-08-15,Unknown,SolarWinds,Web Help Desk
+CVE-2024-38107,2024-08-13,Unknown,Microsoft,Windows
+CVE-2024-38106,2024-08-13,Unknown,Microsoft,Windows
+CVE-2024-38193,2024-08-13,Unknown,Microsoft,Windows
+CVE-2024-38213,2024-08-13,Unknown,Microsoft,Windows
+CVE-2024-38178,2024-08-13,Unknown,Microsoft,Windows
+CVE-2024-38189,2024-08-13,Unknown,Microsoft,Project
+CVE-2024-32113,2024-08-07,Unknown,Apache,OFBiz
+CVE-2024-36971,2024-08-07,Unknown,Android,Kernel
+CVE-2018-0824,2024-08-05,Unknown,Microsoft,Windows
+CVE-2024-37085,2024-07-30,Known,VMware,ESXi
+CVE-2023-45249,2024-07-29,Unknown,Acronis,Cyber Infrastructure (ACI)
+CVE-2024-5217,2024-07-29,Unknown,ServiceNow,"Utah, Vancouver, and Washington DC Now Platform"
+CVE-2024-4879,2024-07-29,Unknown,ServiceNow,"Utah, Vancouver, and Washington DC Now Platform"
+CVE-2024-39891,2024-07-23,Unknown,Twilio,Authy
+CVE-2012-4792,2024-07-23,Unknown,Microsoft,Internet Explorer
+CVE-2022-22948,2024-07-17,Unknown,VMware,vCenter Server
+CVE-2024-28995,2024-07-17,Unknown,SolarWinds,Serv-U
+CVE-2024-34102,2024-07-17,Unknown,Adobe,Commerce and Magento Open Source
+CVE-2024-36401,2024-07-15,Unknown,OSGeo,GeoServer
+CVE-2024-23692,2024-07-09,Known,Rejetto,HTTP File Server
+CVE-2024-38080,2024-07-09,Unknown,Microsoft,Windows 
+CVE-2024-38112,2024-07-09,Unknown,Microsoft,Windows
+CVE-2024-20399,2024-07-02,Unknown,Cisco,NX-OS
+CVE-2020-13965,2024-06-26,Unknown,Roundcube,Webmail
+CVE-2022-2586,2024-06-26,Unknown,Linux,Kernel
+CVE-2022-24816,2024-06-26,Unknown,OSGeo,JAI-EXT
+CVE-2024-4358,2024-06-13,Unknown,Progress,Telerik Report Server
+CVE-2024-26169,2024-06-13,Known,Microsoft,Windows
+CVE-2024-32896,2024-06-13,Unknown,Android,Pixel
+CVE-2024-4577,2024-06-12,Known,PHP Group,PHP
+CVE-2024-4610,2024-06-12,Unknown,Arm,Mali GPU Kernel Driver
+CVE-2017-3506,2024-06-03,Unknown,Oracle,WebLogic Server
+CVE-2024-1086,2024-05-30,Known,Linux,Kernel
+CVE-2024-24919,2024-05-30,Known,Check Point,Quantum Security Gateways
+CVE-2024-4978,2024-05-29,Unknown,Justice AV Solutions,Viewer 
+CVE-2024-5274,2024-05-28,Unknown,Google,Chromium V8
+CVE-2020-17519,2024-05-23,Unknown,Apache,Flink
+CVE-2024-4947,2024-05-20,Unknown,Google,Chromium V8
+CVE-2023-43208,2024-05-20,Known,NextGen Healthcare,Mirth Connect
+CVE-2024-4761,2024-05-16,Unknown,Google,Chromium V8
+CVE-2021-40655,2024-05-16,Unknown,D-Link,DIR-605 Router
+CVE-2014-100005,2024-05-16,Unknown,D-Link,DIR-600 Router
+CVE-2024-30040,2024-05-14,Unknown,Microsoft,Windows
+CVE-2024-30051,2024-05-14,Known,Microsoft,DWM Core Library
+CVE-2024-4671,2024-05-13,Unknown,Google,Chromium
+CVE-2023-7028,2024-05-01,Unknown,GitLab,GitLab CE/EE
+CVE-2024-29988,2024-04-30,Unknown,Microsoft,SmartScreen Prompt
+CVE-2024-4040,2024-04-24,Unknown,CrushFTP,CrushFTP
+CVE-2024-20359,2024-04-24,Unknown,Cisco,Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)
+CVE-2024-20353,2024-04-24,Unknown,Cisco,Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)
+CVE-2022-38028,2024-04-23,Unknown,Microsoft,Windows
+CVE-2024-3400,2024-04-12,Known,Palo Alto Networks,PAN-OS
+CVE-2024-3273,2024-04-11,Unknown,D-Link,Multiple NAS Devices
+CVE-2024-3272,2024-04-11,Unknown,D-Link,Multiple NAS Devices
+CVE-2024-29748,2024-04-04,Unknown,Android,Pixel
+CVE-2024-29745,2024-04-04,Unknown,Android,Pixel
+CVE-2023-24955,2024-03-26,Known,Microsoft,SharePoint Server
+CVE-2019-7256,2024-03-25,Unknown,Nice,Linear eMerge E3-Series
+CVE-2021-44529,2024-03-25,Known,Ivanti,Endpoint Manager Cloud Service Appliance (EPM CSA)
+CVE-2023-48788,2024-03-25,Known,Fortinet,FortiClient EMS
+CVE-2024-27198,2024-03-07,Known,JetBrains,TeamCity
+CVE-2024-23225,2024-03-06,Unknown,Apple,Multiple Products
+CVE-2024-23296,2024-03-06,Unknown,Apple,Multiple Products
+CVE-2023-21237,2024-03-05,Unknown,Android,Pixel
+CVE-2021-36380,2024-03-05,Unknown,Sunhillo,SureLine
+CVE-2024-21338,2024-03-04,Known,Microsoft,Windows
+CVE-2023-29360,2024-02-29,Unknown,Microsoft,Streaming Service
+CVE-2024-1709,2024-02-22,Known,ConnectWise,ScreenConnect
+CVE-2020-3259,2024-02-15,Known,Cisco,Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)
+CVE-2024-21410,2024-02-15,Unknown,Microsoft,Exchange Server
+CVE-2024-21412,2024-02-13,Known,Microsoft,Windows
+CVE-2024-21351,2024-02-13,Unknown,Microsoft,Windows
+CVE-2023-43770,2024-02-12,Unknown,Roundcube,Webmail
+CVE-2024-21762,2024-02-09,Known,Fortinet,FortiOS
+CVE-2023-4762,2024-02-06,Unknown,Google,Chromium V8
+CVE-2022-48618,2024-01-31,Unknown,Apple,Multiple Products
+CVE-2024-21893,2024-01-31,Known,Ivanti,"Connect Secure, Policy Secure, and Neurons"
+CVE-2023-22527,2024-01-24,Known,Atlassian,Confluence Data Center and Server
+CVE-2024-23222,2024-01-23,Unknown,Apple,Multiple Products
+CVE-2023-34048,2024-01-22,Unknown,VMware,vCenter Server
+CVE-2023-35082,2024-01-18,Known,Ivanti,Endpoint Manager Mobile (EPMM) and MobileIron Core
+CVE-2024-0519,2024-01-17,Unknown,Google,Chromium V8
+CVE-2023-6549,2024-01-17,Unknown,Citrix,NetScaler ADC and NetScaler Gateway
+CVE-2023-6548,2024-01-17,Unknown,Citrix,NetScaler ADC and NetScaler Gateway
+CVE-2018-15133,2024-01-16,Unknown,Laravel,Laravel Framework
+CVE-2023-29357,2024-01-10,Known,Microsoft,SharePoint Server
+CVE-2023-46805,2024-01-10,Known,Ivanti,Connect Secure and Policy Secure
+CVE-2024-21887,2024-01-10,Known,Ivanti,Connect Secure and Policy Secure
+CVE-2023-23752,2024-01-08,Unknown,Joomla!,Joomla!
+CVE-2016-20017,2024-01-08,Unknown,D-Link,DSL-2750B Devices
+CVE-2023-41990,2024-01-08,Unknown,Apple,Multiple Products
+CVE-2023-27524,2024-01-08,Unknown,Apache,Superset
+CVE-2023-29300,2024-01-08,Known,Adobe,ColdFusion
+CVE-2023-38203,2024-01-08,Known,Adobe,ColdFusion
+CVE-2023-7101,2024-01-02,Unknown,Spreadsheet::ParseExcel,Spreadsheet::ParseExcel
+CVE-2023-7024,2024-01-02,Unknown,Google,Chromium WebRTC
+CVE-2023-49897,2023-12-21,Unknown,FXC,"AE1021, AE1021PE"
+CVE-2023-47565,2023-12-21,Unknown,QNAP,VioStor NVR
+CVE-2023-6448,2023-12-11,Unknown,Unitronics,Vision PLC and HMI
+CVE-2023-41266,2023-12-07,Known,Qlik,Sense
+CVE-2023-41265,2023-12-07,Known,Qlik,Sense
+CVE-2023-33107,2023-12-05,Unknown,Qualcomm,Multiple Chipsets
+CVE-2023-33106,2023-12-05,Unknown,Qualcomm,Multiple Chipsets
+CVE-2023-33063,2023-12-05,Unknown,Qualcomm,Multiple Chipsets
+CVE-2022-22071,2023-12-05,Unknown,Qualcomm,Multiple Chipsets
+CVE-2023-42917,2023-12-04,Unknown,Apple,Multiple Products
+CVE-2023-42916,2023-12-04,Unknown,Apple,Multiple Products
+CVE-2023-6345,2023-11-30,Unknown,Google,Chromium Skia
+CVE-2023-49103,2023-11-30,Unknown,ownCloud,ownCloud graphapi
+CVE-2023-4911,2023-11-21,Unknown,GNU,GNU C Library
+CVE-2023-36584,2023-11-16,Unknown,Microsoft,Windows
+CVE-2023-1671,2023-11-16,Unknown,Sophos,Web Appliance
+CVE-2020-2551,2023-11-16,Unknown,Oracle,Fusion Middleware
+CVE-2023-36033,2023-11-14,Unknown,Microsoft,Windows
+CVE-2023-36025,2023-11-14,Unknown,Microsoft,Windows
+CVE-2023-36036,2023-11-14,Unknown,Microsoft,Windows
+CVE-2023-47246,2023-11-13,Known,SysAid,SysAid Server
+CVE-2023-36844,2023-11-13,Unknown,Juniper,Junos OS
+CVE-2023-36845,2023-11-13,Unknown,Juniper,Junos OS
+CVE-2023-36846,2023-11-13,Unknown,Juniper,Junos OS
+CVE-2023-36847,2023-11-13,Unknown,Juniper,Junos OS
+CVE-2023-36851,2023-11-13,Unknown,Juniper,Junos OS
+CVE-2023-29552,2023-11-08,Unknown,IETF,Service Location Protocol (SLP)
+CVE-2023-22518,2023-11-07,Known,Atlassian,Confluence Data Center and Server
+CVE-2023-46604,2023-11-02,Known,Apache,ActiveMQ
+CVE-2023-46748,2023-10-31,Unknown,F5,BIG-IP Configuration Utility
+CVE-2023-46747,2023-10-31,Known,F5,BIG-IP Configuration Utility
+CVE-2023-5631,2023-10-26,Unknown,Roundcube,Webmail
+CVE-2023-20273,2023-10-23,Unknown,Cisco,Cisco IOS XE Web UI
+CVE-2023-4966,2023-10-18,Known,Citrix,NetScaler ADC and NetScaler Gateway
+CVE-2023-20198,2023-10-16,Unknown,Cisco,IOS XE Web UI
+CVE-2023-21608,2023-10-10,Unknown,Adobe,Acrobat and Reader
+CVE-2023-20109,2023-10-10,Unknown,Cisco,IOS and IOS XE
+CVE-2023-41763,2023-10-10,Unknown,Microsoft,Skype for Business
+CVE-2023-36563,2023-10-10,Unknown,Microsoft,WordPad
+CVE-2023-44487,2023-10-10,Unknown,IETF,HTTP/2
+CVE-2023-22515,2023-10-05,Known,Atlassian,Confluence Data Center and Server
+CVE-2023-40044,2023-10-05,Known,Progress,WS_FTP Server
+CVE-2023-42824,2023-10-05,Unknown,Apple,iOS and iPadOS
+CVE-2023-42793,2023-10-04,Known,JetBrains,TeamCity
+CVE-2023-28229,2023-10-04,Unknown,Microsoft,Windows CNG Key Isolation Service
+CVE-2023-4211,2023-10-03,Unknown,Arm,Mali GPU Kernel Driver
+CVE-2023-5217,2023-10-02,Unknown,Google,Chromium libvpx
+CVE-2018-14667,2023-09-28,Unknown,Red Hat,JBoss RichFaces Framework
+CVE-2023-41991,2023-09-25,Unknown,Apple,Multiple Products
+CVE-2023-41992,2023-09-25,Unknown,Apple,Multiple Products
+CVE-2023-41993,2023-09-25,Unknown,Apple,Multiple Products
+CVE-2023-41179,2023-09-21,Unknown,Trend Micro,Apex One and Worry-Free Business Security
+CVE-2023-28434,2023-09-19,Unknown,MinIO,MinIO
+CVE-2022-22265,2023-09-18,Unknown,Samsung,Mobile Devices
+CVE-2014-8361,2023-09-18,Unknown,Realtek,SDK
+CVE-2017-6884,2023-09-18,Known,Zyxel,EMG2926 Routers
+CVE-2021-3129,2023-09-18,Known,Laravel,Ignition
+CVE-2023-26369,2023-09-14,Unknown,Adobe,Acrobat and Reader
+CVE-2023-35674,2023-09-13,Unknown,Android,Framework
+CVE-2023-20269,2023-09-13,Known,Cisco,Adaptive Security Appliance and Firepower Threat Defense
+CVE-2023-4863,2023-09-13,Unknown,Google,Chromium WebP
+CVE-2023-36761,2023-09-12,Unknown,Microsoft,Word
+CVE-2023-36802,2023-09-12,Unknown,Microsoft,Streaming Service Proxy
+CVE-2023-41064,2023-09-11,Unknown,Apple,"iOS, iPadOS, and macOS"
+CVE-2023-41061,2023-09-11,Unknown,Apple,"iOS, iPadOS, and watchOS"
+CVE-2023-33246,2023-09-06,Unknown,Apache,RocketMQ
+CVE-2023-38831,2023-08-24,Known,RARLAB,WinRAR
+CVE-2023-32315,2023-08-24,Unknown,Ignite Realtime,Openfire
+CVE-2023-38035,2023-08-22,Known,Ivanti,Sentry
+CVE-2023-27532,2023-08-22,Known,Veeam,Backup & Replication
+CVE-2023-26359,2023-08-21,Unknown,Adobe,ColdFusion
+CVE-2023-24489,2023-08-16,Unknown,Citrix,Content Collaboration
+CVE-2023-38180,2023-08-09,Unknown,Microsoft,.NET Core and Visual Studio
+CVE-2017-18368,2023-08-07,Unknown,Zyxel,P660HN-T1A Routers
+CVE-2023-35081,2023-07-31,Unknown,Ivanti,Endpoint Manager Mobile (EPMM)
+CVE-2023-37580,2023-07-27,Unknown,Synacor,Zimbra Collaboration Suite (ZCS)
+CVE-2023-38606,2023-07-26,Unknown,Apple,Multiple Products
+CVE-2023-35078,2023-07-25,Known,Ivanti,Endpoint Manager Mobile (EPMM)
+CVE-2023-29298,2023-07-20,Unknown,Adobe,ColdFusion
+CVE-2023-38205,2023-07-20,Unknown,Adobe,ColdFusion
+CVE-2023-3519,2023-07-19,Known,Citrix,NetScaler ADC and NetScaler Gateway
+CVE-2023-36884,2023-07-17,Known,Microsoft,Windows
+CVE-2022-29303,2023-07-13,Unknown,SolarView,Compact
+CVE-2023-37450,2023-07-13,Unknown,Apple,Multiple Products
+CVE-2023-32046,2023-07-11,Unknown,Microsoft,Windows
+CVE-2023-32049,2023-07-11,Unknown,Microsoft,Windows
+CVE-2023-35311,2023-07-11,Unknown,Microsoft,Outlook
+CVE-2023-36874,2023-07-11,Unknown,Microsoft,Windows
+CVE-2022-31199,2023-07-11,Known,Netwrix,Auditor
+CVE-2021-29256,2023-07-07,Unknown,Arm,Mali Graphics Processing Unit (GPU)
+CVE-2019-17621,2023-06-29,Unknown,D-Link,DIR-859 Router
+CVE-2019-20500,2023-06-29,Unknown,D-Link,DWL-2600AP Access Point
+CVE-2021-25487,2023-06-29,Unknown,Samsung,Mobile Devices
+CVE-2021-25489,2023-06-29,Unknown,Samsung,Mobile Devices
+CVE-2021-25394,2023-06-29,Unknown,Samsung,Mobile Devices
+CVE-2021-25395,2023-06-29,Unknown,Samsung,Mobile Devices
+CVE-2021-25371,2023-06-29,Unknown,Samsung,Mobile Devices
+CVE-2021-25372,2023-06-29,Unknown,Samsung,Mobile Devices
+CVE-2023-32434,2023-06-23,Unknown,Apple,Multiple Products
+CVE-2023-32435,2023-06-23,Unknown,Apple,Multiple Products
+CVE-2023-32439,2023-06-23,Unknown,Apple,Multiple Products
+CVE-2023-20867,2023-06-23,Unknown,VMware,Tools
+CVE-2023-27992,2023-06-23,Unknown,Zyxel,Multiple Network-Attached Storage (NAS) Devices
+CVE-2023-20887,2023-06-22,Unknown,VMware,Aria Operations for Networks
+CVE-2020-35730,2023-06-22,Unknown,Roundcube,Roundcube Webmail
+CVE-2020-12641,2023-06-22,Unknown,Roundcube,Roundcube Webmail
+CVE-2021-44026,2023-06-22,Unknown,Roundcube,Roundcube Webmail
+CVE-2016-9079,2023-06-22,Unknown,Mozilla,"Firefox, Firefox ESR, and Thunderbird"
+CVE-2016-0165,2023-06-22,Unknown,Microsoft,Win32k
+CVE-2023-27997,2023-06-13,Known,Fortinet,FortiOS and FortiProxy SSL-VPN
+CVE-2023-3079,2023-06-07,Unknown,Google,Chromium V8
+CVE-2023-33009,2023-06-05,Unknown,Zyxel,Multiple Firewalls
+CVE-2023-33010,2023-06-05,Unknown,Zyxel,Multiple Firewalls
+CVE-2023-34362,2023-06-02,Known,Progress,MOVEit Transfer
+CVE-2023-28771,2023-05-31,Unknown,Zyxel,Multiple Firewalls
+CVE-2023-2868,2023-05-26,Unknown,Barracuda Networks,Email Security Gateway (ESG) Appliance
+CVE-2023-32409,2023-05-22,Unknown,Apple,Multiple Products
+CVE-2023-28204,2023-05-22,Unknown,Apple,Multiple Products
+CVE-2023-32373,2023-05-22,Unknown,Apple,Multiple Products
+CVE-2004-1464,2023-05-19,Unknown,Cisco,IOS
+CVE-2016-6415,2023-05-19,Unknown,Cisco,"IOS, IOS XR, and IOS XE"
+CVE-2023-21492,2023-05-19,Unknown,Samsung,Mobile Devices
+CVE-2023-25717,2023-05-12,Unknown,Ruckus Wireless,Multiple Products
+CVE-2021-3560,2023-05-12,Unknown,Red Hat,Polkit
+CVE-2014-0196,2023-05-12,Unknown,Linux,Kernel
+CVE-2010-3904,2023-05-12,Unknown,Linux,Kernel
+CVE-2015-5317,2023-05-12,Unknown,Jenkins,Jenkins User Interface (UI)
+CVE-2016-3427,2023-05-12,Unknown,Oracle,Java SE and JRockit
+CVE-2016-8735,2023-05-12,Unknown,Apache,Tomcat
+CVE-2023-29336,2023-05-09,Unknown,Microsoft,Win32k
+CVE-2023-1389,2023-05-01,Unknown,TP-Link,Archer AX21
+CVE-2021-45046,2023-05-01,Known,Apache,Log4j2
+CVE-2023-21839,2023-05-01,Unknown,Oracle,WebLogic Server
+CVE-2023-28432,2023-04-21,Unknown,MinIO,MinIO
+CVE-2023-27350,2023-04-21,Known,PaperCut,MF/NG
+CVE-2023-2136,2023-04-21,Unknown,Google,Chromium Skia
+CVE-2017-6742,2023-04-19,Unknown,Cisco,IOS and IOS XE Software
+CVE-2019-8526,2023-04-17,Unknown,Apple,macOS
+CVE-2023-2033,2023-04-17,Unknown,Google,Chromium V8
+CVE-2023-20963,2023-04-13,Unknown,Android,Framework
+CVE-2023-29492,2023-04-13,Unknown,Novi Survey,Novi Survey
+CVE-2023-28252,2023-04-11,Known,Microsoft,Windows
+CVE-2023-28205,2023-04-10,Unknown,Apple,Multiple Products
+CVE-2023-28206,2023-04-10,Unknown,Apple,"iOS, iPadOS, and macOS"
+CVE-2021-27876,2023-04-07,Known,Veritas,Backup Exec Agent
+CVE-2021-27877,2023-04-07,Known,Veritas,Backup Exec Agent
+CVE-2021-27878,2023-04-07,Known,Veritas,Backup Exec Agent
+CVE-2019-1388,2023-04-07,Known,Microsoft,Windows
+CVE-2023-26083,2023-04-07,Unknown,Arm,Mali Graphics Processing Unit (GPU)
+CVE-2022-27926,2023-04-03,Unknown,Synacor,Zimbra Collaboration Suite (ZCS)
+CVE-2013-3163,2023-03-30,Unknown,Microsoft,Internet Explorer
+CVE-2017-7494,2023-03-30,Known,Samba,Samba
+CVE-2022-42948,2023-03-30,Unknown,Fortra,Cobalt Strike
+CVE-2022-39197,2023-03-30,Unknown,Fortra,Cobalt Strike
+CVE-2021-30900,2023-03-30,Unknown,Apple,"iOS, iPadOS, and macOS"
+CVE-2022-38181,2023-03-30,Unknown,Arm,Mali Graphics Processing Unit (GPU)
+CVE-2023-0266,2023-03-30,Unknown,Linux,Kernel
+CVE-2022-3038,2023-03-30,Unknown,Google,Chromium Network Service
+CVE-2022-22706,2023-03-30,Unknown,Arm,Mali Graphics Processing Unit (GPU)
+CVE-2023-26360,2023-03-15,Unknown,Adobe,ColdFusion
+CVE-2023-23397,2023-03-14,Unknown,Microsoft,Office
+CVE-2023-24880,2023-03-14,Known,Microsoft,Windows
+CVE-2022-41328,2023-03-14,Unknown,Fortinet,FortiOS
+CVE-2021-39144,2023-03-10,Unknown,XStream,XStream
+CVE-2020-5741,2023-03-10,Unknown,Plex,Media Server
+CVE-2022-28810,2023-03-07,Unknown,Zoho,ManageEngine
+CVE-2022-33891,2023-03-07,Unknown,Apache,Spark
+CVE-2022-35914,2023-03-07,Unknown,Teclib,GLPI
+CVE-2022-36537,2023-02-27,Known,ZK Framework,AuUploader
+CVE-2022-47986,2023-02-21,Known,IBM,Aspera Faspex
+CVE-2022-41223,2023-02-21,Known,Mitel,MiVoice Connect
+CVE-2022-40765,2023-02-21,Known,Mitel,MiVoice Connect
+CVE-2022-46169,2023-02-16,Unknown,Cacti,Cacti
+CVE-2023-21715,2023-02-14,Unknown,Microsoft,Office
+CVE-2023-23376,2023-02-14,Known,Microsoft,Windows
+CVE-2023-23529,2023-02-14,Unknown,Apple,Multiple Products
+CVE-2023-21823,2023-02-14,Unknown,Microsoft,Windows
+CVE-2015-2291,2023-02-10,Known,Intel,Ethernet Diagnostics Driver for Windows
+CVE-2022-24990,2023-02-10,Known,TerraMaster,TerraMaster OS
+CVE-2023-0669,2023-02-10,Known,Fortra,GoAnywhere MFT
+CVE-2022-21587,2023-02-02,Known,Oracle,E-Business Suite
+CVE-2023-22952,2023-02-02,Unknown,SugarCRM,Multiple Products
+CVE-2017-11357,2023-01-26,Known,Telerik,User Interface (UI) for ASP.NET AJAX
+CVE-2022-47966,2023-01-23,Known,Zoho,ManageEngine
+CVE-2022-44877,2023-01-17,Unknown,CWP,Control Web Panel
+CVE-2022-41080,2023-01-10,Known,Microsoft,Exchange Server
+CVE-2023-21674,2023-01-10,Unknown,Microsoft,Windows
+CVE-2018-5430,2022-12-29,Unknown,TIBCO,JasperReports
+CVE-2018-18809,2022-12-29,Unknown,TIBCO,JasperReports
+CVE-2022-42856,2022-12-14,Unknown,Apple,iOS
+CVE-2022-42475,2022-12-13,Known,Fortinet,FortiOS
+CVE-2022-44698,2022-12-13,Known,Microsoft,Defender
+CVE-2022-27518,2022-12-13,Unknown,Citrix,Application Delivery Controller (ADC) and Gateway
+CVE-2022-26500,2022-12-13,Known,Veeam,Backup & Replication
+CVE-2022-26501,2022-12-13,Known,Veeam,Backup & Replication
+CVE-2022-4262,2022-12-05,Unknown,Google,Chromium V8
+CVE-2021-35587,2022-11-28,Unknown,Oracle,Fusion Middleware
+CVE-2022-4135,2022-11-28,Unknown,Google,Chromium GPU
+CVE-2022-41049,2022-11-14,Unknown,Microsoft,Windows
+CVE-2022-41091,2022-11-08,Known,Microsoft,Windows
+CVE-2022-41073,2022-11-08,Known,Microsoft,Windows
+CVE-2022-41125,2022-11-08,Unknown,Microsoft,Windows
+CVE-2022-41128,2022-11-08,Unknown,Microsoft,Windows
+CVE-2021-25337,2022-11-08,Unknown,Samsung,Mobile Devices
+CVE-2021-25369,2022-11-08,Unknown,Samsung,Mobile Devices
+CVE-2021-25370,2022-11-08,Unknown,Samsung,Mobile Devices
+CVE-2022-3723,2022-10-28,Unknown,Google,Chromium V8
+CVE-2022-42827,2022-10-25,Unknown,Apple,iOS and iPadOS
+CVE-2020-3433,2022-10-24,Known,Cisco,AnyConnect Secure
+CVE-2020-3153,2022-10-24,Known,Cisco,AnyConnect Secure
+CVE-2018-19323,2022-10-24,Known,GIGABYTE,Multiple Products
+CVE-2018-19322,2022-10-24,Known,GIGABYTE,Multiple Products
+CVE-2018-19321,2022-10-24,Known,GIGABYTE,Multiple Products
+CVE-2018-19320,2022-10-24,Known,GIGABYTE,Multiple Products
+CVE-2022-41352,2022-10-20,Known,Synacor,Zimbra Collaboration Suite (ZCS)
+CVE-2021-3493,2022-10-20,Unknown,Linux,Kernel
+CVE-2022-40684,2022-10-11,Known,Fortinet,Multiple Products
+CVE-2022-41033,2022-10-11,Unknown,Microsoft,Windows COM+ Event System Service
+CVE-2022-41082,2022-09-30,Known,Microsoft,Exchange Server
+CVE-2022-41040,2022-09-30,Known,Microsoft,Exchange Server
+CVE-2022-36804,2022-09-30,Unknown,Atlassian,Bitbucket Server and Data Center
+CVE-2022-3236,2022-09-23,Unknown,Sophos,Firewall
+CVE-2022-35405,2022-09-22,Unknown,Zoho,ManageEngine
+CVE-2022-40139,2022-09-15,Unknown,Trend Micro,Apex One and Apex One as a Service
+CVE-2013-6282,2022-09-15,Unknown,Linux,Kernel
+CVE-2013-2597,2022-09-15,Unknown,Code Aurora,ACDB Audio Driver
+CVE-2013-2596,2022-09-15,Unknown,Linux,Kernel
+CVE-2013-2094,2022-09-15,Unknown,Linux,Kernel
+CVE-2010-2568,2022-09-15,Unknown,Microsoft,Windows
+CVE-2022-37969,2022-09-14,Known,Microsoft,Windows
+CVE-2022-32917,2022-09-14,Unknown,Apple,"iOS, iPadOS, and macOS"
+CVE-2022-3075,2022-09-08,Unknown,Google,Chromium Mojo
+CVE-2022-27593,2022-09-08,Known,QNAP,Photo Station
+CVE-2022-26258,2022-09-08,Unknown,D-Link,DIR-820L
+CVE-2020-9934,2022-09-08,Unknown,Apple,"iOS, iPadOS, and macOS"
+CVE-2018-7445,2022-09-08,Unknown,MikroTik,RouterOS
+CVE-2018-6530,2022-09-08,Known,D-Link,Multiple Routers
+CVE-2018-2628,2022-09-08,Unknown,Oracle,WebLogic Server
+CVE-2018-13374,2022-09-08,Known,Fortinet,FortiOS and FortiADC
+CVE-2017-5521,2022-09-08,Unknown,NETGEAR,Multiple Devices
+CVE-2011-4723,2022-09-08,Unknown,D-Link,DIR-300 Router
+CVE-2011-1823,2022-09-08,Unknown,Android,Android OS
+CVE-2022-26352,2022-08-25,Known,dotCMS,dotCMS
+CVE-2022-24706,2022-08-25,Unknown,Apache,CouchDB
+CVE-2022-24112,2022-08-25,Unknown,Apache,APISIX
+CVE-2022-22963,2022-08-25,Unknown,VMware Tanzu,Spring Cloud
+CVE-2022-2294,2022-08-25,Known,WebRTC,WebRTC
+CVE-2021-39226,2022-08-25,Unknown,Grafana Labs,Grafana
+CVE-2021-38406,2022-08-25,Unknown,Delta Electronics,DOPSoft 2
+CVE-2021-31010,2022-08-25,Unknown,Apple,"iOS, macOS, watchOS"
+CVE-2020-36193,2022-08-25,Unknown,PEAR,Archive_Tar
+CVE-2020-28949,2022-08-25,Unknown,PEAR,Archive_Tar
+CVE-2022-0028,2022-08-22,Unknown,Palo Alto Networks,PAN-OS
+CVE-2022-22536,2022-08-18,Unknown,SAP,Multiple Products
+CVE-2022-32894,2022-08-18,Unknown,Apple,iOS and macOS
+CVE-2022-32893,2022-08-18,Unknown,Apple,iOS and macOS
+CVE-2022-2856,2022-08-18,Unknown,Google,Chromium Intents
+CVE-2022-26923,2022-08-18,Unknown,Microsoft,Active Directory
+CVE-2022-21971,2022-08-18,Unknown,Microsoft,Windows
+CVE-2017-15944,2022-08-18,Unknown,Palo Alto Networks,PAN-OS
+CVE-2022-27925,2022-08-11,Known,Synacor,Zimbra Collaboration Suite (ZCS)
+CVE-2022-37042,2022-08-11,Known,Synacor,Zimbra Collaboration Suite (ZCS)
+CVE-2022-34713,2022-08-09,Unknown,Microsoft,Windows
+CVE-2022-30333,2022-08-09,Known,RARLAB,UnRAR
+CVE-2022-27924,2022-08-04,Known,Synacor,Zimbra Collaboration Suite (ZCS)
+CVE-2022-26138,2022-07-29,Unknown,Atlassian,Confluence
+CVE-2022-22047,2022-07-12,Unknown,Microsoft,Windows
+CVE-2022-26925,2022-07-01,Unknown,Microsoft,Windows
+CVE-2022-29499,2022-06-27,Known,Mitel,MiVoice Connect
+CVE-2021-30533,2022-06-27,Unknown,Google,Chromium PopupBlocker
+CVE-2021-4034,2022-06-27,Known,Red Hat,Polkit
+CVE-2021-30983,2022-06-27,Unknown,Apple,iOS and iPadOS
+CVE-2020-3837,2022-06-27,Unknown,Apple,Multiple Products
+CVE-2020-9907,2022-06-27,Unknown,Apple,Multiple Products
+CVE-2019-8605,2022-06-27,Unknown,Apple,Multiple Products
+CVE-2018-4344,2022-06-27,Unknown,Apple,Multiple Products
+CVE-2022-30190,2022-06-14,Known,Microsoft,Windows
+CVE-2021-38163,2022-06-09,Unknown,SAP,NetWeaver
+CVE-2016-2386,2022-06-09,Unknown,SAP,NetWeaver
+CVE-2016-2388,2022-06-09,Unknown,SAP,NetWeaver
+CVE-2019-7195,2022-06-08,Known,QNAP,Photo Station
+CVE-2019-7194,2022-06-08,Known,QNAP,Photo Station
+CVE-2019-7193,2022-06-08,Known,QNAP,QTS
+CVE-2019-7192,2022-06-08,Known,QNAP,Photo Station
+CVE-2019-5825,2022-06-08,Unknown,Google,Chromium V8
+CVE-2019-15271,2022-06-08,Unknown,Cisco,RV Series Routers
+CVE-2018-6065,2022-06-08,Unknown,Google,Chromium V8
+CVE-2018-4990,2022-06-08,Unknown,Adobe,Acrobat and Reader
+CVE-2018-17480,2022-06-08,Unknown,Google,Chromium V8
+CVE-2018-17463,2022-06-08,Unknown,Google,Chromium V8
+CVE-2017-6862,2022-06-08,Unknown,NETGEAR,Multiple Devices
+CVE-2017-5070,2022-06-08,Unknown,Google,Chromium V8
+CVE-2017-5030,2022-06-08,Unknown,Google,Chromium V8
+CVE-2016-5198,2022-06-08,Unknown,Google,Chromium V8
+CVE-2016-1646,2022-06-08,Unknown,Google,Chromium V8
+CVE-2013-1331,2022-06-08,Unknown,Microsoft,Office
+CVE-2012-5054,2022-06-08,Unknown,Adobe,Flash Player
+CVE-2012-4969,2022-06-08,Unknown,Microsoft,Internet Explorer
+CVE-2012-1889,2022-06-08,Unknown,Microsoft,XML Core Services
+CVE-2012-0767,2022-06-08,Unknown,Adobe,Flash Player
+CVE-2012-0754,2022-06-08,Unknown,Adobe,Flash Player
+CVE-2012-0151,2022-06-08,Unknown,Microsoft,Windows
+CVE-2011-2462,2022-06-08,Unknown,Adobe,Reader and Acrobat
+CVE-2011-0609,2022-06-08,Unknown,Adobe,Flash Player
+CVE-2010-2883,2022-06-08,Unknown,Adobe,Acrobat and Reader
+CVE-2010-2572,2022-06-08,Unknown,Microsoft,PowerPoint
+CVE-2010-1297,2022-06-08,Unknown,Adobe,Flash Player
+CVE-2009-4324,2022-06-08,Unknown,Adobe,Acrobat and Reader
+CVE-2009-3953,2022-06-08,Unknown,Adobe,Acrobat and Reader
+CVE-2009-1862,2022-06-08,Unknown,Adobe,"Acrobat and Reader, Flash Player"
+CVE-2009-0563,2022-06-08,Unknown,Microsoft,Office
+CVE-2009-0557,2022-06-08,Unknown,Microsoft,Office
+CVE-2008-0655,2022-06-08,Unknown,Adobe,Acrobat and Reader
+CVE-2007-5659,2022-06-08,Unknown,Adobe,Acrobat and Reader
+CVE-2006-2492,2022-06-08,Unknown,Microsoft,Word
+CVE-2022-26134,2022-06-02,Known,Atlassian,Confluence Server/Data Center
+CVE-2019-3010,2022-05-25,Unknown,Oracle,Solaris
+CVE-2016-3393,2022-05-25,Unknown,Microsoft,Windows
+CVE-2016-7256,2022-05-25,Unknown,Microsoft,Windows
+CVE-2016-1010,2022-05-25,Unknown,Adobe,Flash Player and AIR
+CVE-2016-0984,2022-05-25,Unknown,Adobe,Flash Player and AIR
+CVE-2016-0034,2022-05-25,Known,Microsoft,Silverlight
+CVE-2015-0310,2022-05-25,Unknown,Adobe,Flash Player
+CVE-2015-0016,2022-05-25,Unknown,Microsoft,Windows
+CVE-2015-0071,2022-05-25,Unknown,Microsoft,Internet Explorer
+CVE-2015-2360,2022-05-25,Unknown,Microsoft,Win32k
+CVE-2015-2425,2022-05-25,Unknown,Microsoft,Internet Explorer
+CVE-2015-1769,2022-05-25,Unknown,Microsoft,Windows
+CVE-2015-4495,2022-05-25,Unknown,Mozilla,Firefox
+CVE-2015-8651,2022-05-25,Unknown,Adobe,Flash Player
+CVE-2015-6175,2022-05-25,Unknown,Microsoft,Windows
+CVE-2015-1671,2022-05-25,Unknown,Microsoft,Windows
+CVE-2014-4148,2022-05-25,Unknown,Microsoft,Windows
+CVE-2014-8439,2022-05-25,Unknown,Adobe,Flash Player
+CVE-2014-4123,2022-05-25,Unknown,Microsoft,Internet Explorer
+CVE-2014-0546,2022-05-25,Unknown,Adobe,Reader and Acrobat
+CVE-2014-2817,2022-05-25,Unknown,Microsoft,Internet Explorer
+CVE-2014-4077,2022-05-25,Unknown,Microsoft,Input Method Editor (IME) Japanese
+CVE-2014-3153,2022-05-25,Unknown,Linux,Kernel
+CVE-2013-7331,2022-05-25,Unknown,Microsoft,Internet Explorer
+CVE-2013-3993,2022-05-25,Known,IBM,InfoSphere BigInsights
+CVE-2013-3896,2022-05-25,Unknown,Microsoft,Silverlight
+CVE-2013-2423,2022-05-25,Unknown,Oracle,Java Runtime Environment (JRE)
+CVE-2013-0431,2022-05-25,Known,Oracle,Java Runtime Environment (JRE)
+CVE-2013-0422,2022-05-25,Known,Oracle,Java Runtime Environment (JRE)
+CVE-2013-0074,2022-05-25,Known,Microsoft,Silverlight
+CVE-2012-1710,2022-05-25,Known,Oracle,Fusion Middleware
+CVE-2010-1428,2022-05-25,Known,Red Hat,JBoss
+CVE-2010-0840,2022-05-25,Unknown,Oracle,Java Runtime Environment (JRE)
+CVE-2010-0738,2022-05-25,Known,Red Hat,JBoss
+CVE-2018-8611,2022-05-24,Unknown,Microsoft,Windows
+CVE-2018-19953,2022-05-24,Known,QNAP,Network Attached Storage (NAS)
+CVE-2018-19949,2022-05-24,Known,QNAP,Network Attached Storage (NAS)
+CVE-2018-19943,2022-05-24,Known,QNAP,Network Attached Storage (NAS)
+CVE-2017-0147,2022-05-24,Known,Microsoft,SMBv1 server
+CVE-2017-0022,2022-05-24,Unknown,Microsoft,XML Core Services
+CVE-2017-0005,2022-05-24,Unknown,Microsoft,Windows
+CVE-2017-0149,2022-05-24,Unknown,Microsoft,Internet Explorer
+CVE-2017-0210,2022-05-24,Unknown,Microsoft,Internet Explorer
+CVE-2017-8291,2022-05-24,Unknown,Artifex,Ghostscript
+CVE-2017-8543,2022-05-24,Unknown,Microsoft,Windows
+CVE-2017-18362,2022-05-24,Known,Kaseya,Virtual System/Server Administrator (VSA)
+CVE-2016-0162,2022-05-24,Unknown,Microsoft,Internet Explorer
+CVE-2016-3351,2022-05-24,Known,Microsoft,Internet Explorer and Edge
+CVE-2016-4655,2022-05-24,Unknown,Apple,iOS
+CVE-2016-4656,2022-05-24,Unknown,Apple,iOS
+CVE-2016-4657,2022-05-24,Unknown,Apple,iOS
+CVE-2016-6366,2022-05-24,Unknown,Cisco,Adaptive Security Appliance (ASA)
+CVE-2016-6367,2022-05-24,Unknown,Cisco,Adaptive Security Appliance (ASA)
+CVE-2016-3298,2022-05-24,Unknown,Microsoft,Internet Explorer
+CVE-2022-20821,2022-05-23,Unknown,Cisco,IOS XR
+CVE-2021-1048,2022-05-23,Unknown,Android,Kernel
+CVE-2021-0920,2022-05-23,Unknown,Android,Kernel
+CVE-2021-30883,2022-05-23,Unknown,Apple,Multiple Products
+CVE-2020-1027,2022-05-23,Unknown,Microsoft,Windows
+CVE-2020-0638,2022-05-23,Known,Microsoft,Update Notification Manager
+CVE-2019-7286,2022-05-23,Unknown,Apple,Multiple Products
+CVE-2019-7287,2022-05-23,Unknown,Apple,iOS
+CVE-2019-0676,2022-05-23,Unknown,Microsoft,Internet Explorer
+CVE-2019-5786,2022-05-23,Unknown,Google,Chrome Blink
+CVE-2019-0703,2022-05-23,Unknown,Microsoft,Windows
+CVE-2019-0880,2022-05-23,Unknown,Microsoft,Windows
+CVE-2019-13720,2022-05-23,Unknown,Google,Chrome WebAudio
+CVE-2019-11707,2022-05-23,Unknown,Mozilla,Firefox and Thunderbird
+CVE-2019-11708,2022-05-23,Unknown,Mozilla,Firefox and Thunderbird
+CVE-2019-8720,2022-05-23,Unknown,WebKitGTK,WebKitGTK
+CVE-2019-18426,2022-05-23,Unknown,Meta Platforms,WhatsApp
+CVE-2019-1385,2022-05-23,Known,Microsoft,Windows
+CVE-2019-1130,2022-05-23,Known,Microsoft,Windows
+CVE-2018-5002,2022-05-23,Unknown,Adobe,Flash Player
+CVE-2018-8589,2022-05-23,Unknown,Microsoft,Win32k
+CVE-2022-30525,2022-05-16,Unknown,Zyxel,Multiple Firewalls
+CVE-2022-22947,2022-05-16,Unknown,VMware,Spring Cloud Gateway
+CVE-2022-1388,2022-05-10,Known,F5,BIG-IP
+CVE-2021-1789,2022-05-04,Unknown,Apple,Multiple Products
+CVE-2019-8506,2022-05-04,Unknown,Apple,Multiple Products
+CVE-2014-4113,2022-05-04,Unknown,Microsoft,Win32k
+CVE-2014-0322,2022-05-04,Unknown,Microsoft,Internet Explorer
+CVE-2014-0160,2022-05-04,Unknown,OpenSSL,OpenSSL
+CVE-2022-29464,2022-04-25,Known,WSO2,Multiple Products
+CVE-2022-26904,2022-04-25,Unknown,Microsoft,Windows
+CVE-2022-21919,2022-04-25,Unknown,Microsoft,Windows
+CVE-2022-0847,2022-04-25,Unknown,Linux,Kernel
+CVE-2021-41357,2022-04-25,Unknown,Microsoft,Win32k
+CVE-2021-40450,2022-04-25,Unknown,Microsoft,Win32k
+CVE-2019-1003029,2022-04-25,Unknown,Jenkins,Script Security Plugin
+CVE-2018-6882,2022-04-19,Known,Synacor,Zimbra Collaboration Suite (ZCS)
+CVE-2019-3568,2022-04-19,Unknown,Meta Platforms,WhatsApp
+CVE-2022-22718,2022-04-19,Unknown,Microsoft,Windows
+CVE-2022-22960,2022-04-15,Unknown,VMware,Multiple Products
+CVE-2022-1364,2022-04-15,Unknown,Google,Chromium V8
+CVE-2019-3929,2022-04-15,Unknown,Crestron,Multiple Products
+CVE-2019-16057,2022-04-15,Known,D-Link,DNS-320 Storage Device
+CVE-2018-7841,2022-04-15,Unknown,Schneider Electric,U.motion Builder
+CVE-2016-4523,2022-04-15,Unknown,Trihedral,VTScada (formerly VTS)
+CVE-2014-0780,2022-04-15,Unknown,InduSoft,Web Studio
+CVE-2010-5330,2022-04-15,Unknown,Ubiquiti,AirOS
+CVE-2007-3010,2022-04-15,Unknown,Alcatel,OmniPCX Enterprise
+CVE-2022-22954,2022-04-14,Known,VMware,Workspace ONE Access and Identity Manager
+CVE-2022-24521,2022-04-13,Known,Microsoft,Windows
+CVE-2018-7602,2022-04-13,Known,Drupal,Core
+CVE-2018-20753,2022-04-13,Known,Kaseya,Virtual System/Server Administrator (VSA)
+CVE-2015-5123,2022-04-13,Unknown,Adobe,Flash Player
+CVE-2015-5122,2022-04-13,Unknown,Adobe,Flash Player
+CVE-2015-3113,2022-04-13,Unknown,Adobe,Flash Player
+CVE-2015-2502,2022-04-13,Unknown,Microsoft,Internet Explorer
+CVE-2015-0313,2022-04-13,Unknown,Adobe,Flash Player
+CVE-2015-0311,2022-04-13,Unknown,Adobe,Flash Player
+CVE-2014-9163,2022-04-13,Unknown,Adobe,Flash Player
+CVE-2022-23176,2022-04-11,Unknown,WatchGuard,Firebox and XTM
+CVE-2021-42287,2022-04-11,Known,Microsoft,Active Directory
+CVE-2021-42278,2022-04-11,Known,Microsoft,Active Directory
+CVE-2021-39793,2022-04-11,Unknown,Google,Pixel
+CVE-2021-27852,2022-04-11,Unknown,Checkbox,Checkbox Survey
+CVE-2021-22600,2022-04-11,Unknown,Linux,Kernel
+CVE-2020-2509,2022-04-11,Unknown,QNAP,QNAP Network-Attached Storage (NAS)
+CVE-2017-11317,2022-04-11,Unknown,Telerik,User Interface (UI) for ASP.NET AJAX
+CVE-2021-3156,2022-04-06,Unknown,Sudo,Sudo
+CVE-2021-31166,2022-04-06,Unknown,Microsoft,HTTP Protocol Stack
+CVE-2017-0148,2022-04-06,Known,Microsoft,SMBv1 server
+CVE-2022-22965,2022-04-04,Unknown,VMware,Spring Framework
+CVE-2022-22675,2022-04-04,Unknown,Apple,macOS
+CVE-2022-22674,2022-04-04,Unknown,Apple,macOS
+CVE-2021-45382,2022-04-04,Unknown,D-Link,Multiple Routers
+CVE-2022-26871,2022-03-31,Unknown,Trend Micro,Apex Central
+CVE-2022-1040,2022-03-31,Unknown,Sophos,Firewall
+CVE-2021-34484,2022-03-31,Unknown,Microsoft,Windows
+CVE-2021-28799,2022-03-31,Known,QNAP,Network Attached Storage (NAS)
+CVE-2021-21551,2022-03-31,Unknown,Dell,dbutil Driver
+CVE-2018-10562,2022-03-31,Known,Dasan,Gigabit Passive Optical Network (GPON) Routers
+CVE-2018-10561,2022-03-31,Unknown,Dasan,Gigabit Passive Optical Network (GPON) Routers
+CVE-2022-1096,2022-03-28,Unknown,Google,Chromium V8
+CVE-2022-0543,2022-03-28,Unknown,Redis,Debian-specific Redis Servers
+CVE-2021-38646,2022-03-28,Known,Microsoft,Office
+CVE-2021-34486,2022-03-28,Unknown,Microsoft,Windows
+CVE-2021-26085,2022-03-28,Known,Atlassian,Confluence Server
+CVE-2021-20028,2022-03-28,Known,SonicWall,Secure Remote Access (SRA)
+CVE-2019-7483,2022-03-28,Unknown,SonicWall,SMA100
+CVE-2018-8440,2022-03-28,Known,Microsoft,Windows
+CVE-2018-8406,2022-03-28,Known,Microsoft,DirectX Graphics Kernel (DXGKRNL)
+CVE-2018-8405,2022-03-28,Known,Microsoft,DirectX Graphics Kernel (DXGKRNL)
+CVE-2017-0213,2022-03-28,Known,Microsoft,Windows
+CVE-2017-0059,2022-03-28,Unknown,Microsoft,Internet Explorer
+CVE-2017-0037,2022-03-28,Unknown,Microsoft,Edge and Internet Explorer
+CVE-2016-7201,2022-03-28,Unknown,Microsoft,Edge
+CVE-2016-7200,2022-03-28,Unknown,Microsoft,Edge
+CVE-2016-0189,2022-03-28,Known,Microsoft,Internet Explorer
+CVE-2016-0151,2022-03-28,Known,Microsoft,Client-Server Run-time Subsystem (CSRSS)
+CVE-2016-0040,2022-03-28,Unknown,Microsoft,Windows
+CVE-2015-2426,2022-03-28,Unknown,Microsoft,Windows
+CVE-2015-2419,2022-03-28,Unknown,Microsoft,Internet Explorer
+CVE-2015-1770,2022-03-28,Unknown,Microsoft,Office
+CVE-2013-3660,2022-03-28,Unknown,Microsoft,Win32k
+CVE-2013-2729,2022-03-28,Unknown,Adobe,Reader and Acrobat
+CVE-2013-2551,2022-03-28,Known,Microsoft,Internet Explorer
+CVE-2013-2465,2022-03-28,Known,Oracle,Java SE
+CVE-2013-1690,2022-03-28,Unknown,Mozilla,Firefox and Thunderbird
+CVE-2012-5076,2022-03-28,Unknown,Oracle,Java SE
+CVE-2012-2539,2022-03-28,Unknown,Microsoft,Word
+CVE-2012-2034,2022-03-28,Unknown,Adobe,Flash Player
+CVE-2012-0518,2022-03-28,Unknown,Oracle,Fusion Middleware
+CVE-2011-2005,2022-03-28,Unknown,Microsoft,Ancillary Function Driver (afd.sys)
+CVE-2010-4398,2022-03-28,Unknown,Microsoft,Windows
+CVE-2022-26318,2022-03-25,Unknown,WatchGuard,Firebox and XTM Appliances
+CVE-2022-26143,2022-03-25,Unknown,Mitel,"MiCollab, MiVoice Business Express"
+CVE-2022-21999,2022-03-25,Known,Microsoft,Windows
+CVE-2021-42237,2022-03-25,Known,Sitecore,XP
+CVE-2021-22941,2022-03-25,Known,Citrix,ShareFile
+CVE-2020-9377,2022-03-25,Unknown,D-Link,DIR-610 Devices
+CVE-2020-9054,2022-03-25,Unknown,Zyxel,Multiple Network-Attached Storage (NAS) Devices
+CVE-2020-7247,2022-03-25,Unknown,OpenBSD,OpenSMTPD
+CVE-2020-5410,2022-03-25,Unknown,VMware Tanzu,Spring Cloud Configuration (Config) Server
+CVE-2020-25223,2022-03-25,Unknown,Sophos,SG UTM
+CVE-2020-2506,2022-03-25,Unknown,QNAP Systems,Helpdesk
+CVE-2020-2021,2022-03-25,Known,Palo Alto Networks,PAN-OS
+CVE-2020-1956,2022-03-25,Unknown,Apache,Kylin
+CVE-2020-1631,2022-03-25,Unknown,Juniper,Junos OS
+CVE-2019-6340,2022-03-25,Unknown,Drupal,Core
+CVE-2019-2616,2022-03-25,Unknown,Oracle,BI Publisher (Formerly XML Publisher)
+CVE-2019-16920,2022-03-25,Unknown,D-Link,Multiple Routers
+CVE-2019-15107,2022-03-25,Known,Webmin,Webmin
+CVE-2019-12991,2022-03-25,Unknown,Citrix,SD-WAN and NetScaler
+CVE-2019-12989,2022-03-25,Unknown,Citrix,SD-WAN and NetScaler
+CVE-2019-11043,2022-03-25,Known,PHP,FastCGI Process Manager (FPM)
+CVE-2019-10068,2022-03-25,Unknown,Kentico,Xperience
+CVE-2019-1003030,2022-03-25,Unknown,Jenkins,Matrix Project Plugin
+CVE-2019-0903,2022-03-25,Unknown,Microsoft,Graphics Device Interface (GDI)
+CVE-2018-8414,2022-03-25,Unknown,Microsoft,Windows
+CVE-2018-8373,2022-03-25,Unknown,Microsoft,Internet Explorer Scripting Engine
+CVE-2018-6961,2022-03-25,Unknown,VMware,SD-WAN Edge
+CVE-2018-14839,2022-03-25,Unknown,LG,N1A1 NAS
+CVE-2018-1273,2022-03-25,Known,VMware Tanzu,Spring Data Commons
+CVE-2018-11138,2022-03-25,Known,Quest,KACE System Management Appliance
+CVE-2018-0147,2022-03-25,Unknown,Cisco,Secure Access Control System (ACS)
+CVE-2018-0125,2022-03-25,Unknown,Cisco,VPN Routers
+CVE-2017-6334,2022-03-25,Unknown,NETGEAR,DGN2200 Devices
+CVE-2017-6316,2022-03-25,Unknown,Citrix,"NetScaler SD-WAN Enterprise, CloudBridge Virtual WAN, and XenMobile Server"
+CVE-2017-3881,2022-03-25,Unknown,Cisco,IOS and IOS XE
+CVE-2017-12617,2022-03-25,Unknown,Apache,Tomcat
+CVE-2017-12615,2022-03-25,Known,Apache,Tomcat
+CVE-2017-0146,2022-03-25,Known,Microsoft,Windows
+CVE-2016-7892,2022-03-25,Unknown,Adobe,Flash Player
+CVE-2016-4171,2022-03-25,Unknown,Adobe,Flash Player
+CVE-2016-1555,2022-03-25,Unknown,NETGEAR,Wireless Access Point (WAP) Devices
+CVE-2016-11021,2022-03-25,Unknown,D-Link,DCS-930L Devices
+CVE-2016-10174,2022-03-25,Unknown,NETGEAR,WNR2000v5 Router
+CVE-2016-0752,2022-03-25,Unknown,Rails,Ruby on Rails
+CVE-2015-4068,2022-03-25,Unknown,Arcserve,Unified Data Protection (UDP)
+CVE-2015-3035,2022-03-25,Unknown,TP-Link,Multiple Archer Devices
+CVE-2015-1427,2022-03-25,Unknown,Elastic,Elasticsearch
+CVE-2015-1187,2022-03-25,Unknown,D-Link and TRENDnet,Multiple Devices
+CVE-2015-0666,2022-03-25,Unknown,Cisco,Prime Data Center Network Manager (DCNM)
+CVE-2014-6332,2022-03-25,Unknown,Microsoft,Windows
+CVE-2014-6324,2022-03-25,Unknown,Microsoft,Kerberos Key Distribution Center (KDC)
+CVE-2014-6287,2022-03-25,Unknown,Rejetto,HTTP File Server (HFS)
+CVE-2014-3120,2022-03-25,Unknown,Elastic,Elasticsearch
+CVE-2014-0130,2022-03-25,Unknown,Rails,Ruby on Rails
+CVE-2013-5223,2022-03-25,Unknown,D-Link,DSL-2760U
+CVE-2013-4810,2022-03-25,Unknown,Hewlett Packard (HP),"ProCurve Manager (PCM), PCM+, Identity Driven Manager (IDM), and Application Lifecycle Management"
+CVE-2013-2251,2022-03-25,Unknown,Apache,Struts
+CVE-2012-1823,2022-03-25,Unknown,PHP,PHP
+CVE-2010-4345,2022-03-25,Unknown,Exim,Exim
+CVE-2010-4344,2022-03-25,Unknown,Exim,Exim
+CVE-2010-3035,2022-03-25,Unknown,Cisco,IOS XR
+CVE-2010-2861,2022-03-25,Known,Adobe,ColdFusion
+CVE-2009-2055,2022-03-25,Unknown,Cisco,IOS XR
+CVE-2009-1151,2022-03-25,Unknown,phpMyAdmin,phpMyAdmin
+CVE-2009-0927,2022-03-25,Unknown,Adobe,Reader and Acrobat
+CVE-2005-2773,2022-03-25,Unknown,Hewlett Packard (HP),OpenView Network Node Manager
+CVE-2020-5135,2022-03-15,Known,SonicWall,SonicOS
+CVE-2019-1405,2022-03-15,Known,Microsoft,Windows
+CVE-2019-1322,2022-03-15,Known,Microsoft,Windows
+CVE-2019-1315,2022-03-15,Known,Microsoft,Windows
+CVE-2019-1253,2022-03-15,Known,Microsoft,Windows
+CVE-2019-1132,2022-03-15,Unknown,Microsoft,Win32k
+CVE-2019-1129,2022-03-15,Known,Microsoft,Windows
+CVE-2019-1069,2022-03-15,Known,Microsoft,Task Scheduler
+CVE-2019-1064,2022-03-15,Known,Microsoft,Windows
+CVE-2019-0841,2022-03-15,Known,Microsoft,Windows
+CVE-2019-0543,2022-03-15,Known,Microsoft,Windows
+CVE-2018-8120,2022-03-15,Known,Microsoft,Win32k
+CVE-2017-0101,2022-03-15,Known,Microsoft,Windows
+CVE-2016-3309,2022-03-15,Known,Microsoft,Windows
+CVE-2015-2546,2022-03-15,Known,Microsoft,Win32k
+CVE-2022-26486,2022-03-07,Unknown,Mozilla,Firefox
+CVE-2022-26485,2022-03-07,Unknown,Mozilla,Firefox
+CVE-2021-21973,2022-03-07,Unknown,VMware,vCenter Server and Cloud Foundation
+CVE-2020-8218,2022-03-07,Unknown,Pulse Secure,Pulse Connect Secure
+CVE-2019-11581,2022-03-07,Unknown,Atlassian,Jira Server and Data Center
+CVE-2017-6077,2022-03-07,Unknown,NETGEAR,Wireless Router DGN2200
+CVE-2016-6277,2022-03-07,Unknown,NETGEAR,Multiple Routers
+CVE-2013-0631,2022-03-07,Unknown,Adobe,ColdFusion
+CVE-2013-0629,2022-03-07,Unknown,Adobe,ColdFusion
+CVE-2013-0625,2022-03-07,Unknown,Adobe,ColdFusion
+CVE-2009-3960,2022-03-07,Known,Adobe,BlazeDS
+CVE-2022-20708,2022-03-03,Unknown,Cisco,"Small Business RV160, RV260, RV340, and RV345 Series Routers"
+CVE-2022-20703,2022-03-03,Unknown,Cisco,"Small Business RV160, RV260, RV340, and RV345 Series Routers"
+CVE-2022-20701,2022-03-03,Unknown,Cisco,"Small Business RV160, RV260, RV340, and RV345 Series Routers"
+CVE-2022-20700,2022-03-03,Unknown,Cisco,"Small Business RV160, RV260, RV340, and RV345 Series Routers"
+CVE-2022-20699,2022-03-03,Unknown,Cisco,"Small Business RV160, RV260, RV340, and RV345 Series Routers"
+CVE-2021-41379,2022-03-03,Known,Microsoft,Windows
+CVE-2020-1938,2022-03-03,Unknown,Apache,Tomcat
+CVE-2020-11899,2022-03-03,Unknown,Treck TCP/IP stack,IPv6
+CVE-2019-16928,2022-03-03,Unknown,Exim,Exim Internet Mailer
+CVE-2019-1652,2022-03-03,Unknown,Cisco,Small Business RV320 and RV325 Dual Gigabit WAN VPN Routers
+CVE-2019-1297,2022-03-03,Unknown,Microsoft,Excel
+CVE-2018-8581,2022-03-03,Known,Microsoft,Exchange Server
+CVE-2018-8298,2022-03-03,Unknown,ChakraCore,ChakraCore scripting engine
+CVE-2018-0180,2022-03-03,Unknown,Cisco,IOS Software
+CVE-2018-0179,2022-03-03,Unknown,Cisco,IOS Software
+CVE-2018-0175,2022-03-03,Unknown,Cisco,"IOS, XR, and XE Software"
+CVE-2018-0174,2022-03-03,Unknown,Cisco,IOS XE Software
+CVE-2018-0173,2022-03-03,Unknown,Cisco,IOS and IOS XE Software
+CVE-2018-0172,2022-03-03,Unknown,Cisco,IOS and IOS XE Software
+CVE-2018-0167,2022-03-03,Unknown,Cisco,"IOS, XR, and XE Software"
+CVE-2018-0161,2022-03-03,Unknown,Cisco,IOS Software
+CVE-2018-0159,2022-03-03,Unknown,Cisco,IOS Software and Cisco IOS XE Software
+CVE-2018-0158,2022-03-03,Unknown,Cisco,IOS Software and Cisco IOS XE Software
+CVE-2018-0156,2022-03-03,Unknown,Cisco,IOS Software and Cisco IOS XE Software
+CVE-2018-0155,2022-03-03,Unknown,Cisco,Catalyst 4500 Series Switches and Cisco Catalyst 4500-X Series Switches
+CVE-2018-0154,2022-03-03,Unknown,Cisco,IOS Software
+CVE-2018-0151,2022-03-03,Unknown,Cisco,IOS and IOS XE Software
+CVE-2017-8540,2022-03-03,Unknown,Microsoft,Malware Protection Engine
+CVE-2017-6744,2022-03-03,Unknown,Cisco,IOS software
+CVE-2017-6743,2022-03-03,Unknown,Cisco,IOS and IOS XE Software
+CVE-2017-6740,2022-03-03,Unknown,Cisco,IOS and IOS XE Software
+CVE-2017-6739,2022-03-03,Unknown,Cisco,IOS and IOS XE Software
+CVE-2017-6738,2022-03-03,Unknown,Cisco,IOS and IOS XE Software
+CVE-2017-6737,2022-03-03,Unknown,Cisco,IOS and IOS XE Software
+CVE-2017-6736,2022-03-03,Unknown,Cisco,IOS and IOS XE Software
+CVE-2017-6663,2022-03-03,Unknown,Cisco,IOS and IOS XE Software
+CVE-2017-6627,2022-03-03,Unknown,Cisco,IOS and IOS XE Software
+CVE-2017-12319,2022-03-03,Unknown,Cisco,IOS XE Software
+CVE-2017-12240,2022-03-03,Unknown,Cisco,IOS and IOS XE Software
+CVE-2017-12238,2022-03-03,Unknown,Cisco,Catalyst 6800 Series Switches
+CVE-2017-12237,2022-03-03,Unknown,Cisco,IOS and IOS XE Software
+CVE-2017-12235,2022-03-03,Unknown,Cisco,IOS software
+CVE-2017-12234,2022-03-03,Unknown,Cisco,IOS software
+CVE-2017-12233,2022-03-03,Unknown,Cisco,IOS software
+CVE-2017-12232,2022-03-03,Unknown,Cisco,IOS software
+CVE-2017-12231,2022-03-03,Unknown,Cisco,IOS software
+CVE-2017-11826,2022-03-03,Unknown,Microsoft,Office
+CVE-2017-11292,2022-03-03,Unknown,Adobe,Flash Player
+CVE-2017-0261,2022-03-03,Unknown,Microsoft,Office
+CVE-2017-0001,2022-03-03,Unknown,Microsoft,Graphics Device Interface (GDI)
+CVE-2016-8562,2022-03-03,Unknown,Siemens,SIMATIC CP
+CVE-2016-7855,2022-03-03,Unknown,Adobe,Flash Player
+CVE-2016-7262,2022-03-03,Unknown,Microsoft,Excel
+CVE-2016-7193,2022-03-03,Unknown,Microsoft,Office
+CVE-2016-5195,2022-03-03,Unknown,Linux,Kernel
+CVE-2016-4117,2022-03-03,Known,Adobe,Flash Player
+CVE-2016-1019,2022-03-03,Known,Adobe,Flash Player
+CVE-2016-0099,2022-03-03,Known,Microsoft,Windows
+CVE-2015-7645,2022-03-03,Known,Adobe,Flash Player
+CVE-2015-5119,2022-03-03,Unknown,Adobe,Flash Player
+CVE-2015-4902,2022-03-03,Unknown,Oracle,Java SE
+CVE-2015-3043,2022-03-03,Unknown,Adobe,Flash Player
+CVE-2015-2590,2022-03-03,Unknown,Oracle,Java SE
+CVE-2015-2545,2022-03-03,Unknown,Microsoft,Office
+CVE-2015-2424,2022-03-03,Unknown,Microsoft,PowerPoint
+CVE-2015-2387,2022-03-03,Unknown,Microsoft,ATM Font Driver
+CVE-2015-1701,2022-03-03,Known,Microsoft,Win32k
+CVE-2015-1642,2022-03-03,Unknown,Microsoft,Office
+CVE-2014-4114,2022-03-03,Unknown,Microsoft,Windows
+CVE-2014-0496,2022-03-03,Unknown,Adobe,Reader and Acrobat
+CVE-2013-5065,2022-03-03,Unknown,Microsoft,Windows
+CVE-2013-3897,2022-03-03,Unknown,Microsoft,Internet Explorer
+CVE-2013-3346,2022-03-03,Unknown,Adobe,Reader and Acrobat
+CVE-2013-1675,2022-03-03,Unknown,Mozilla,Firefox
+CVE-2013-1347,2022-03-03,Unknown,Microsoft,Internet Explorer
+CVE-2013-0641,2022-03-03,Unknown,Adobe,Reader
+CVE-2013-0640,2022-03-03,Unknown,Adobe,Reader and Acrobat
+CVE-2013-0632,2022-03-03,Unknown,Adobe,ColdFusion
+CVE-2012-4681,2022-03-03,Known,Oracle,Java SE
+CVE-2012-1856,2022-03-03,Unknown,Microsoft,Office
+CVE-2012-1723,2022-03-03,Known,Oracle,Java SE
+CVE-2012-1535,2022-03-03,Unknown,Adobe,Flash Player
+CVE-2012-0507,2022-03-03,Known,Oracle,Java SE
+CVE-2011-3544,2022-03-03,Unknown,Oracle,Java SE JDK and JRE
+CVE-2011-1889,2022-03-03,Unknown,Microsoft,Forefront Threat Management Gateway (TMG)
+CVE-2011-0611,2022-03-03,Unknown,Adobe,Flash Player
+CVE-2010-3333,2022-03-03,Unknown,Microsoft,Office
+CVE-2010-0232,2022-03-03,Unknown,Microsoft,Windows
+CVE-2010-0188,2022-03-03,Known,Adobe,Reader and Acrobat
+CVE-2009-3129,2022-03-03,Unknown,Microsoft,Excel
+CVE-2009-1123,2022-03-03,Unknown,Microsoft,Windows
+CVE-2008-3431,2022-03-03,Unknown,Oracle,VirtualBox
+CVE-2008-2992,2022-03-03,Known,Adobe,Acrobat and Reader
+CVE-2004-0210,2022-03-03,Unknown,Microsoft,Windows
+CVE-2002-0367,2022-03-03,Unknown,Microsoft,Windows
+CVE-2022-24682,2022-02-25,Known,Synacor,Zimbra Collaborate Suite (ZCS)
+CVE-2017-8570,2022-02-25,Unknown,Microsoft,Office
+CVE-2017-0222,2022-02-25,Unknown,Microsoft,Internet Explorer
+CVE-2014-6352,2022-02-25,Unknown,Microsoft,Windows
+CVE-2022-23131,2022-02-22,Unknown,Zabbix,Frontend
+CVE-2022-23134,2022-02-22,Unknown,Zabbix,Frontend
+CVE-2022-24086,2022-02-15,Unknown,Adobe,Commerce and Magento Open Source
+CVE-2022-0609,2022-02-15,Unknown,Google,Chromium Animation
+CVE-2019-0752,2022-02-15,Known,Microsoft,Internet Explorer
+CVE-2018-8174,2022-02-15,Known,Microsoft,Windows
+CVE-2018-20250,2022-02-15,Known,RARLAB,WinRAR
+CVE-2018-15982,2022-02-15,Known,Adobe,Flash Player
+CVE-2017-9841,2022-02-15,Unknown,PHPUnit,PHPUnit
+CVE-2014-1761,2022-02-15,Unknown,Microsoft,Word
+CVE-2013-3906,2022-02-15,Unknown,Microsoft,Graphics Component
+CVE-2022-22620,2022-02-11,Unknown,Apple,"iOS, iPadOS, and macOS"
+CVE-2021-36934,2022-02-10,Unknown,Microsoft,Windows
+CVE-2020-0796,2022-02-10,Known,Microsoft,SMBv3
+CVE-2018-1000861,2022-02-10,Unknown,Jenkins,Jenkins Stapler Web Framework
+CVE-2017-9791,2022-02-10,Unknown,Apache,Struts 1
+CVE-2017-8464,2022-02-10,Unknown,Microsoft,Windows
+CVE-2017-10271,2022-02-10,Known,Oracle,WebLogic Server
+CVE-2017-0263,2022-02-10,Unknown,Microsoft,Win32k
+CVE-2017-0262,2022-02-10,Unknown,Microsoft,Office
+CVE-2017-0145,2022-02-10,Known,Microsoft,SMBv1
+CVE-2017-0144,2022-02-10,Known,Microsoft,SMBv1
+CVE-2016-3088,2022-02-10,Unknown,Apache,ActiveMQ
+CVE-2015-2051,2022-02-10,Unknown,D-Link,DIR-645 Router
+CVE-2015-1635,2022-02-10,Unknown,Microsoft,HTTP.sys
+CVE-2015-1130,2022-02-10,Unknown,Apple,OS X
+CVE-2014-4404,2022-02-10,Unknown,Apple,OS X
+CVE-2022-21882,2022-02-04,Known,Microsoft,Win32k
+CVE-2022-22587,2022-01-28,Unknown,Apple,iOS and macOS
+CVE-2021-20038,2022-01-28,Known,SonicWall,SMA 100 Appliances
+CVE-2020-5722,2022-01-28,Unknown,Grandstream,UCM6200
+CVE-2020-0787,2022-01-28,Known,Microsoft,Windows
+CVE-2017-5689,2022-01-28,Unknown,Intel,"Active Management Technology (AMT), Small Business Technology (SBT), and Standard Manageability"
+CVE-2014-1776,2022-01-28,Unknown,Microsoft,Internet Explorer
+CVE-2014-6271,2022-01-28,Unknown,GNU,Bourne-Again Shell (Bash)
+CVE-2014-7169,2022-01-28,Unknown,GNU,Bourne-Again Shell (Bash)
+CVE-2006-1547,2022-01-21,Unknown,Apache,Struts 1
+CVE-2012-0391,2022-01-21,Unknown,Apache,Struts 2
+CVE-2018-8453,2022-01-21,Known,Microsoft,Win32k
+CVE-2021-35247,2022-01-21,Unknown,SolarWinds,Serv-U
+CVE-2021-32648,2022-01-18,Unknown,October CMS,October CMS
+CVE-2021-25296,2022-01-18,Unknown,Nagios,Nagios XI
+CVE-2021-25297,2022-01-18,Unknown,Nagios,Nagios XI
+CVE-2021-25298,2022-01-18,Unknown,Nagios,Nagios XI
+CVE-2021-40870,2022-01-18,Unknown,Aviatrix,Aviatrix Controller
+CVE-2021-33766,2022-01-18,Unknown,Microsoft,Exchange Server
+CVE-2021-21975,2022-01-18,Known,VMware,vRealize Operations Manager API
+CVE-2021-21315,2022-01-18,Unknown,Npm package,System Information Library for Node.JS
+CVE-2021-22991,2022-01-18,Unknown,F5,BIG-IP Traffic Management Microkernel
+CVE-2020-14864,2022-01-18,Unknown,Oracle,Intelligence Enterprise Edition
+CVE-2020-13671,2022-01-18,Unknown,Drupal,Drupal core
+CVE-2020-11978,2022-01-18,Unknown,Apache,Airflow
+CVE-2020-13927,2022-01-18,Unknown,Apache,Airflow's Experimental API
+CVE-2021-22017,2022-01-10,Unknown,VMware,vCenter Server
+CVE-2021-36260,2022-01-10,Unknown,Hikvision,Security cameras web server
+CVE-2020-6572,2022-01-10,Unknown,Google,Chrome Media
+CVE-2019-1458,2022-01-10,Known,Microsoft,Win32k
+CVE-2013-3900,2022-01-10,Unknown,Microsoft,WinVerifyTrust function
+CVE-2019-2725,2022-01-10,Known,Oracle,WebLogic Server
+CVE-2019-9670,2022-01-10,Unknown,Synacor,Zimbra Collaboration Suite (ZCS)
+CVE-2018-13382,2022-01-10,Known,Fortinet,FortiOS and FortiProxy
+CVE-2018-13383,2022-01-10,Known,Fortinet,FortiOS and FortiProxy
+CVE-2019-1579,2022-01-10,Known,Palo Alto Networks,PAN-OS
+CVE-2019-10149,2022-01-10,Unknown,Exim,Mail Transfer Agent (MTA)
+CVE-2015-7450,2022-01-10,Unknown,IBM,WebSphere Application Server and Server Hypervisor Edition
+CVE-2017-1000486,2022-01-10,Unknown,Primetek,Primefaces Application
+CVE-2019-7609,2022-01-10,Unknown,Elastic,Kibana
+CVE-2021-27860,2022-01-10,Unknown,FatPipe,"WARP, IPVPN, and MPVPN software"
+CVE-2021-43890,2021-12-15,Known,Microsoft,Windows
+CVE-2021-4102,2021-12-15,Unknown,Google,Chromium V8
+CVE-2021-44515,2021-12-10,Unknown,Zoho,Desktop Central
+CVE-2019-13272,2021-12-10,Unknown,Linux,Kernel
+CVE-2021-35394,2021-12-10,Unknown,Realtek,Jungle Software Development Kit (SDK)
+CVE-2019-7238,2021-12-10,Unknown,Sonatype,Nexus Repository Manager
+CVE-2019-0193,2021-12-10,Unknown,Apache,Solr
+CVE-2021-44168,2021-12-10,Unknown,Fortinet,FortiOS
+CVE-2017-17562,2021-12-10,Unknown,Embedthis,GoAhead
+CVE-2017-12149,2021-12-10,Known,Red Hat,JBoss Application Server
+CVE-2010-1871,2021-12-10,Unknown,Red Hat,JBoss Seam 2
+CVE-2020-17463,2021-12-10,Unknown,Fuel CMS,Fuel CMS
+CVE-2020-8816,2021-12-10,Unknown,Pi-hole,AdminLTE
+CVE-2019-10758,2021-12-10,Unknown,MongoDB,mongo-express
+CVE-2021-44228,2021-12-10,Known,Apache,Log4j2
+CVE-2020-11261,2021-12-01,Unknown,Qualcomm,"Snapdragon Auto, Snapdragon Compute, Snapdragon Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Voice & Music, Snapdragon Wearables"
+CVE-2018-14847,2021-12-01,Unknown,MikroTik,RouterOS
+CVE-2021-37415,2021-12-01,Unknown,Zoho,ManageEngine ServiceDesk Plus (SDP)
+CVE-2021-40438,2021-12-01,Known,Apache,Apache
+CVE-2021-44077,2021-12-01,Unknown,Zoho,ManageEngine ServiceDesk Plus (SDP) / SupportCenter Plus
+CVE-2021-22204,2021-11-17,Unknown,Perl,Exiftool
+CVE-2021-40449,2021-11-17,Known,Microsoft,Windows
+CVE-2021-42321,2021-11-17,Known,Microsoft,Exchange
+CVE-2021-42292,2021-11-17,Unknown,Microsoft,Office
+CVE-2021-27104,2021-11-03,Known,Accellion,FTA
+CVE-2021-27102,2021-11-03,Known,Accellion,FTA
+CVE-2021-27101,2021-11-03,Known,Accellion,FTA
+CVE-2021-27103,2021-11-03,Known,Accellion,FTA
+CVE-2021-21017,2021-11-03,Unknown,Adobe,Acrobat and Reader
+CVE-2021-28550,2021-11-03,Unknown,Adobe,Acrobat and Reader
+CVE-2018-4939,2021-11-03,Unknown,Adobe,ColdFusion
+CVE-2018-15961,2021-11-03,Unknown,Adobe,ColdFusion
+CVE-2018-4878,2021-11-03,Known,Adobe,Flash Player
+CVE-2020-5735,2021-11-03,Unknown,Amcrest,Cameras and Network Video Recorder (NVR)
+CVE-2019-2215,2021-11-03,Unknown,Android,Android Kernel
+CVE-2020-0041,2021-11-03,Unknown,Android,Android Kernel
+CVE-2020-0069,2021-11-03,Unknown,MediaTek,Multiple Chipsets
+CVE-2017-9805,2021-11-03,Unknown,Apache,Struts
+CVE-2021-42013,2021-11-03,Known,Apache,HTTP Server
+CVE-2021-41773,2021-11-03,Known,Apache,HTTP Server
+CVE-2019-0211,2021-11-03,Unknown,Apache,HTTP Server
+CVE-2016-4437,2021-11-03,Unknown,Apache,Shiro
+CVE-2019-17558,2021-11-03,Unknown,Apache,Solr
+CVE-2020-17530,2021-11-03,Unknown,Apache,Struts
+CVE-2017-5638,2021-11-03,Known,Apache,Struts
+CVE-2018-11776,2021-11-03,Unknown,Apache,Struts
+CVE-2021-30858,2021-11-03,Unknown,Apple,"iOS, iPadOS, and macOS"
+CVE-2019-6223,2021-11-03,Unknown,Apple,iOS and macOS
+CVE-2021-30860,2021-11-03,Unknown,Apple,Multiple Products
+CVE-2020-27930,2021-11-03,Unknown,Apple,Multiple Products
+CVE-2021-30807,2021-11-03,Unknown,Apple,Multiple Products
+CVE-2020-27950,2021-11-03,Unknown,Apple,Multiple Products
+CVE-2020-27932,2021-11-03,Unknown,Apple,Multiple Products
+CVE-2020-9818,2021-11-03,Unknown,Apple,"iOS, iPadOS, and watchOS"
+CVE-2020-9819,2021-11-03,Unknown,Apple,"iOS, iPadOS, and watchOS"
+CVE-2021-30762,2021-11-03,Unknown,Apple,iOS
+CVE-2021-1782,2021-11-03,Unknown,Apple,Multiple Products
+CVE-2021-1870,2021-11-03,Unknown,Apple,"iOS, iPadOS, and macOS"
+CVE-2021-1871,2021-11-03,Unknown,Apple,"iOS, iPadOS, and macOS"
+CVE-2021-1879,2021-11-03,Unknown,Apple,"iOS, iPadOS, and watchOS"
+CVE-2021-30661,2021-11-03,Unknown,Apple,Multiple Products
+CVE-2021-30666,2021-11-03,Unknown,Apple,iOS
+CVE-2021-30713,2021-11-03,Unknown,Apple,macOS
+CVE-2021-30657,2021-11-03,Unknown,Apple,macOS
+CVE-2021-30665,2021-11-03,Unknown,Apple,Multiple Products
+CVE-2021-30663,2021-11-03,Unknown,Apple,Multiple Products
+CVE-2021-30761,2021-11-03,Unknown,Apple,iOS
+CVE-2021-30869,2021-11-03,Unknown,Apple,"iOS, iPadOS, and macOS"
+CVE-2020-9859,2021-11-03,Unknown,Apple,Multiple Products
+CVE-2021-20090,2021-11-03,Unknown,Arcadyan,Buffalo Firmware
+CVE-2021-27562,2021-11-03,Unknown,Arm,Trusted Firmware
+CVE-2021-28664,2021-11-03,Unknown,Arm,Mali Graphics Processing Unit (GPU)
+CVE-2021-28663,2021-11-03,Unknown,Arm,Mali Graphics Processing Unit (GPU)
+CVE-2019-3398,2021-11-03,Unknown,Atlassian,Confluence Server and Data Center
+CVE-2021-26084,2021-11-03,Known,Atlassian,Confluence Server and Data Center
+CVE-2019-11580,2021-11-03,Known,Atlassian,Crowd and Crowd Data Center
+CVE-2019-3396,2021-11-03,Known,Atlassian,Confluence Server and Data Server
+CVE-2021-42258,2021-11-03,Known,BQE,BillQuick Web Suite
+CVE-2020-3452,2021-11-03,Unknown,Cisco,Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)
+CVE-2020-3580,2021-11-03,Known,Cisco,Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)
+CVE-2021-1497,2021-11-03,Unknown,Cisco,HyperFlex HX
+CVE-2021-1498,2021-11-03,Unknown,Cisco,HyperFlex HX
+CVE-2018-0171,2021-11-03,Unknown,Cisco,IOS and IOS XE
+CVE-2020-3118,2021-11-03,Unknown,Cisco,IOS XR
+CVE-2020-3566,2021-11-03,Unknown,Cisco,IOS XR
+CVE-2020-3569,2021-11-03,Unknown,Cisco,IOS XR
+CVE-2020-3161,2021-11-03,Unknown,Cisco,Cisco IP Phones
+CVE-2019-1653,2021-11-03,Unknown,Cisco,Small Business RV320 and RV325 Routers
+CVE-2018-0296,2021-11-03,Unknown,Cisco,Adaptive Security Appliance (ASA)
+CVE-2019-13608,2021-11-03,Known,Citrix,StoreFront Server
+CVE-2020-8193,2021-11-03,Unknown,Citrix,"Application Delivery Controller (ADC), Gateway, and SD-WAN WANOP Appliance"
+CVE-2020-8195,2021-11-03,Unknown,Citrix,"Application Delivery Controller (ADC), Gateway, and SD-WAN WANOP Appliance"
+CVE-2020-8196,2021-11-03,Unknown,Citrix,"Application Delivery Controller (ADC), Gateway, and SD-WAN WANOP Appliance"
+CVE-2019-19781,2021-11-03,Known,Citrix,"Application Delivery Controller (ADC), Gateway, and SD-WAN WANOP Appliance"
+CVE-2019-11634,2021-11-03,Known,Citrix,Workspace Application and Receiver for Windows
+CVE-2020-29557,2021-11-03,Unknown,D-Link,DIR-825 R1 Devices
+CVE-2020-25506,2021-11-03,Unknown,D-Link,DNS-320 Device
+CVE-2018-15811,2021-11-03,Unknown,DotNetNuke (DNN),DotNetNuke (DNN)
+CVE-2018-18325,2021-11-03,Unknown,DotNetNuke (DNN),DotNetNuke (DNN)
+CVE-2017-9822,2021-11-03,Known,DotNetNuke (DNN),DotNetNuke (DNN)
+CVE-2019-15752,2021-11-03,Unknown,Docker,Desktop Community Edition
+CVE-2020-8515,2021-11-03,Unknown,DrayTek,Multiple Vigor Routers
+CVE-2018-7600,2021-11-03,Known,Drupal,Drupal Core
+CVE-2021-22205,2021-11-03,Known,GitLab,Community and Enterprise Editions
+CVE-2018-6789,2021-11-03,Known,Exim,Exim
+CVE-2020-8657,2021-11-03,Unknown,EyesOfNetwork,EyesOfNetwork
+CVE-2020-8655,2021-11-03,Unknown,EyesOfNetwork,EyesOfNetwork
+CVE-2020-5902,2021-11-03,Known,F5,BIG-IP
+CVE-2021-22986,2021-11-03,Known,F5,BIG-IP and BIG-IQ Centralized Management
+CVE-2021-35464,2021-11-03,Known,ForgeRock,Access Management (AM)
+CVE-2019-5591,2021-11-03,Known,Fortinet,FortiOS
+CVE-2020-12812,2021-11-03,Known,Fortinet,FortiOS
+CVE-2018-13379,2021-11-03,Known,Fortinet,FortiOS
+CVE-2020-16010,2021-11-03,Unknown,Google,Chrome for Android UI
+CVE-2020-15999,2021-11-03,Unknown,Google,Chrome FreeType
+CVE-2021-21166,2021-11-03,Unknown,Google,Chromium
+CVE-2020-16017,2021-11-03,Unknown,Google,Chrome
+CVE-2021-37976,2021-11-03,Unknown,Google,Chromium
+CVE-2020-16009,2021-11-03,Unknown,Google,Chromium V8
+CVE-2021-30632,2021-11-03,Unknown,Google,Chromium V8
+CVE-2020-16013,2021-11-03,Unknown,Google,Chromium V8
+CVE-2021-30633,2021-11-03,Unknown,Google,Chromium Indexed DB API
+CVE-2021-21148,2021-11-03,Unknown,Google,Chromium V8
+CVE-2021-37973,2021-11-03,Unknown,Google,Chromium Portals
+CVE-2021-30551,2021-11-03,Unknown,Google,Chromium V8
+CVE-2021-37975,2021-11-03,Unknown,Google,Chromium V8
+CVE-2020-6418,2021-11-03,Unknown,Google,Chromium V8
+CVE-2021-30554,2021-11-03,Unknown,Google,Chromium WebGL
+CVE-2021-21206,2021-11-03,Unknown,Google,Chromium Blink
+CVE-2021-38000,2021-11-03,Unknown,Google,Chromium Intents
+CVE-2021-38003,2021-11-03,Unknown,Google,Chromium V8
+CVE-2021-21224,2021-11-03,Unknown,Google,Chromium V8
+CVE-2021-21193,2021-11-03,Unknown,Google,Chromium Blink
+CVE-2021-21220,2021-11-03,Unknown,Google,Chromium V8
+CVE-2021-30563,2021-11-03,Unknown,Google,Chromium V8
+CVE-2020-4430,2021-11-03,Unknown,IBM,Data Risk Manager
+CVE-2020-4427,2021-11-03,Unknown,IBM,Data Risk Manager
+CVE-2020-4428,2021-11-03,Unknown,IBM,Data Risk Manager
+CVE-2019-4716,2021-11-03,Unknown,IBM,Planning Analytics
+CVE-2016-3715,2021-11-03,Unknown,ImageMagick,ImageMagick
+CVE-2016-3718,2021-11-03,Unknown,ImageMagick,ImageMagick
+CVE-2020-15505,2021-11-03,Unknown,Ivanti,MobileIron Multiple Products
+CVE-2021-30116,2021-11-03,Known,Kaseya,Virtual System/Server Administrator (VSA)
+CVE-2020-7961,2021-11-03,Unknown,Liferay,Liferay Portal
+CVE-2021-23874,2021-11-03,Unknown,McAfee,McAfee Total Protection (MTP)
+CVE-2021-22506,2021-11-03,Unknown,Micro Focus,Micro Focus Access Manager
+CVE-2021-22502,2021-11-03,Unknown,Micro Focus,Operation Bridge Reporter (OBR)
+CVE-2014-1812,2021-11-03,Known,Microsoft,Windows
+CVE-2021-38647,2021-11-03,Known,Microsoft,Open Management Infrastructure (OMI)
+CVE-2016-0167,2021-11-03,Known,Microsoft,Win32k
+CVE-2020-0878,2021-11-03,Known,Microsoft,Edge and Internet Explorer
+CVE-2021-31955,2021-11-03,Unknown,Microsoft,Windows
+CVE-2021-1647,2021-11-03,Unknown,Microsoft,Defender
+CVE-2021-33739,2021-11-03,Unknown,Microsoft,Windows
+CVE-2016-0185,2021-11-03,Unknown,Microsoft,Windows
+CVE-2020-0683,2021-11-03,Unknown,Microsoft,Windows
+CVE-2020-17087,2021-11-03,Unknown,Microsoft,Windows
+CVE-2021-33742,2021-11-03,Unknown,Microsoft,Windows
+CVE-2021-31199,2021-11-03,Unknown,Microsoft,Enhanced Cryptographic Provider
+CVE-2021-33771,2021-11-03,Unknown,Microsoft,Windows
+CVE-2021-31956,2021-11-03,Unknown,Microsoft,Windows
+CVE-2021-31201,2021-11-03,Unknown,Microsoft,Enhanced Cryptographic Provider
+CVE-2021-31979,2021-11-03,Unknown,Microsoft,Windows
+CVE-2020-0938,2021-11-03,Unknown,Microsoft,Windows
+CVE-2020-17144,2021-11-03,Unknown,Microsoft,Exchange Server
+CVE-2020-0986,2021-11-03,Unknown,Microsoft,Windows
+CVE-2020-1020,2021-11-03,Unknown,Microsoft,Windows
+CVE-2021-38645,2021-11-03,Unknown,Microsoft,Open Management Infrastructure (OMI)
+CVE-2021-34523,2021-11-03,Known,Microsoft,Exchange Server
+CVE-2017-7269,2021-11-03,Unknown,Microsoft,Internet Information Services (IIS)
+CVE-2021-36948,2021-11-03,Unknown,Microsoft,Windows
+CVE-2021-38649,2021-11-03,Unknown,Microsoft,Open Management Infrastructure (OMI)
+CVE-2020-0688,2021-11-03,Known,Microsoft,Exchange Server
+CVE-2017-0143,2021-11-03,Known,Microsoft,Windows
+CVE-2016-7255,2021-11-03,Known,Microsoft,Win32k
+CVE-2019-0708,2021-11-03,Known,Microsoft,Remote Desktop Services
+CVE-2021-34473,2021-11-03,Known,Microsoft,Exchange Server
+CVE-2020-1464,2021-11-03,Unknown,Microsoft,Windows
+CVE-2021-1732,2021-11-03,Known,Microsoft,Win32k
+CVE-2021-34527,2021-11-03,Known,Microsoft,Windows
+CVE-2021-31207,2021-11-03,Known,Microsoft,Exchange Server
+CVE-2019-0803,2021-11-03,Known,Microsoft,Win32k
+CVE-2020-1040,2021-11-03,Unknown,Microsoft,Hyper-V RemoteFX
+CVE-2021-28310,2021-11-03,Unknown,Microsoft,Win32k
+CVE-2020-1350,2021-11-03,Unknown,Microsoft,Windows
+CVE-2021-26411,2021-11-03,Known,Microsoft,Internet Explorer
+CVE-2019-0859,2021-11-03,Known,Microsoft,Win32k
+CVE-2021-40444,2021-11-03,Known,Microsoft,MSHTML
+CVE-2017-8759,2021-11-03,Unknown,Microsoft,.NET Framework
+CVE-2018-8653,2021-11-03,Unknown,Microsoft,Internet Explorer
+CVE-2019-0797,2021-11-03,Unknown,Microsoft,Win32k
+CVE-2021-36942,2021-11-03,Known,Microsoft,Windows
+CVE-2019-1215,2021-11-03,Known,Microsoft,Windows
+CVE-2018-0798,2021-11-03,Unknown,Microsoft,Office
+CVE-2018-0802,2021-11-03,Known,Microsoft,Office
+CVE-2012-0158,2021-11-03,Known,Microsoft,MSCOMCTL.OCX
+CVE-2015-1641,2021-11-03,Unknown,Microsoft,Office
+CVE-2021-27085,2021-11-03,Unknown,Microsoft,Internet Explorer
+CVE-2019-0541,2021-11-03,Unknown,Microsoft,MSHTML
+CVE-2017-11882,2021-11-03,Known,Microsoft,Office
+CVE-2020-0674,2021-11-03,Unknown,Microsoft,Internet Explorer
+CVE-2021-27059,2021-11-03,Unknown,Microsoft,Office
+CVE-2019-1367,2021-11-03,Known,Microsoft,Internet Explorer
+CVE-2017-0199,2021-11-03,Known,Microsoft,Office and WordPad
+CVE-2020-1380,2021-11-03,Unknown,Microsoft,Internet Explorer
+CVE-2019-1429,2021-11-03,Unknown,Microsoft,Internet Explorer
+CVE-2017-11774,2021-11-03,Unknown,Microsoft,Office
+CVE-2020-0968,2021-11-03,Known,Microsoft,Internet Explorer
+CVE-2020-1472,2021-11-03,Known,Microsoft,Netlogon
+CVE-2021-26855,2021-11-03,Known,Microsoft,Exchange Server
+CVE-2021-26858,2021-11-03,Known,Microsoft,Exchange Server
+CVE-2021-27065,2021-11-03,Known,Microsoft,Exchange Server
+CVE-2020-1054,2021-11-03,Unknown,Microsoft,Win32k
+CVE-2021-1675,2021-11-03,Known,Microsoft,Windows
+CVE-2021-34448,2021-11-03,Unknown,Microsoft,Windows
+CVE-2020-0601,2021-11-03,Unknown,Microsoft,Windows
+CVE-2019-0604,2021-11-03,Known,Microsoft,SharePoint
+CVE-2020-0646,2021-11-03,Unknown,Microsoft,.NET Framework
+CVE-2019-0808,2021-11-03,Unknown,Microsoft,Win32k
+CVE-2021-26857,2021-11-03,Known,Microsoft,Exchange Server
+CVE-2020-1147,2021-11-03,Unknown,Microsoft,".NET Framework, SharePoint, Visual Studio"
+CVE-2019-1214,2021-11-03,Unknown,Microsoft,Windows
+CVE-2016-3235,2021-11-03,Unknown,Microsoft,Office
+CVE-2019-0863,2021-11-03,Unknown,Microsoft,Windows
+CVE-2021-36955,2021-11-03,Known,Microsoft,Windows
+CVE-2021-38648,2021-11-03,Unknown,Microsoft,Open Management Infrastructure (OMI)
+CVE-2020-6819,2021-11-03,Unknown,Mozilla,Firefox and Thunderbird
+CVE-2020-6820,2021-11-03,Unknown,Mozilla,Firefox and Thunderbird
+CVE-2019-17026,2021-11-03,Unknown,Mozilla,Firefox and Thunderbird
+CVE-2019-15949,2021-11-03,Unknown,Nagios,Nagios XI
+CVE-2020-26919,2021-11-03,Unknown,NETGEAR,JGS516PE Devices
+CVE-2019-19356,2021-11-03,Unknown,Netis,WF2419 Devices
+CVE-2020-2555,2021-11-03,Unknown,Oracle,Multiple Products
+CVE-2012-3152,2021-11-03,Unknown,Oracle,Fusion Middleware
+CVE-2020-14871,2021-11-03,Unknown,Oracle,Solaris and Zettabyte File System (ZFS)
+CVE-2015-4852,2021-11-03,Unknown,Oracle,WebLogic Server
+CVE-2020-14750,2021-11-03,Unknown,Oracle,WebLogic Server
+CVE-2020-14882,2021-11-03,Unknown,Oracle,WebLogic Server
+CVE-2020-14883,2021-11-03,Unknown,Oracle,WebLogic Server
+CVE-2020-8644,2021-11-03,Unknown,PlaySMS,PlaySMS
+CVE-2019-18935,2021-11-03,Known,Progress,Telerik UI for ASP.NET AJAX
+CVE-2021-22893,2021-11-03,Known,Ivanti,Pulse Connect Secure
+CVE-2020-8243,2021-11-03,Unknown,Ivanti,Pulse Connect Secure
+CVE-2021-22900,2021-11-03,Unknown,Ivanti,Pulse Connect Secure
+CVE-2021-22894,2021-11-03,Unknown,Ivanti,Pulse Connect Secure
+CVE-2020-8260,2021-11-03,Unknown,Ivanti,Pulse Connect Secure
+CVE-2021-22899,2021-11-03,Unknown,Ivanti,Pulse Connect Secure
+CVE-2019-11510,2021-11-03,Known,Ivanti,Pulse Connect Secure
+CVE-2019-11539,2021-11-03,Known,Ivanti,Pulse Connect Secure and Pulse Policy Secure
+CVE-2021-1906,2021-11-03,Unknown,Qualcomm,Multiple Chipsets
+CVE-2021-1905,2021-11-03,Unknown,Qualcomm,Multiple Chipsets
+CVE-2020-10221,2021-11-03,Unknown,rConfig,rConfig
+CVE-2021-35395,2021-11-03,Unknown,Realtek,AP-Router SDK
+CVE-2017-16651,2021-11-03,Unknown,Roundcube,Roundcube Webmail
+CVE-2020-11652,2021-11-03,Unknown,SaltStack,Salt
+CVE-2020-11651,2021-11-03,Unknown,SaltStack,Salt
+CVE-2020-16846,2021-11-03,Unknown,SaltStack,Salt
+CVE-2018-2380,2021-11-03,Known,SAP,Customer Relationship Management (CRM)
+CVE-2010-5326,2021-11-03,Unknown,SAP,NetWeaver
+CVE-2016-9563,2021-11-03,Unknown,SAP,NetWeaver
+CVE-2020-6287,2021-11-03,Unknown,SAP,NetWeaver
+CVE-2020-6207,2021-11-03,Unknown,SAP,Solution Manager
+CVE-2016-3976,2021-11-03,Unknown,SAP,NetWeaver
+CVE-2019-16256,2021-11-03,Unknown,SIMalliance,Toolbox Browser
+CVE-2020-10148,2021-11-03,Unknown,SolarWinds,Orion
+CVE-2021-35211,2021-11-03,Known,SolarWinds,Serv-U
+CVE-2016-3643,2021-11-03,Unknown,SolarWinds,Virtualization Manager
+CVE-2020-10199,2021-11-03,Unknown,Sonatype,Nexus Repository
+CVE-2021-20021,2021-11-03,Known,SonicWall,SonicWall Email Security
+CVE-2019-7481,2021-11-03,Known,SonicWall,SMA100
+CVE-2021-20022,2021-11-03,Known,SonicWall,SonicWall Email Security
+CVE-2021-20023,2021-11-03,Known,SonicWall,SonicWall Email Security
+CVE-2021-20016,2021-11-03,Known,SonicWall,SSLVPN SMA100
+CVE-2020-12271,2021-11-03,Known,Sophos,SFOS
+CVE-2020-10181,2021-11-03,Unknown,Sumavision,Enhanced Multimedia Router (EMR)
+CVE-2017-6327,2021-11-03,Unknown,Symantec,Symantec Messaging Gateway
+CVE-2019-18988,2021-11-03,Unknown,TeamViewer,Desktop
+CVE-2017-9248,2021-11-03,Unknown,Progress,ASP.NET AJAX and Sitefinity
+CVE-2021-31755,2021-11-03,Unknown,Tenda,AC11 Router
+CVE-2020-10987,2021-11-03,Unknown,Tenda,AC1900 Router AC15 Model
+CVE-2018-14558,2021-11-03,Unknown,Tenda,"AC7, AC9, and AC10 Routers"
+CVE-2018-20062,2021-11-03,Unknown,ThinkPHP,noneCms
+CVE-2019-9082,2021-11-03,Unknown,ThinkPHP,ThinkPHP
+CVE-2019-18187,2021-11-03,Unknown,Trend Micro,OfficeScan
+CVE-2020-8467,2021-11-03,Unknown,Trend Micro,Apex One and OfficeScan
+CVE-2020-8468,2021-11-03,Unknown,Trend Micro,"Apex One, OfficeScan and Worry-Free Business Security Agents"
+CVE-2020-24557,2021-11-03,Unknown,Trend Micro,"Apex One, OfficeScan, and Worry-Free Business Security"
+CVE-2020-8599,2021-11-03,Unknown,Trend Micro,Apex One and OfficeScan
+CVE-2021-36742,2021-11-03,Unknown,Trend Micro,"Apex One, Apex One as a Service, and Worry-Free Business Security"
+CVE-2021-36741,2021-11-03,Unknown,Trend Micro,"Apex One, Apex One as a Service, and Worry-Free Business Security"
+CVE-2019-20085,2021-11-03,Unknown,TVT,NVMS-1000
+CVE-2020-5849,2021-11-03,Unknown,Unraid,Unraid
+CVE-2020-5847,2021-11-03,Unknown,Unraid,Unraid
+CVE-2019-16759,2021-11-03,Unknown,vBulletin,vBulletin
+CVE-2020-17496,2021-11-03,Unknown,vBulletin,vBulletin
+CVE-2019-5544,2021-11-03,Known,VMware,VMware ESXi and Horizon DaaS
+CVE-2020-3992,2021-11-03,Known,VMware,ESXi
+CVE-2020-3950,2021-11-03,Unknown,VMware,Multiple Products
+CVE-2021-22005,2021-11-03,Known,VMware,vCenter Server
+CVE-2020-3952,2021-11-03,Unknown,VMware,vCenter Server
+CVE-2021-21972,2021-11-03,Known,VMware,vCenter Server
+CVE-2021-21985,2021-11-03,Known,VMware,vCenter Server
+CVE-2020-4006,2021-11-03,Unknown,VMware,Multiple Products
+CVE-2020-25213,2021-11-03,Unknown,WordPress,File Manager Plugin
+CVE-2020-11738,2021-11-03,Unknown,WordPress,Snap Creek Duplicator Plugin
+CVE-2019-9978,2021-11-03,Unknown,WordPress,Social Warfare Plugin
+CVE-2021-27561,2021-11-03,Unknown,Yealink,Device Management
+CVE-2021-40539,2021-11-03,Known,Zoho,ManageEngine
+CVE-2020-10189,2021-11-03,Unknown,Zoho,ManageEngine
+CVE-2019-8394,2021-11-03,Unknown,Zoho,ManageEngine
+CVE-2020-29583,2021-11-03,Unknown,Zyxel,Multiple Products

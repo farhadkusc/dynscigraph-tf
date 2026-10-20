@@ -1,13 +1,14 @@
 cff-version: 1.2.0
-title: "DynSciGraph-TF prototype"
-message: "If you use this prototype, please cite it."
+title: "DynSciGraph-TF"
+message: "If you use this software, please cite it."
 type: software
 authors:
   - family-names: Kabir
     given-names: Md Farhad
-version: 0.1.0
-date-released: 2026-10-19
+version: 0.2.0
+date-released: 2026-10-20
 repository-code: "https://github.com/farhadkusc/dynscigraph-tf"
 abstract: >-
-  Reference prototype of a temporal knowledge-graph forecaster for
-  pre-incident cyber threat prediction. Synthetic validation only.
+  Retrospective link prediction on MITRE ATT&CK group-technique
+  documentation dates, plus an unfitted EPSS ranking against later
+  CISA KEV additions. Public data only. Not an incident-time forecaster.

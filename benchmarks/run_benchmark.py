@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
-"""Retrospective synthetic benchmark for DynSciGraph-TF.
-
-Writes benchmarks/results/synthetic_validation.json and prints the table.
-These figures are prototype measurements on a planted synthetic threat graph.
-They are not a substitute for the historical MITRE/NVD/EPSS evaluation
-specified in the concept paper.
-"""
+"""Run both public-data evaluations and write benchmarks/results/evaluation.json."""
 
 from __future__ import annotations
 
@@ -16,47 +10,36 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from dynscigraph.model import calibration_table, run_retrospective  # noqa: E402
+from dynscigraph.attack import run_attack_benchmark  # noqa: E402
+from dynscigraph.kev import run_kev_benchmark  # noqa: E402
 
 
 def main() -> None:
-    rows = run_retrospective()
-    cal = calibration_table()
-    out_dir = ROOT / "benchmarks" / "results"
-    out_dir.mkdir(parents=True, exist_ok=True)
     payload = {
-        "protocol": {
-            "data": "synthetic temporal threat graph, seed=7, 24 monthly snapshots",
-            "cutoff": "month 18",
-            "horizon_days": 90,
-            "label": "edges first observed in months 19-21",
-            "disclaimer": "Synthetic prototype validation only. Not historical CTI results.",
-        },
-        "metrics": [
-            {
-                "model": r.model,
-                "precision_at_10": round(r.precision_at_10, 4),
-                "recall_at_50": round(r.recall_at_50, 4),
-                "f1_at_50": round(r.f1_at_50, 4),
-                "lead_time_days": round(r.lead_time_days, 1),
-                "calibration_error": round(r.calibration_error, 4),
-                "n_true_future_edges": r.n_true_future,
-            }
-            for r in rows
-        ],
-        "calibration_bins": cal,
+        "package": "dynscigraph-tf",
+        "version": "0.2.0",
+        "attack": run_attack_benchmark(),
+        "kev": run_kev_benchmark(),
     }
-    dest = out_dir / "synthetic_validation.json"
-    dest.write_text(json.dumps(payload, indent=2) + "\n")
-    header = f"{'Model':<28} {'P@10':>8} {'R@50':>8} {'F1@50':>8} {'Lead d':>8} {'CalErr':>8}"
-    print(header)
-    print("-" * len(header))
-    for r in rows:
+    out = ROOT / "benchmarks" / "results" / "evaluation.json"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(payload, indent=2) + "\n")
+    print("ATT&CK group→technique, next 365 days")
+    for run in payload["attack"]["runs"]:
+        b = run["baselines"]["technique_degree"]
         print(
-            f"{r.model:<28} {r.precision_at_10:8.3f} {r.recall_at_50:8.3f} "
-            f"{r.f1_at_50:8.3f} {r.lead_time_days:8.1f} {r.calibration_error:8.3f}"
+            f"  cutoff {run['cutoff']}: model AP {run['ap']:.4f} "
+            f"(degree {b['ap']:.4f}, base {run['base_rate']:.4f}) "
+            f"P@10 {run['p_at_10']:.2f}  future {run['n_future']}"
         )
-    print(f"\nWrote {dest}")
+    print("EPSS file vs later CISA KEV")
+    for w in payload["kev"]["windows"]:
+        print(
+            f"  {w['score_date']}: AP {w['average_precision']:.4f} "
+            f"lift {w['lift_ap_vs_base']}x  P@10 {w['precision_at_10']:.2f}  "
+            f"added {w['n_added_to_kev']}"
+        )
+    print(f"wrote {out}")
 
 
 if __name__ == "__main__":

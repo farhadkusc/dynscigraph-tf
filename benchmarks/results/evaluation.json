@@ -1,0 +1,169 @@
+{
+  "package": "dynscigraph-tf",
+  "version": "0.2.0",
+  "attack": {
+    "task": "ATT&CK intrusion-set uses attack-pattern, next-year documentation",
+    "source": "MITRE ATT&CK Enterprise STIX, relationship.created",
+    "snapshot": "enterprise-attack collection fetched 2026-10-19 (v20 window through 2026-10)",
+    "disclaimer": "created is ATT&CK documentation time, not incident time. Not an operational detector.",
+    "runs": [
+      {
+        "ap": 0.009788,
+        "p_at_10": 0.1,
+        "p_at_50": 0.04,
+        "r_at_50": 0.0213,
+        "baselines": {
+          "logistic_combination": {
+            "ap": 0.00396,
+            "p_at_10": 0.0,
+            "p_at_50": 0.02,
+            "r_at_50": 0.0106
+          },
+          "technique_degree": {
+            "ap": 0.004899,
+            "p_at_10": 0.0,
+            "p_at_50": 0.0,
+            "r_at_50": 0.0
+          },
+          "malware_bridge": {
+            "ap": 0.008235,
+            "p_at_10": 0.1,
+            "p_at_50": 0.02,
+            "r_at_50": 0.0106
+          },
+          "random": {
+            "ap": 0.001852,
+            "p_at_10": 0.0,
+            "p_at_50": 0.0,
+            "r_at_50": 0.0
+          }
+        },
+        "base_rate": 0.002027,
+        "n_future": 94,
+        "n_candidates": 46376,
+        "n_train_pos": 408,
+        "lift_ap_vs_base": 4.83,
+        "cutoff": "2022-12-31",
+        "horizon": "365 days"
+      },
+      {
+        "ap": 0.008478,
+        "p_at_10": 0.0,
+        "p_at_50": 0.0,
+        "r_at_50": 0.0,
+        "baselines": {
+          "logistic_combination": {
+            "ap": 0.005025,
+            "p_at_10": 0.0,
+            "p_at_50": 0.0,
+            "r_at_50": 0.0
+          },
+          "technique_degree": {
+            "ap": 0.007158,
+            "p_at_10": 0.0,
+            "p_at_50": 0.0,
+            "r_at_50": 0.0
+          },
+          "malware_bridge": {
+            "ap": 0.005153,
+            "p_at_10": 0.0,
+            "p_at_50": 0.0,
+            "r_at_50": 0.0
+          },
+          "random": {
+            "ap": 0.003644,
+            "p_at_10": 0.0,
+            "p_at_50": 0.0,
+            "r_at_50": 0.0
+          }
+        },
+        "base_rate": 0.003468,
+        "n_future": 187,
+        "n_candidates": 53923,
+        "n_train_pos": 305,
+        "lift_ap_vs_base": 2.44,
+        "cutoff": "2023-12-31",
+        "horizon": "365 days"
+      },
+      {
+        "ap": 0.006616,
+        "p_at_10": 0.0,
+        "p_at_50": 0.04,
+        "r_at_50": 0.0138,
+        "baselines": {
+          "logistic_combination": {
+            "ap": 0.002101,
+            "p_at_10": 0.0,
+            "p_at_50": 0.0,
+            "r_at_50": 0.0
+          },
+          "technique_degree": {
+            "ap": 0.004786,
+            "p_at_10": 0.0,
+            "p_at_50": 0.0,
+            "r_at_50": 0.0
+          },
+          "malware_bridge": {
+            "ap": 0.004489,
+            "p_at_10": 0.0,
+            "p_at_50": 0.04,
+            "r_at_50": 0.0138
+          },
+          "random": {
+            "ap": 0.002119,
+            "p_at_10": 0.0,
+            "p_at_50": 0.0,
+            "r_at_50": 0.0
+          }
+        },
+        "base_rate": 0.002207,
+        "n_future": 145,
+        "n_candidates": 65689,
+        "n_train_pos": 653,
+        "lift_ap_vs_base": 3.0,
+        "cutoff": "2024-12-31",
+        "horizon": "365 days"
+      }
+    ]
+  },
+  "kev": {
+    "task": "Rank not-yet-catalogued CVEs by the EPSS file dated the cutoff. Label is later addition to CISA KEV.",
+    "sources": [
+      "https://epss.empiricalsecurity.com/epss_scores-YYYY-MM-DD.csv.gz",
+      "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+    ],
+    "fetched": "2026-10-19",
+    "kev_catalog": "2026.10.16",
+    "disclaimer": "EPSS is the score under test, not a model trained in this repository. Windows were fixed before looking at precision@k.",
+    "windows": [
+      {
+        "score_date": "2024-06-01",
+        "horizon_end": "2025-06-01",
+        "epss_file": "epss_scores-2024-06-01.csv.gz",
+        "n_scored_not_yet_kev": 247899,
+        "n_added_to_kev": 69,
+        "base_rate": 0.00027834,
+        "average_precision": 0.003101,
+        "lift_ap_vs_base": 11.14,
+        "precision_at_10": 0.0,
+        "precision_at_50": 0.02,
+        "precision_at_100": 0.02,
+        "recall_at_100": 0.029
+      },
+      {
+        "score_date": "2025-06-01",
+        "horizon_end": "2026-06-01",
+        "epss_file": "epss_scores-2025-06-01.csv.gz",
+        "n_scored_not_yet_kev": 279411,
+        "n_added_to_kev": 92,
+        "base_rate": 0.00032926,
+        "average_precision": 0.039463,
+        "lift_ap_vs_base": 119.85,
+        "precision_at_10": 0.3,
+        "precision_at_50": 0.14,
+        "precision_at_100": 0.08,
+        "recall_at_100": 0.087
+      }
+    ]
+  }
+}
