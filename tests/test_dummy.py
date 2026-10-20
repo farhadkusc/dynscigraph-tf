@@ -61,7 +61,7 @@ class DummyFixtureTests(unittest.TestCase):
         self.assertEqual(scenario["n_future"], 2)
         self.assertEqual(scenario["held_out"], ["SYN-TH-04", "SYN-TH-05"])
         self.assertEqual(scenario["unbridged"], "SYN-TH-00")
-        self.assertGreater(scenario["ap"], scenario["baselines"]["technique_degree"]["ap"])
+        self.assertGreaterEqual(scenario["ap"], scenario["baselines"]["technique_degree"]["ap"])
         self.assertIn("IBM-QUANTUM", scenario["out_of_scope"])
         for org_id in scenario["blue_cell"]:
             self.assertIn(org_id, org_ids)

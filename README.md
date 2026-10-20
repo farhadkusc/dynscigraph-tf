@@ -12,15 +12,25 @@ Source: MITRE ATT&CK Enterprise STIX (`enterprise-attack.json`, fetched 2026-10-
 
 Question: for pairs that are absent on a cutoff, which ones does ATT&CK add in the next 365 days? Endpoints that do not exist yet at the cutoff are excluded. That is the cold-start the knowledge base actually has; it is reported as a smaller positive set, not hidden.
 
-The ranker is a fixed graph score: `log(1 + malware-bridge count) + 0.35 * log(1 + technique degree)`. The bridge counts malware that the group already uses and that already use the technique. The 0.35 is a constant, not fit on the test year. A logistic combination of seven features is reported next to it and does not win.
+The model is the temporal encoder in the concept paper. Each year aggregates group–technique neighbors and updates node states. A DistMult decoder is fit on pairs dated on or before the cutoff. The same cutoff also reports a one-step static encoder, an LSTM on yearly link counts, a one-head attention model on those counts, degree, the malware bridge, and a seven-feature logistic. Horizon 90 days is the horizon in the concept paper. Horizon 365 days is the same cutoff code run for a full year.
 
-| Cutoff | Future links | Base rate | Graph AP | Logistic AP | Degree AP | Random AP | Graph P@10 |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2022-12-31 | 94 | 0.0020 | 0.0098 | 0.0040 | 0.0049 | 0.0019 | 0.10 |
-| 2023-12-31 | 187 | 0.0035 | 0.0085 | 0.0050 | 0.0072 | 0.0036 | 0.00 |
-| 2024-12-31 | 145 | 0.0022 | 0.0066 | 0.0021 | 0.0048 | 0.0021 | 0.00 |
+### 90 days
 
-Average precision of the fixed score is about 2–5× the base rate and ahead of degree on every cutoff. The seven-feature logistic, fit only on the prior year, does not beat it, and on 2024 it does not beat random. Precision@10 is 0.10 on one cutoff and 0 on the other two.
+| Cutoff | Future links | Base rate | Temporal AP | Static AP | LSTM AP | Attention AP | Degree AP | P@10 | R@50 | CalErr |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2022-12-31 | 40 | 0.000863 | 0.000685 | 0.001062 | 0.001567 | 0.001515 | 0.001645 | 0.00 | 0.0000 | 0.0123 |
+| 2023-12-31 | 57 | 0.001057 | 0.002405 | 0.000751 | 0.001584 | 0.001803 | 0.001607 | 0.00 | 0.0000 | 0.0260 |
+| 2024-12-31 | 40 | 0.000609 | 0.000634 | 0.000532 | 0.001290 | 0.001353 | 0.001302 | 0.00 | 0.0000 | 0.0006 |
+
+### 365 days
+
+| Cutoff | Future links | Base rate | Temporal AP | Static AP | LSTM AP | Attention AP | Degree AP | P@10 | R@50 | CalErr | Lead time |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2022-12-31 | 94 | 0.002027 | 0.001637 | 0.002133 | 0.005616 | 0.004370 | 0.004899 | 0.00 | 0.0000 | 0.0123 | |
+| 2023-12-31 | 187 | 0.003468 | 0.006543 | 0.002205 | 0.008149 | 0.007270 | 0.007158 | 0.00 | 0.0053 | 0.0260 | 136 |
+| 2024-12-31 | 145 | 0.002207 | 0.002149 | 0.001763 | 0.005354 | 0.004638 | 0.004786 | 0.00 | 0.0000 | 0.0006 | |
+
+F1 at probability 0.5 is 0 on every cutoff. Lead time is the mean number of days from the cutoff to the edge timestamp for hits inside the top 50. Precision@10 is 0 on every cutoff. On the 90-day horizon the temporal encoder is ahead of the static encoder at the 2023 and 2024 cutoffs. On the 365-day horizon the LSTM and the degree score are ahead of the temporal encoder.
 
 ## 2. EPSS file versus later CISA KEV
 

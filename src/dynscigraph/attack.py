@@ -19,7 +19,8 @@ from pathlib import Path
 
 import numpy as np
 
-from .metrics import average_precision, precision_at, recall_at
+from .metrics import average_precision, f1_score, precision_at, recall_at
+from .tgnn import forecast, lead_time_days
 
 ROOT = Path(__file__).resolve().parents[2]
 DERIVED = ROOT / "data" / "derived"
@@ -223,7 +224,8 @@ def _fit_and_score(tables, candidates, future, train_pos, cut_s, tr_s, seed) -> 
     y_test = np.array([1.0 if (g, t) in future else 0.0 for g, t in candidates])
     popularity = X_test[:, 0]
     bridge_only = X_test[:, 3]
-    graph_score = bridge_only + 0.35 * popularity
+    paper = forecast(tables, cut_s, candidates)
+    graph_score = paper["temporal"]
     rng_s = np.random.default_rng(seed + 1)
     random_scores = rng_s.random(len(candidates))
 
@@ -233,16 +235,24 @@ def _fit_and_score(tables, candidates, future, train_pos, cut_s, tr_s, seed) -> 
             "p_at_10": round(precision_at(y_test, scores, 10), 4),
             "p_at_50": round(precision_at(y_test, scores, 50), 4),
             "r_at_50": round(recall_at(y_test, scores, 50), 4),
+            "f1": round(f1_score(y_test, scores), 6),
         }
 
-    # Headline ranker is the fixed graph score (malware-bridge count plus
-    # technique degree). The logistic fit is reported beside it. The 0.35
-    # weight is a constant, not selected on the test year.
+    created = {}
+    for g, t, _, stamp in tables.gt:
+        if (g, t) in future:
+            created[(g, t)] = stamp
+    order = np.argsort(-np.asarray(graph_score, dtype=float), kind="mergesort")
+    hits = [candidates[int(i)] for i in order[:50] if y_test[int(i)] == 1.0]
     out = pack(graph_score)
     out["baselines"] = {
+        "static_gnn": pack(paper["static"]),
+        "lstm_indicators": pack(paper["lstm"]),
+        "transformer_indicators": pack(paper["transformer"]),
         "logistic_combination": pack(model_scores),
         "technique_degree": pack(popularity),
         "malware_bridge": pack(bridge_only),
+        "reactive_degree": pack(popularity),
         "random": pack(random_scores),
     }
     out["base_rate"] = round(float(y_test.mean()), 6)
@@ -250,21 +260,28 @@ def _fit_and_score(tables, candidates, future, train_pos, cut_s, tr_s, seed) -> 
     out["n_candidates"] = int(len(candidates))
     out["n_train_pos"] = len(pos)
     out["lift_ap_vs_base"] = round(out["ap"] / out["base_rate"], 2) if out["base_rate"] else None
+    out["f1"] = out["f1"]
+    out["lead_time_days"] = lead_time_days(hits, created, cut_s)
+    out["cal_err"] = round(float(paper["cal_err"]), 6)
+    out["model"] = "temporal-encoder"
     return out
 
 
 def run_attack_benchmark(cutoffs: tuple[str, ...] = ("2022-12-31", "2023-12-31", "2024-12-31")) -> dict:
     tables = load_tables()
     runs = []
-    for cutoff in cutoffs:
-        result = run_cutoff(tables, cutoff)
-        result["cutoff"] = cutoff
-        result["horizon"] = "365 days"
-        runs.append(result)
+    for horizon in (90, 365):
+        for cutoff in cutoffs:
+            result = run_cutoff(tables, cutoff, horizon_days=horizon)
+            result["cutoff"] = cutoff
+            result["horizon"] = f"{horizon} days"
+            runs.append(result)
     return {
-        "task": "ATT&CK intrusion-set uses attack-pattern, next-year documentation",
+        "task": "P(E_t+delta \\ E_t | G_1..G_t) on ATT&CK group-technique edges",
         "source": "MITRE ATT&CK Enterprise STIX, relationship.created",
         "snapshot": "enterprise-attack collection fetched 2026-10-19 (v20 window through 2026-10)",
+        "model": "temporal encoder, yearly uses-aggregation, trained DistMult decoder",
+        "horizons_days": [90, 365],
         "disclaimer": "The timestamp is the ATT&CK relationship created field, the documentation date.",
         "runs": runs,
     }

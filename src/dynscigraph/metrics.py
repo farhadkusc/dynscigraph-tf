@@ -31,3 +31,16 @@ def recall_at(y_true: np.ndarray, scores: np.ndarray, k: int) -> float:
         return 0.0
     order = np.argsort(-np.asarray(scores, dtype=float), kind="mergesort")
     return float(y[order][:k].sum() / y.sum())
+
+
+def f1_score(y_true: np.ndarray, scores: np.ndarray, threshold: float = 0.5) -> float:
+    y = np.asarray(y_true, dtype=float)
+    pred = np.asarray(scores, dtype=float) >= threshold
+    tp = float(((pred == 1) & (y == 1)).sum())
+    fp = float(((pred == 1) & (y == 0)).sum())
+    fn = float(((pred == 0) & (y == 1)).sum())
+    prec = tp / (tp + fp) if tp + fp else 0.0
+    rec = tp / (tp + fn) if tp + fn else 0.0
+    if prec + rec == 0.0:
+        return 0.0
+    return float(2 * prec * rec / (prec + rec))
