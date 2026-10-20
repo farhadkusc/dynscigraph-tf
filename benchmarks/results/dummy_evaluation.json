@@ -1,0 +1,64 @@
+{
+  "kind": "synthetic-fixture",
+  "package": "dynscigraph-tf",
+  "package_version": "0.2.1",
+  "statement": "Synthetic fixture. Organization names are scenario labels, not sources. Do not cite this object as an experimental result.",
+  "n_organizations": 106,
+  "counts": {
+    "federal-department": 15,
+    "federal-component": 18,
+    "national-laboratory": 17,
+    "ibm": 10,
+    "research-center": 46
+  },
+  "observation_graph": {
+    "ap": 0.733185,
+    "p_at_10": 1.0,
+    "p_at_50": 1.0,
+    "r_at_50": 0.3205,
+    "baselines": {
+      "logistic_combination": {
+        "ap": 0.87306,
+        "p_at_10": 1.0,
+        "p_at_50": 1.0,
+        "r_at_50": 0.3205
+      },
+      "technique_degree": {
+        "ap": 0.034578,
+        "p_at_10": 0.0,
+        "p_at_50": 0.0,
+        "r_at_50": 0.0
+      },
+      "malware_bridge": {
+        "ap": 0.849558,
+        "p_at_10": 1.0,
+        "p_at_50": 1.0,
+        "r_at_50": 0.3205
+      },
+      "random": {
+        "ap": 0.04802,
+        "p_at_10": 0.1,
+        "p_at_50": 0.1,
+        "r_at_50": 0.0321
+      }
+    },
+    "base_rate": 0.044318,
+    "n_future": 156,
+    "n_candidates": 3520,
+    "n_train_pos": 190,
+    "lift_ap_vs_base": 16.54,
+    "cutoff": "2024-12-31",
+    "note": "Planted observation graph. Groups are scenario labels, not intrusion sets. Timestamps are fixture dates, not ATT&CK created dates."
+  },
+  "vulnerability_catalog": {
+    "score_date": "2025-06-01",
+    "horizon_end": "2026-06-01",
+    "n_excluded_already_listed": 8,
+    "n_scored": 230,
+    "n_added_later": 45,
+    "base_rate": 0.195652,
+    "average_precision": 0.909841,
+    "precision_at_10": 1.0,
+    "note": "Separable synthetic catalog. Not EPSS and not CISA KEV."
+  }
+}

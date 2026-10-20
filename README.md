@@ -2,7 +2,7 @@
 
 Temporal link prediction for documented cyber relationships, evaluated on public data.
 
-Author: **Md Farhad Kabir**. Package **0.2.0**.
+Author: **Md Farhad Kabir**. Package **0.2.1**.
 
 Two tasks, both retrospective. Nothing in a test window is used to build features for that window.
 
@@ -42,6 +42,17 @@ python3 benchmarks/plot_results.py
 ```
 
 The figure is [docs/figures/results.svg](docs/figures/results.svg). Derived ATT&CK tables and the two EPSS gzip files are in the repository so the benchmark does not download 50 MB on every run. `data/SOURCES.md` has the upstream URLs, the catalog version, and the fetch date.
+
+## Synthetic fixtures
+
+`data/dummy/` is a labeled test corpus, not a feed. It covers all 15 U.S. cabinet departments, the cyber-relevant federal components, all 17 DOE national laboratories, IBM research and security units, and a fixed list of universities and research centers. Names are scenario labels. The observation graph and `vuln_catalog.csv` use `SYN-` identifiers so they cannot be confused with ATT&CK or CVE records.
+
+```bash
+python3 -m unittest tests/test_dummy.py
+python3 benchmarks/run_dummy.py
+```
+
+`benchmarks/results/dummy_evaluation.json` is the fixture check. It is not part of the tables above.
 
 ## What this is not
 

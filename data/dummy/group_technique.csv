@@ -1,0 +1,877 @@
+group_id,group_name,technique_id,technique_name,tactic,created
+FED-CISA,Cybersecurity and Infrastructure Security Agency,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-CISA,Cybersecurity and Infrastructure Security Agency,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-CISA,Cybersecurity and Infrastructure Security Agency,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-CISA,Cybersecurity and Infrastructure Security Agency,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-CISA,Cybersecurity and Infrastructure Security Agency,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-CISA,Cybersecurity and Infrastructure Security Agency,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-CISA,Cybersecurity and Infrastructure Security Agency,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2024-08-01
+FED-CISA,Cybersecurity and Infrastructure Security Agency,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2024-08-01
+FED-CISA,Cybersecurity and Infrastructure Security Agency,SYN-T015,Synthetic control SYN-STACK-DEFENSE 7,collection,2025-05-01
+FED-DHS,U.S. Department of Homeland Security,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-DHS,U.S. Department of Homeland Security,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-DHS,U.S. Department of Homeland Security,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-DHS,U.S. Department of Homeland Security,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-DHS,U.S. Department of Homeland Security,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-DHS,U.S. Department of Homeland Security,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-DHS,U.S. Department of Homeland Security,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2024-08-01
+FED-DHS,U.S. Department of Homeland Security,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2024-08-01
+FED-DOC,U.S. Department of Commerce,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-DOC,U.S. Department of Commerce,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-DOC,U.S. Department of Commerce,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-DOC,U.S. Department of Commerce,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-DOC,U.S. Department of Commerce,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-DOC,U.S. Department of Commerce,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-DOC,U.S. Department of Commerce,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2024-08-01
+FED-DOC,U.S. Department of Commerce,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2024-08-01
+FED-DOE,U.S. Department of Energy,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-DOE,U.S. Department of Energy,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-DOE,U.S. Department of Energy,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-DOE,U.S. Department of Energy,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-DOE,U.S. Department of Energy,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-DOE,U.S. Department of Energy,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-DOE,U.S. Department of Energy,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2024-08-01
+FED-DOE,U.S. Department of Energy,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2024-08-01
+FED-DOI,U.S. Department of the Interior,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-DOI,U.S. Department of the Interior,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-DOI,U.S. Department of the Interior,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-DOI,U.S. Department of the Interior,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-DOI,U.S. Department of the Interior,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-DOI,U.S. Department of the Interior,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-DOI,U.S. Department of the Interior,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2024-08-01
+FED-DOI,U.S. Department of the Interior,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2024-08-01
+FED-DOI,U.S. Department of the Interior,SYN-T015,Synthetic control SYN-STACK-DEFENSE 7,collection,2025-05-01
+FED-DOJ,U.S. Department of Justice,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-DOJ,U.S. Department of Justice,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-DOJ,U.S. Department of Justice,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-DOJ,U.S. Department of Justice,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-DOJ,U.S. Department of Justice,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-DOJ,U.S. Department of Justice,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-DOJ,U.S. Department of Justice,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2024-08-01
+FED-DOJ,U.S. Department of Justice,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2024-08-01
+FED-DOL,U.S. Department of Labor,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-DOL,U.S. Department of Labor,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-DOL,U.S. Department of Labor,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-DOL,U.S. Department of Labor,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-DOL,U.S. Department of Labor,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-DOL,U.S. Department of Labor,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-DOL,U.S. Department of Labor,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2024-08-01
+FED-DOL,U.S. Department of Labor,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2024-08-01
+FED-DOS,U.S. Department of State,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-DOS,U.S. Department of State,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-DOS,U.S. Department of State,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-DOS,U.S. Department of State,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-DOS,U.S. Department of State,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-DOS,U.S. Department of State,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-DOS,U.S. Department of State,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2024-08-01
+FED-DOS,U.S. Department of State,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2024-08-01
+FED-DOT,U.S. Department of Transportation,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-DOT,U.S. Department of Transportation,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-DOT,U.S. Department of Transportation,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-DOT,U.S. Department of Transportation,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-DOT,U.S. Department of Transportation,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-DOT,U.S. Department of Transportation,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-DOT,U.S. Department of Transportation,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2024-08-01
+FED-DOT,U.S. Department of Transportation,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2024-08-01
+FED-DOT,U.S. Department of Transportation,SYN-T015,Synthetic control SYN-STACK-DEFENSE 7,collection,2025-05-01
+FED-ED,U.S. Department of Education,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-ED,U.S. Department of Education,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-ED,U.S. Department of Education,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-ED,U.S. Department of Education,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-ED,U.S. Department of Education,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-ED,U.S. Department of Education,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-ED,U.S. Department of Education,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2024-08-01
+FED-ED,U.S. Department of Education,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2024-08-01
+FED-EPA,Environmental Protection Agency,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-EPA,Environmental Protection Agency,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-EPA,Environmental Protection Agency,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-EPA,Environmental Protection Agency,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-EPA,Environmental Protection Agency,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-EPA,Environmental Protection Agency,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-EPA,Environmental Protection Agency,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-04-15
+FED-EPA,Environmental Protection Agency,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2025-04-15
+FED-FCC,Federal Communications Commission,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-FCC,Federal Communications Commission,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-FCC,Federal Communications Commission,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-FCC,Federal Communications Commission,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-FCC,Federal Communications Commission,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-FCC,Federal Communications Commission,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-FCC,Federal Communications Commission,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-04-15
+FED-FCC,Federal Communications Commission,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2025-04-15
+FED-FRB,Board of Governors of the Federal Reserve System,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-FRB,Board of Governors of the Federal Reserve System,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-FRB,Board of Governors of the Federal Reserve System,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-FRB,Board of Governors of the Federal Reserve System,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-FRB,Board of Governors of the Federal Reserve System,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-FRB,Board of Governors of the Federal Reserve System,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-FRB,Board of Governors of the Federal Reserve System,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-04-15
+FED-FRB,Board of Governors of the Federal Reserve System,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2025-04-15
+FED-FRB,Board of Governors of the Federal Reserve System,SYN-T015,Synthetic control SYN-STACK-DEFENSE 7,collection,2025-05-01
+FED-HHS,U.S. Department of Health and Human Services,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-HHS,U.S. Department of Health and Human Services,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-HHS,U.S. Department of Health and Human Services,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-HHS,U.S. Department of Health and Human Services,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-HHS,U.S. Department of Health and Human Services,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-HHS,U.S. Department of Health and Human Services,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-HHS,U.S. Department of Health and Human Services,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-04-15
+FED-HHS,U.S. Department of Health and Human Services,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2025-04-15
+FED-HUD,U.S. Department of Housing and Urban Development,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-HUD,U.S. Department of Housing and Urban Development,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-HUD,U.S. Department of Housing and Urban Development,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-HUD,U.S. Department of Housing and Urban Development,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-HUD,U.S. Department of Housing and Urban Development,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-HUD,U.S. Department of Housing and Urban Development,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-HUD,U.S. Department of Housing and Urban Development,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-04-15
+FED-HUD,U.S. Department of Housing and Urban Development,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2025-04-15
+FED-NASA,National Aeronautics and Space Administration,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-NASA,National Aeronautics and Space Administration,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-NASA,National Aeronautics and Space Administration,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-NASA,National Aeronautics and Space Administration,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-NASA,National Aeronautics and Space Administration,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-NASA,National Aeronautics and Space Administration,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-NASA,National Aeronautics and Space Administration,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-04-15
+FED-NASA,National Aeronautics and Space Administration,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2025-04-15
+FED-NIST,National Institute of Standards and Technology,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-NIST,National Institute of Standards and Technology,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-NIST,National Institute of Standards and Technology,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-NIST,National Institute of Standards and Technology,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-NIST,National Institute of Standards and Technology,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-NIST,National Institute of Standards and Technology,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-NIST,National Institute of Standards and Technology,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-04-15
+FED-NIST,National Institute of Standards and Technology,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2025-04-15
+FED-NIST,National Institute of Standards and Technology,SYN-T015,Synthetic control SYN-STACK-DEFENSE 7,collection,2025-05-01
+FED-NRC,Nuclear Regulatory Commission,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-NRC,Nuclear Regulatory Commission,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-NRC,Nuclear Regulatory Commission,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-NRC,Nuclear Regulatory Commission,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-NRC,Nuclear Regulatory Commission,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-NRC,Nuclear Regulatory Commission,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-NRC,Nuclear Regulatory Commission,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-04-15
+FED-NRC,Nuclear Regulatory Commission,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2025-04-15
+FED-NSF,National Science Foundation,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-NSF,National Science Foundation,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-NSF,National Science Foundation,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-NSF,National Science Foundation,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-NSF,National Science Foundation,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-NSF,National Science Foundation,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-NSF,National Science Foundation,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-04-15
+FED-NSF,National Science Foundation,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2025-04-15
+FED-SEC,U.S. Securities and Exchange Commission,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-SEC,U.S. Securities and Exchange Commission,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-SEC,U.S. Securities and Exchange Commission,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-SEC,U.S. Securities and Exchange Commission,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-SEC,U.S. Securities and Exchange Commission,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-SEC,U.S. Securities and Exchange Commission,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-SEC,U.S. Securities and Exchange Commission,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-04-15
+FED-SEC,U.S. Securities and Exchange Commission,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2025-04-15
+FED-TREAS,U.S. Department of the Treasury,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-TREAS,U.S. Department of the Treasury,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-TREAS,U.S. Department of the Treasury,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-TREAS,U.S. Department of the Treasury,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-TREAS,U.S. Department of the Treasury,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-TREAS,U.S. Department of the Treasury,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-TREAS,U.S. Department of the Treasury,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-04-15
+FED-TREAS,U.S. Department of the Treasury,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2025-04-15
+FED-TREAS,U.S. Department of the Treasury,SYN-T015,Synthetic control SYN-STACK-DEFENSE 7,collection,2025-05-01
+FED-TSA,Transportation Security Administration,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-TSA,Transportation Security Administration,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-TSA,Transportation Security Administration,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-TSA,Transportation Security Administration,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-TSA,Transportation Security Administration,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-TSA,Transportation Security Administration,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-TSA,Transportation Security Administration,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-04-15
+FED-TSA,Transportation Security Administration,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2025-04-15
+FED-USCG,U.S. Coast Guard,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-USCG,U.S. Coast Guard,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-USCG,U.S. Coast Guard,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-USCG,U.S. Coast Guard,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-USCG,U.S. Coast Guard,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-USCG,U.S. Coast Guard,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-USCG,U.S. Coast Guard,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-04-15
+FED-USCG,U.S. Coast Guard,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2025-04-15
+FED-USDA,U.S. Department of Agriculture,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-USDA,U.S. Department of Agriculture,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-USDA,U.S. Department of Agriculture,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-USDA,U.S. Department of Agriculture,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-USDA,U.S. Department of Agriculture,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-USDA,U.S. Department of Agriculture,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-USDA,U.S. Department of Agriculture,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-04-15
+FED-USDA,U.S. Department of Agriculture,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2025-04-15
+FED-USSS,U.S. Secret Service,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-USSS,U.S. Secret Service,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-USSS,U.S. Secret Service,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-USSS,U.S. Secret Service,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-USSS,U.S. Secret Service,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-USSS,U.S. Secret Service,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-USSS,U.S. Secret Service,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-04-15
+FED-USSS,U.S. Secret Service,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2025-04-15
+FED-USSS,U.S. Secret Service,SYN-T015,Synthetic control SYN-STACK-DEFENSE 7,collection,2025-05-01
+FED-VA,U.S. Department of Veterans Affairs,SYN-T001,Synthetic control SYN-STACK-CIVIL 1,collection,2023-06-15
+FED-VA,U.S. Department of Veterans Affairs,SYN-T002,Synthetic control SYN-STACK-CIVIL 2,credential-access,2023-06-15
+FED-VA,U.S. Department of Veterans Affairs,SYN-T003,Synthetic control SYN-STACK-CIVIL 3,defense-evasion,2023-06-15
+FED-VA,U.S. Department of Veterans Affairs,SYN-T004,Synthetic control SYN-STACK-CIVIL 4,discovery,2023-06-15
+FED-VA,U.S. Department of Veterans Affairs,SYN-T005,Synthetic control SYN-STACK-CIVIL 5,lateral-movement,2023-06-15
+FED-VA,U.S. Department of Veterans Affairs,SYN-T006,Synthetic control SYN-STACK-CIVIL 6,command-and-control,2024-06-15
+FED-VA,U.S. Department of Veterans Affairs,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-04-15
+FED-VA,U.S. Department of Veterans Affairs,SYN-T008,Synthetic control SYN-STACK-CIVIL 8,credential-access,2025-04-15
+FED-DARPA,Defense Advanced Research Projects Agency,SYN-T009,Synthetic control SYN-STACK-DEFENSE 1,collection,2023-06-15
+FED-DARPA,Defense Advanced Research Projects Agency,SYN-T010,Synthetic control SYN-STACK-DEFENSE 2,credential-access,2023-06-15
+FED-DARPA,Defense Advanced Research Projects Agency,SYN-T011,Synthetic control SYN-STACK-DEFENSE 3,defense-evasion,2023-06-15
+FED-DARPA,Defense Advanced Research Projects Agency,SYN-T012,Synthetic control SYN-STACK-DEFENSE 4,discovery,2023-06-15
+FED-DARPA,Defense Advanced Research Projects Agency,SYN-T013,Synthetic control SYN-STACK-DEFENSE 5,lateral-movement,2023-06-15
+FED-DARPA,Defense Advanced Research Projects Agency,SYN-T014,Synthetic control SYN-STACK-DEFENSE 6,command-and-control,2024-06-15
+FED-DARPA,Defense Advanced Research Projects Agency,SYN-T015,Synthetic control SYN-STACK-DEFENSE 7,collection,2024-08-01
+FED-DARPA,Defense Advanced Research Projects Agency,SYN-T016,Synthetic control SYN-STACK-DEFENSE 8,credential-access,2024-08-01
+FED-DARPA,Defense Advanced Research Projects Agency,SYN-T023,Synthetic control SYN-STACK-LAB 7,collection,2025-05-01
+FED-DOD,U.S. Department of Defense,SYN-T009,Synthetic control SYN-STACK-DEFENSE 1,collection,2023-06-15
+FED-DOD,U.S. Department of Defense,SYN-T010,Synthetic control SYN-STACK-DEFENSE 2,credential-access,2023-06-15
+FED-DOD,U.S. Department of Defense,SYN-T011,Synthetic control SYN-STACK-DEFENSE 3,defense-evasion,2023-06-15
+FED-DOD,U.S. Department of Defense,SYN-T012,Synthetic control SYN-STACK-DEFENSE 4,discovery,2023-06-15
+FED-DOD,U.S. Department of Defense,SYN-T013,Synthetic control SYN-STACK-DEFENSE 5,lateral-movement,2023-06-15
+FED-DOD,U.S. Department of Defense,SYN-T014,Synthetic control SYN-STACK-DEFENSE 6,command-and-control,2024-06-15
+FED-DOD,U.S. Department of Defense,SYN-T015,Synthetic control SYN-STACK-DEFENSE 7,collection,2024-08-01
+FED-DOD,U.S. Department of Defense,SYN-T016,Synthetic control SYN-STACK-DEFENSE 8,credential-access,2024-08-01
+FED-FBI,Federal Bureau of Investigation,SYN-T009,Synthetic control SYN-STACK-DEFENSE 1,collection,2023-06-15
+FED-FBI,Federal Bureau of Investigation,SYN-T010,Synthetic control SYN-STACK-DEFENSE 2,credential-access,2023-06-15
+FED-FBI,Federal Bureau of Investigation,SYN-T011,Synthetic control SYN-STACK-DEFENSE 3,defense-evasion,2023-06-15
+FED-FBI,Federal Bureau of Investigation,SYN-T012,Synthetic control SYN-STACK-DEFENSE 4,discovery,2023-06-15
+FED-FBI,Federal Bureau of Investigation,SYN-T013,Synthetic control SYN-STACK-DEFENSE 5,lateral-movement,2023-06-15
+FED-FBI,Federal Bureau of Investigation,SYN-T014,Synthetic control SYN-STACK-DEFENSE 6,command-and-control,2024-06-15
+FED-FBI,Federal Bureau of Investigation,SYN-T015,Synthetic control SYN-STACK-DEFENSE 7,collection,2024-08-01
+FED-FBI,Federal Bureau of Investigation,SYN-T016,Synthetic control SYN-STACK-DEFENSE 8,credential-access,2024-08-01
+FED-IARPA,Intelligence Advanced Research Projects Activity,SYN-T009,Synthetic control SYN-STACK-DEFENSE 1,collection,2023-06-15
+FED-IARPA,Intelligence Advanced Research Projects Activity,SYN-T010,Synthetic control SYN-STACK-DEFENSE 2,credential-access,2023-06-15
+FED-IARPA,Intelligence Advanced Research Projects Activity,SYN-T011,Synthetic control SYN-STACK-DEFENSE 3,defense-evasion,2023-06-15
+FED-IARPA,Intelligence Advanced Research Projects Activity,SYN-T012,Synthetic control SYN-STACK-DEFENSE 4,discovery,2023-06-15
+FED-IARPA,Intelligence Advanced Research Projects Activity,SYN-T013,Synthetic control SYN-STACK-DEFENSE 5,lateral-movement,2023-06-15
+FED-IARPA,Intelligence Advanced Research Projects Activity,SYN-T014,Synthetic control SYN-STACK-DEFENSE 6,command-and-control,2024-06-15
+FED-IARPA,Intelligence Advanced Research Projects Activity,SYN-T015,Synthetic control SYN-STACK-DEFENSE 7,collection,2025-04-15
+FED-IARPA,Intelligence Advanced Research Projects Activity,SYN-T016,Synthetic control SYN-STACK-DEFENSE 8,credential-access,2025-04-15
+FED-NSA,National Security Agency,SYN-T009,Synthetic control SYN-STACK-DEFENSE 1,collection,2023-06-15
+FED-NSA,National Security Agency,SYN-T010,Synthetic control SYN-STACK-DEFENSE 2,credential-access,2023-06-15
+FED-NSA,National Security Agency,SYN-T011,Synthetic control SYN-STACK-DEFENSE 3,defense-evasion,2023-06-15
+FED-NSA,National Security Agency,SYN-T012,Synthetic control SYN-STACK-DEFENSE 4,discovery,2023-06-15
+FED-NSA,National Security Agency,SYN-T013,Synthetic control SYN-STACK-DEFENSE 5,lateral-movement,2023-06-15
+FED-NSA,National Security Agency,SYN-T014,Synthetic control SYN-STACK-DEFENSE 6,command-and-control,2024-06-15
+FED-NSA,National Security Agency,SYN-T015,Synthetic control SYN-STACK-DEFENSE 7,collection,2025-04-15
+FED-NSA,National Security Agency,SYN-T016,Synthetic control SYN-STACK-DEFENSE 8,credential-access,2025-04-15
+FED-NSA,National Security Agency,SYN-T023,Synthetic control SYN-STACK-LAB 7,collection,2025-05-01
+FED-ODNI,Office of the Director of National Intelligence,SYN-T009,Synthetic control SYN-STACK-DEFENSE 1,collection,2023-06-15
+FED-ODNI,Office of the Director of National Intelligence,SYN-T010,Synthetic control SYN-STACK-DEFENSE 2,credential-access,2023-06-15
+FED-ODNI,Office of the Director of National Intelligence,SYN-T011,Synthetic control SYN-STACK-DEFENSE 3,defense-evasion,2023-06-15
+FED-ODNI,Office of the Director of National Intelligence,SYN-T012,Synthetic control SYN-STACK-DEFENSE 4,discovery,2023-06-15
+FED-ODNI,Office of the Director of National Intelligence,SYN-T013,Synthetic control SYN-STACK-DEFENSE 5,lateral-movement,2023-06-15
+FED-ODNI,Office of the Director of National Intelligence,SYN-T014,Synthetic control SYN-STACK-DEFENSE 6,command-and-control,2024-06-15
+FED-ODNI,Office of the Director of National Intelligence,SYN-T015,Synthetic control SYN-STACK-DEFENSE 7,collection,2025-04-15
+FED-ODNI,Office of the Director of National Intelligence,SYN-T016,Synthetic control SYN-STACK-DEFENSE 8,credential-access,2025-04-15
+FED-USCYBERCOM,U.S. Cyber Command,SYN-T009,Synthetic control SYN-STACK-DEFENSE 1,collection,2023-06-15
+FED-USCYBERCOM,U.S. Cyber Command,SYN-T010,Synthetic control SYN-STACK-DEFENSE 2,credential-access,2023-06-15
+FED-USCYBERCOM,U.S. Cyber Command,SYN-T011,Synthetic control SYN-STACK-DEFENSE 3,defense-evasion,2023-06-15
+FED-USCYBERCOM,U.S. Cyber Command,SYN-T012,Synthetic control SYN-STACK-DEFENSE 4,discovery,2023-06-15
+FED-USCYBERCOM,U.S. Cyber Command,SYN-T013,Synthetic control SYN-STACK-DEFENSE 5,lateral-movement,2023-06-15
+FED-USCYBERCOM,U.S. Cyber Command,SYN-T014,Synthetic control SYN-STACK-DEFENSE 6,command-and-control,2024-06-15
+FED-USCYBERCOM,U.S. Cyber Command,SYN-T015,Synthetic control SYN-STACK-DEFENSE 7,collection,2025-04-15
+FED-USCYBERCOM,U.S. Cyber Command,SYN-T016,Synthetic control SYN-STACK-DEFENSE 8,credential-access,2025-04-15
+FEDLAB-AMES,Ames Laboratory,SYN-T017,Synthetic control SYN-STACK-LAB 1,collection,2023-06-15
+FEDLAB-AMES,Ames Laboratory,SYN-T018,Synthetic control SYN-STACK-LAB 2,credential-access,2023-06-15
+FEDLAB-AMES,Ames Laboratory,SYN-T019,Synthetic control SYN-STACK-LAB 3,defense-evasion,2023-06-15
+FEDLAB-AMES,Ames Laboratory,SYN-T020,Synthetic control SYN-STACK-LAB 4,discovery,2023-06-15
+FEDLAB-AMES,Ames Laboratory,SYN-T021,Synthetic control SYN-STACK-LAB 5,lateral-movement,2023-06-15
+FEDLAB-AMES,Ames Laboratory,SYN-T022,Synthetic control SYN-STACK-LAB 6,command-and-control,2024-06-15
+FEDLAB-AMES,Ames Laboratory,SYN-T023,Synthetic control SYN-STACK-LAB 7,collection,2024-08-01
+FEDLAB-AMES,Ames Laboratory,SYN-T024,Synthetic control SYN-STACK-LAB 8,credential-access,2024-08-01
+FEDLAB-AMES,Ames Laboratory,SYN-T031,Synthetic control SYN-STACK-IBM 7,collection,2025-05-01
+FEDLAB-ANL,Argonne National Laboratory,SYN-T017,Synthetic control SYN-STACK-LAB 1,collection,2023-06-15
+FEDLAB-ANL,Argonne National Laboratory,SYN-T018,Synthetic control SYN-STACK-LAB 2,credential-access,2023-06-15
+FEDLAB-ANL,Argonne National Laboratory,SYN-T019,Synthetic control SYN-STACK-LAB 3,defense-evasion,2023-06-15
+FEDLAB-ANL,Argonne National Laboratory,SYN-T020,Synthetic control SYN-STACK-LAB 4,discovery,2023-06-15
+FEDLAB-ANL,Argonne National Laboratory,SYN-T021,Synthetic control SYN-STACK-LAB 5,lateral-movement,2023-06-15
+FEDLAB-ANL,Argonne National Laboratory,SYN-T022,Synthetic control SYN-STACK-LAB 6,command-and-control,2024-06-15
+FEDLAB-ANL,Argonne National Laboratory,SYN-T023,Synthetic control SYN-STACK-LAB 7,collection,2024-08-01
+FEDLAB-ANL,Argonne National Laboratory,SYN-T024,Synthetic control SYN-STACK-LAB 8,credential-access,2024-08-01
+FEDLAB-BNL,Brookhaven National Laboratory,SYN-T017,Synthetic control SYN-STACK-LAB 1,collection,2023-06-15
+FEDLAB-BNL,Brookhaven National Laboratory,SYN-T018,Synthetic control SYN-STACK-LAB 2,credential-access,2023-06-15
+FEDLAB-BNL,Brookhaven National Laboratory,SYN-T019,Synthetic control SYN-STACK-LAB 3,defense-evasion,2023-06-15
+FEDLAB-BNL,Brookhaven National Laboratory,SYN-T020,Synthetic control SYN-STACK-LAB 4,discovery,2023-06-15
+FEDLAB-BNL,Brookhaven National Laboratory,SYN-T021,Synthetic control SYN-STACK-LAB 5,lateral-movement,2023-06-15
+FEDLAB-BNL,Brookhaven National Laboratory,SYN-T022,Synthetic control SYN-STACK-LAB 6,command-and-control,2024-06-15
+FEDLAB-BNL,Brookhaven National Laboratory,SYN-T023,Synthetic control SYN-STACK-LAB 7,collection,2024-08-01
+FEDLAB-BNL,Brookhaven National Laboratory,SYN-T024,Synthetic control SYN-STACK-LAB 8,credential-access,2024-08-01
+FEDLAB-FNAL,Fermi National Accelerator Laboratory,SYN-T017,Synthetic control SYN-STACK-LAB 1,collection,2023-06-15
+FEDLAB-FNAL,Fermi National Accelerator Laboratory,SYN-T018,Synthetic control SYN-STACK-LAB 2,credential-access,2023-06-15
+FEDLAB-FNAL,Fermi National Accelerator Laboratory,SYN-T019,Synthetic control SYN-STACK-LAB 3,defense-evasion,2023-06-15
+FEDLAB-FNAL,Fermi National Accelerator Laboratory,SYN-T020,Synthetic control SYN-STACK-LAB 4,discovery,2023-06-15
+FEDLAB-FNAL,Fermi National Accelerator Laboratory,SYN-T021,Synthetic control SYN-STACK-LAB 5,lateral-movement,2023-06-15
+FEDLAB-FNAL,Fermi National Accelerator Laboratory,SYN-T022,Synthetic control SYN-STACK-LAB 6,command-and-control,2024-06-15
+FEDLAB-FNAL,Fermi National Accelerator Laboratory,SYN-T023,Synthetic control SYN-STACK-LAB 7,collection,2024-08-01
+FEDLAB-FNAL,Fermi National Accelerator Laboratory,SYN-T024,Synthetic control SYN-STACK-LAB 8,credential-access,2024-08-01
+FEDLAB-INL,Idaho National Laboratory,SYN-T017,Synthetic control SYN-STACK-LAB 1,collection,2023-06-15
+FEDLAB-INL,Idaho National Laboratory,SYN-T018,Synthetic control SYN-STACK-LAB 2,credential-access,2023-06-15
+FEDLAB-INL,Idaho National Laboratory,SYN-T019,Synthetic control SYN-STACK-LAB 3,defense-evasion,2023-06-15
+FEDLAB-INL,Idaho National Laboratory,SYN-T020,Synthetic control SYN-STACK-LAB 4,discovery,2023-06-15
+FEDLAB-INL,Idaho National Laboratory,SYN-T021,Synthetic control SYN-STACK-LAB 5,lateral-movement,2023-06-15
+FEDLAB-INL,Idaho National Laboratory,SYN-T022,Synthetic control SYN-STACK-LAB 6,command-and-control,2024-06-15
+FEDLAB-INL,Idaho National Laboratory,SYN-T023,Synthetic control SYN-STACK-LAB 7,collection,2024-08-01
+FEDLAB-INL,Idaho National Laboratory,SYN-T024,Synthetic control SYN-STACK-LAB 8,credential-access,2024-08-01
+FEDLAB-INL,Idaho National Laboratory,SYN-T031,Synthetic control SYN-STACK-IBM 7,collection,2025-05-01
+FEDLAB-JLAB,Thomas Jefferson National Accelerator Facility,SYN-T017,Synthetic control SYN-STACK-LAB 1,collection,2023-06-15
+FEDLAB-JLAB,Thomas Jefferson National Accelerator Facility,SYN-T018,Synthetic control SYN-STACK-LAB 2,credential-access,2023-06-15
+FEDLAB-JLAB,Thomas Jefferson National Accelerator Facility,SYN-T019,Synthetic control SYN-STACK-LAB 3,defense-evasion,2023-06-15
+FEDLAB-JLAB,Thomas Jefferson National Accelerator Facility,SYN-T020,Synthetic control SYN-STACK-LAB 4,discovery,2023-06-15
+FEDLAB-JLAB,Thomas Jefferson National Accelerator Facility,SYN-T021,Synthetic control SYN-STACK-LAB 5,lateral-movement,2023-06-15
+FEDLAB-JLAB,Thomas Jefferson National Accelerator Facility,SYN-T022,Synthetic control SYN-STACK-LAB 6,command-and-control,2024-06-15
+FEDLAB-JLAB,Thomas Jefferson National Accelerator Facility,SYN-T023,Synthetic control SYN-STACK-LAB 7,collection,2024-08-01
+FEDLAB-JLAB,Thomas Jefferson National Accelerator Facility,SYN-T024,Synthetic control SYN-STACK-LAB 8,credential-access,2024-08-01
+FEDLAB-LANL,Los Alamos National Laboratory,SYN-T017,Synthetic control SYN-STACK-LAB 1,collection,2023-06-15
+FEDLAB-LANL,Los Alamos National Laboratory,SYN-T018,Synthetic control SYN-STACK-LAB 2,credential-access,2023-06-15
+FEDLAB-LANL,Los Alamos National Laboratory,SYN-T019,Synthetic control SYN-STACK-LAB 3,defense-evasion,2023-06-15
+FEDLAB-LANL,Los Alamos National Laboratory,SYN-T020,Synthetic control SYN-STACK-LAB 4,discovery,2023-06-15
+FEDLAB-LANL,Los Alamos National Laboratory,SYN-T021,Synthetic control SYN-STACK-LAB 5,lateral-movement,2023-06-15
+FEDLAB-LANL,Los Alamos National Laboratory,SYN-T022,Synthetic control SYN-STACK-LAB 6,command-and-control,2024-06-15
+FEDLAB-LANL,Los Alamos National Laboratory,SYN-T023,Synthetic control SYN-STACK-LAB 7,collection,2024-08-01
+FEDLAB-LANL,Los Alamos National Laboratory,SYN-T024,Synthetic control SYN-STACK-LAB 8,credential-access,2024-08-01
+FEDLAB-LBNL,Lawrence Berkeley National Laboratory,SYN-T017,Synthetic control SYN-STACK-LAB 1,collection,2023-06-15
+FEDLAB-LBNL,Lawrence Berkeley National Laboratory,SYN-T018,Synthetic control SYN-STACK-LAB 2,credential-access,2023-06-15
+FEDLAB-LBNL,Lawrence Berkeley National Laboratory,SYN-T019,Synthetic control SYN-STACK-LAB 3,defense-evasion,2023-06-15
+FEDLAB-LBNL,Lawrence Berkeley National Laboratory,SYN-T020,Synthetic control SYN-STACK-LAB 4,discovery,2023-06-15
+FEDLAB-LBNL,Lawrence Berkeley National Laboratory,SYN-T021,Synthetic control SYN-STACK-LAB 5,lateral-movement,2023-06-15
+FEDLAB-LBNL,Lawrence Berkeley National Laboratory,SYN-T022,Synthetic control SYN-STACK-LAB 6,command-and-control,2024-06-15
+FEDLAB-LBNL,Lawrence Berkeley National Laboratory,SYN-T023,Synthetic control SYN-STACK-LAB 7,collection,2024-08-01
+FEDLAB-LBNL,Lawrence Berkeley National Laboratory,SYN-T024,Synthetic control SYN-STACK-LAB 8,credential-access,2024-08-01
+FEDLAB-LLNL,Lawrence Livermore National Laboratory,SYN-T017,Synthetic control SYN-STACK-LAB 1,collection,2023-06-15
+FEDLAB-LLNL,Lawrence Livermore National Laboratory,SYN-T018,Synthetic control SYN-STACK-LAB 2,credential-access,2023-06-15
+FEDLAB-LLNL,Lawrence Livermore National Laboratory,SYN-T019,Synthetic control SYN-STACK-LAB 3,defense-evasion,2023-06-15
+FEDLAB-LLNL,Lawrence Livermore National Laboratory,SYN-T020,Synthetic control SYN-STACK-LAB 4,discovery,2023-06-15
+FEDLAB-LLNL,Lawrence Livermore National Laboratory,SYN-T021,Synthetic control SYN-STACK-LAB 5,lateral-movement,2023-06-15
+FEDLAB-LLNL,Lawrence Livermore National Laboratory,SYN-T022,Synthetic control SYN-STACK-LAB 6,command-and-control,2024-06-15
+FEDLAB-LLNL,Lawrence Livermore National Laboratory,SYN-T023,Synthetic control SYN-STACK-LAB 7,collection,2025-04-15
+FEDLAB-LLNL,Lawrence Livermore National Laboratory,SYN-T024,Synthetic control SYN-STACK-LAB 8,credential-access,2025-04-15
+FEDLAB-LLNL,Lawrence Livermore National Laboratory,SYN-T031,Synthetic control SYN-STACK-IBM 7,collection,2025-05-01
+FEDLAB-NETL,National Energy Technology Laboratory,SYN-T017,Synthetic control SYN-STACK-LAB 1,collection,2023-06-15
+FEDLAB-NETL,National Energy Technology Laboratory,SYN-T018,Synthetic control SYN-STACK-LAB 2,credential-access,2023-06-15
+FEDLAB-NETL,National Energy Technology Laboratory,SYN-T019,Synthetic control SYN-STACK-LAB 3,defense-evasion,2023-06-15
+FEDLAB-NETL,National Energy Technology Laboratory,SYN-T020,Synthetic control SYN-STACK-LAB 4,discovery,2023-06-15
+FEDLAB-NETL,National Energy Technology Laboratory,SYN-T021,Synthetic control SYN-STACK-LAB 5,lateral-movement,2023-06-15
+FEDLAB-NETL,National Energy Technology Laboratory,SYN-T022,Synthetic control SYN-STACK-LAB 6,command-and-control,2024-06-15
+FEDLAB-NETL,National Energy Technology Laboratory,SYN-T023,Synthetic control SYN-STACK-LAB 7,collection,2025-04-15
+FEDLAB-NETL,National Energy Technology Laboratory,SYN-T024,Synthetic control SYN-STACK-LAB 8,credential-access,2025-04-15
+FEDLAB-NREL,National Renewable Energy Laboratory,SYN-T017,Synthetic control SYN-STACK-LAB 1,collection,2023-06-15
+FEDLAB-NREL,National Renewable Energy Laboratory,SYN-T018,Synthetic control SYN-STACK-LAB 2,credential-access,2023-06-15
+FEDLAB-NREL,National Renewable Energy Laboratory,SYN-T019,Synthetic control SYN-STACK-LAB 3,defense-evasion,2023-06-15
+FEDLAB-NREL,National Renewable Energy Laboratory,SYN-T020,Synthetic control SYN-STACK-LAB 4,discovery,2023-06-15
+FEDLAB-NREL,National Renewable Energy Laboratory,SYN-T021,Synthetic control SYN-STACK-LAB 5,lateral-movement,2023-06-15
+FEDLAB-NREL,National Renewable Energy Laboratory,SYN-T022,Synthetic control SYN-STACK-LAB 6,command-and-control,2024-06-15
+FEDLAB-NREL,National Renewable Energy Laboratory,SYN-T023,Synthetic control SYN-STACK-LAB 7,collection,2025-04-15
+FEDLAB-NREL,National Renewable Energy Laboratory,SYN-T024,Synthetic control SYN-STACK-LAB 8,credential-access,2025-04-15
+FEDLAB-ORNL,Oak Ridge National Laboratory,SYN-T017,Synthetic control SYN-STACK-LAB 1,collection,2023-06-15
+FEDLAB-ORNL,Oak Ridge National Laboratory,SYN-T018,Synthetic control SYN-STACK-LAB 2,credential-access,2023-06-15
+FEDLAB-ORNL,Oak Ridge National Laboratory,SYN-T019,Synthetic control SYN-STACK-LAB 3,defense-evasion,2023-06-15
+FEDLAB-ORNL,Oak Ridge National Laboratory,SYN-T020,Synthetic control SYN-STACK-LAB 4,discovery,2023-06-15
+FEDLAB-ORNL,Oak Ridge National Laboratory,SYN-T021,Synthetic control SYN-STACK-LAB 5,lateral-movement,2023-06-15
+FEDLAB-ORNL,Oak Ridge National Laboratory,SYN-T022,Synthetic control SYN-STACK-LAB 6,command-and-control,2024-06-15
+FEDLAB-ORNL,Oak Ridge National Laboratory,SYN-T023,Synthetic control SYN-STACK-LAB 7,collection,2025-04-15
+FEDLAB-ORNL,Oak Ridge National Laboratory,SYN-T024,Synthetic control SYN-STACK-LAB 8,credential-access,2025-04-15
+FEDLAB-PNNL,Pacific Northwest National Laboratory,SYN-T017,Synthetic control SYN-STACK-LAB 1,collection,2023-06-15
+FEDLAB-PNNL,Pacific Northwest National Laboratory,SYN-T018,Synthetic control SYN-STACK-LAB 2,credential-access,2023-06-15
+FEDLAB-PNNL,Pacific Northwest National Laboratory,SYN-T019,Synthetic control SYN-STACK-LAB 3,defense-evasion,2023-06-15
+FEDLAB-PNNL,Pacific Northwest National Laboratory,SYN-T020,Synthetic control SYN-STACK-LAB 4,discovery,2023-06-15
+FEDLAB-PNNL,Pacific Northwest National Laboratory,SYN-T021,Synthetic control SYN-STACK-LAB 5,lateral-movement,2023-06-15
+FEDLAB-PNNL,Pacific Northwest National Laboratory,SYN-T022,Synthetic control SYN-STACK-LAB 6,command-and-control,2024-06-15
+FEDLAB-PNNL,Pacific Northwest National Laboratory,SYN-T023,Synthetic control SYN-STACK-LAB 7,collection,2025-04-15
+FEDLAB-PNNL,Pacific Northwest National Laboratory,SYN-T024,Synthetic control SYN-STACK-LAB 8,credential-access,2025-04-15
+FEDLAB-PNNL,Pacific Northwest National Laboratory,SYN-T031,Synthetic control SYN-STACK-IBM 7,collection,2025-05-01
+FEDLAB-PPPL,Princeton Plasma Physics Laboratory,SYN-T017,Synthetic control SYN-STACK-LAB 1,collection,2023-06-15
+FEDLAB-PPPL,Princeton Plasma Physics Laboratory,SYN-T018,Synthetic control SYN-STACK-LAB 2,credential-access,2023-06-15
+FEDLAB-PPPL,Princeton Plasma Physics Laboratory,SYN-T019,Synthetic control SYN-STACK-LAB 3,defense-evasion,2023-06-15
+FEDLAB-PPPL,Princeton Plasma Physics Laboratory,SYN-T020,Synthetic control SYN-STACK-LAB 4,discovery,2023-06-15
+FEDLAB-PPPL,Princeton Plasma Physics Laboratory,SYN-T021,Synthetic control SYN-STACK-LAB 5,lateral-movement,2023-06-15
+FEDLAB-PPPL,Princeton Plasma Physics Laboratory,SYN-T022,Synthetic control SYN-STACK-LAB 6,command-and-control,2024-06-15
+FEDLAB-PPPL,Princeton Plasma Physics Laboratory,SYN-T023,Synthetic control SYN-STACK-LAB 7,collection,2025-04-15
+FEDLAB-PPPL,Princeton Plasma Physics Laboratory,SYN-T024,Synthetic control SYN-STACK-LAB 8,credential-access,2025-04-15
+FEDLAB-SLAC,SLAC National Accelerator Laboratory,SYN-T017,Synthetic control SYN-STACK-LAB 1,collection,2023-06-15
+FEDLAB-SLAC,SLAC National Accelerator Laboratory,SYN-T018,Synthetic control SYN-STACK-LAB 2,credential-access,2023-06-15
+FEDLAB-SLAC,SLAC National Accelerator Laboratory,SYN-T019,Synthetic control SYN-STACK-LAB 3,defense-evasion,2023-06-15
+FEDLAB-SLAC,SLAC National Accelerator Laboratory,SYN-T020,Synthetic control SYN-STACK-LAB 4,discovery,2023-06-15
+FEDLAB-SLAC,SLAC National Accelerator Laboratory,SYN-T021,Synthetic control SYN-STACK-LAB 5,lateral-movement,2023-06-15
+FEDLAB-SLAC,SLAC National Accelerator Laboratory,SYN-T022,Synthetic control SYN-STACK-LAB 6,command-and-control,2024-06-15
+FEDLAB-SLAC,SLAC National Accelerator Laboratory,SYN-T023,Synthetic control SYN-STACK-LAB 7,collection,2025-04-15
+FEDLAB-SLAC,SLAC National Accelerator Laboratory,SYN-T024,Synthetic control SYN-STACK-LAB 8,credential-access,2025-04-15
+FEDLAB-SNL,Sandia National Laboratories,SYN-T017,Synthetic control SYN-STACK-LAB 1,collection,2023-06-15
+FEDLAB-SNL,Sandia National Laboratories,SYN-T018,Synthetic control SYN-STACK-LAB 2,credential-access,2023-06-15
+FEDLAB-SNL,Sandia National Laboratories,SYN-T019,Synthetic control SYN-STACK-LAB 3,defense-evasion,2023-06-15
+FEDLAB-SNL,Sandia National Laboratories,SYN-T020,Synthetic control SYN-STACK-LAB 4,discovery,2023-06-15
+FEDLAB-SNL,Sandia National Laboratories,SYN-T021,Synthetic control SYN-STACK-LAB 5,lateral-movement,2023-06-15
+FEDLAB-SNL,Sandia National Laboratories,SYN-T022,Synthetic control SYN-STACK-LAB 6,command-and-control,2024-06-15
+FEDLAB-SNL,Sandia National Laboratories,SYN-T023,Synthetic control SYN-STACK-LAB 7,collection,2025-04-15
+FEDLAB-SNL,Sandia National Laboratories,SYN-T024,Synthetic control SYN-STACK-LAB 8,credential-access,2025-04-15
+FEDLAB-SRNL,Savannah River National Laboratory,SYN-T017,Synthetic control SYN-STACK-LAB 1,collection,2023-06-15
+FEDLAB-SRNL,Savannah River National Laboratory,SYN-T018,Synthetic control SYN-STACK-LAB 2,credential-access,2023-06-15
+FEDLAB-SRNL,Savannah River National Laboratory,SYN-T019,Synthetic control SYN-STACK-LAB 3,defense-evasion,2023-06-15
+FEDLAB-SRNL,Savannah River National Laboratory,SYN-T020,Synthetic control SYN-STACK-LAB 4,discovery,2023-06-15
+FEDLAB-SRNL,Savannah River National Laboratory,SYN-T021,Synthetic control SYN-STACK-LAB 5,lateral-movement,2023-06-15
+FEDLAB-SRNL,Savannah River National Laboratory,SYN-T022,Synthetic control SYN-STACK-LAB 6,command-and-control,2024-06-15
+FEDLAB-SRNL,Savannah River National Laboratory,SYN-T023,Synthetic control SYN-STACK-LAB 7,collection,2025-04-15
+FEDLAB-SRNL,Savannah River National Laboratory,SYN-T024,Synthetic control SYN-STACK-LAB 8,credential-access,2025-04-15
+FEDLAB-SRNL,Savannah River National Laboratory,SYN-T031,Synthetic control SYN-STACK-IBM 7,collection,2025-05-01
+RES-CMU-SEI,Carnegie Mellon Software Engineering Institute,SYN-T017,Synthetic control SYN-STACK-LAB 1,collection,2023-06-15
+RES-CMU-SEI,Carnegie Mellon Software Engineering Institute,SYN-T018,Synthetic control SYN-STACK-LAB 2,credential-access,2023-06-15
+RES-CMU-SEI,Carnegie Mellon Software Engineering Institute,SYN-T019,Synthetic control SYN-STACK-LAB 3,defense-evasion,2023-06-15
+RES-CMU-SEI,Carnegie Mellon Software Engineering Institute,SYN-T020,Synthetic control SYN-STACK-LAB 4,discovery,2023-06-15
+RES-CMU-SEI,Carnegie Mellon Software Engineering Institute,SYN-T021,Synthetic control SYN-STACK-LAB 5,lateral-movement,2023-06-15
+RES-CMU-SEI,Carnegie Mellon Software Engineering Institute,SYN-T022,Synthetic control SYN-STACK-LAB 6,command-and-control,2024-06-15
+RES-CMU-SEI,Carnegie Mellon Software Engineering Institute,SYN-T023,Synthetic control SYN-STACK-LAB 7,collection,2025-04-15
+RES-CMU-SEI,Carnegie Mellon Software Engineering Institute,SYN-T024,Synthetic control SYN-STACK-LAB 8,credential-access,2025-04-15
+RES-JHU-APL,Johns Hopkins University Applied Physics Laboratory,SYN-T017,Synthetic control SYN-STACK-LAB 1,collection,2023-06-15
+RES-JHU-APL,Johns Hopkins University Applied Physics Laboratory,SYN-T018,Synthetic control SYN-STACK-LAB 2,credential-access,2023-06-15
+RES-JHU-APL,Johns Hopkins University Applied Physics Laboratory,SYN-T019,Synthetic control SYN-STACK-LAB 3,defense-evasion,2023-06-15
+RES-JHU-APL,Johns Hopkins University Applied Physics Laboratory,SYN-T020,Synthetic control SYN-STACK-LAB 4,discovery,2023-06-15
+RES-JHU-APL,Johns Hopkins University Applied Physics Laboratory,SYN-T021,Synthetic control SYN-STACK-LAB 5,lateral-movement,2023-06-15
+RES-JHU-APL,Johns Hopkins University Applied Physics Laboratory,SYN-T022,Synthetic control SYN-STACK-LAB 6,command-and-control,2024-06-15
+RES-JHU-APL,Johns Hopkins University Applied Physics Laboratory,SYN-T023,Synthetic control SYN-STACK-LAB 7,collection,2025-04-15
+RES-JHU-APL,Johns Hopkins University Applied Physics Laboratory,SYN-T024,Synthetic control SYN-STACK-LAB 8,credential-access,2025-04-15
+RES-MIT-LL,MIT Lincoln Laboratory,SYN-T017,Synthetic control SYN-STACK-LAB 1,collection,2023-06-15
+RES-MIT-LL,MIT Lincoln Laboratory,SYN-T018,Synthetic control SYN-STACK-LAB 2,credential-access,2023-06-15
+RES-MIT-LL,MIT Lincoln Laboratory,SYN-T019,Synthetic control SYN-STACK-LAB 3,defense-evasion,2023-06-15
+RES-MIT-LL,MIT Lincoln Laboratory,SYN-T020,Synthetic control SYN-STACK-LAB 4,discovery,2023-06-15
+RES-MIT-LL,MIT Lincoln Laboratory,SYN-T021,Synthetic control SYN-STACK-LAB 5,lateral-movement,2023-06-15
+RES-MIT-LL,MIT Lincoln Laboratory,SYN-T022,Synthetic control SYN-STACK-LAB 6,command-and-control,2024-06-15
+RES-MIT-LL,MIT Lincoln Laboratory,SYN-T023,Synthetic control SYN-STACK-LAB 7,collection,2025-04-15
+RES-MIT-LL,MIT Lincoln Laboratory,SYN-T024,Synthetic control SYN-STACK-LAB 8,credential-access,2025-04-15
+IBM-ALMADEN,IBM Research Almaden,SYN-T025,Synthetic control SYN-STACK-IBM 1,collection,2023-06-15
+IBM-ALMADEN,IBM Research Almaden,SYN-T026,Synthetic control SYN-STACK-IBM 2,credential-access,2023-06-15
+IBM-ALMADEN,IBM Research Almaden,SYN-T027,Synthetic control SYN-STACK-IBM 3,defense-evasion,2023-06-15
+IBM-ALMADEN,IBM Research Almaden,SYN-T028,Synthetic control SYN-STACK-IBM 4,discovery,2023-06-15
+IBM-ALMADEN,IBM Research Almaden,SYN-T029,Synthetic control SYN-STACK-IBM 5,lateral-movement,2023-06-15
+IBM-ALMADEN,IBM Research Almaden,SYN-T030,Synthetic control SYN-STACK-IBM 6,command-and-control,2024-06-15
+IBM-ALMADEN,IBM Research Almaden,SYN-T031,Synthetic control SYN-STACK-IBM 7,collection,2024-08-01
+IBM-ALMADEN,IBM Research Almaden,SYN-T032,Synthetic control SYN-STACK-IBM 8,credential-access,2024-08-01
+IBM-ALMADEN,IBM Research Almaden,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-05-01
+IBM-FEDERAL,IBM Federal,SYN-T025,Synthetic control SYN-STACK-IBM 1,collection,2023-06-15
+IBM-FEDERAL,IBM Federal,SYN-T026,Synthetic control SYN-STACK-IBM 2,credential-access,2023-06-15
+IBM-FEDERAL,IBM Federal,SYN-T027,Synthetic control SYN-STACK-IBM 3,defense-evasion,2023-06-15
+IBM-FEDERAL,IBM Federal,SYN-T028,Synthetic control SYN-STACK-IBM 4,discovery,2023-06-15
+IBM-FEDERAL,IBM Federal,SYN-T029,Synthetic control SYN-STACK-IBM 5,lateral-movement,2023-06-15
+IBM-FEDERAL,IBM Federal,SYN-T030,Synthetic control SYN-STACK-IBM 6,command-and-control,2024-06-15
+IBM-FEDERAL,IBM Federal,SYN-T031,Synthetic control SYN-STACK-IBM 7,collection,2024-08-01
+IBM-FEDERAL,IBM Federal,SYN-T032,Synthetic control SYN-STACK-IBM 8,credential-access,2024-08-01
+IBM-HAIFA,IBM Research Haifa,SYN-T025,Synthetic control SYN-STACK-IBM 1,collection,2023-06-15
+IBM-HAIFA,IBM Research Haifa,SYN-T026,Synthetic control SYN-STACK-IBM 2,credential-access,2023-06-15
+IBM-HAIFA,IBM Research Haifa,SYN-T027,Synthetic control SYN-STACK-IBM 3,defense-evasion,2023-06-15
+IBM-HAIFA,IBM Research Haifa,SYN-T028,Synthetic control SYN-STACK-IBM 4,discovery,2023-06-15
+IBM-HAIFA,IBM Research Haifa,SYN-T029,Synthetic control SYN-STACK-IBM 5,lateral-movement,2023-06-15
+IBM-HAIFA,IBM Research Haifa,SYN-T030,Synthetic control SYN-STACK-IBM 6,command-and-control,2024-06-15
+IBM-HAIFA,IBM Research Haifa,SYN-T031,Synthetic control SYN-STACK-IBM 7,collection,2024-08-01
+IBM-HAIFA,IBM Research Haifa,SYN-T032,Synthetic control SYN-STACK-IBM 8,credential-access,2024-08-01
+IBM-INDIA,IBM Research India,SYN-T025,Synthetic control SYN-STACK-IBM 1,collection,2023-06-15
+IBM-INDIA,IBM Research India,SYN-T026,Synthetic control SYN-STACK-IBM 2,credential-access,2023-06-15
+IBM-INDIA,IBM Research India,SYN-T027,Synthetic control SYN-STACK-IBM 3,defense-evasion,2023-06-15
+IBM-INDIA,IBM Research India,SYN-T028,Synthetic control SYN-STACK-IBM 4,discovery,2023-06-15
+IBM-INDIA,IBM Research India,SYN-T029,Synthetic control SYN-STACK-IBM 5,lateral-movement,2023-06-15
+IBM-INDIA,IBM Research India,SYN-T030,Synthetic control SYN-STACK-IBM 6,command-and-control,2024-06-15
+IBM-INDIA,IBM Research India,SYN-T031,Synthetic control SYN-STACK-IBM 7,collection,2024-08-01
+IBM-INDIA,IBM Research India,SYN-T032,Synthetic control SYN-STACK-IBM 8,credential-access,2024-08-01
+IBM-QUANTUM,IBM Quantum,SYN-T025,Synthetic control SYN-STACK-IBM 1,collection,2023-06-15
+IBM-QUANTUM,IBM Quantum,SYN-T026,Synthetic control SYN-STACK-IBM 2,credential-access,2023-06-15
+IBM-QUANTUM,IBM Quantum,SYN-T027,Synthetic control SYN-STACK-IBM 3,defense-evasion,2023-06-15
+IBM-QUANTUM,IBM Quantum,SYN-T028,Synthetic control SYN-STACK-IBM 4,discovery,2023-06-15
+IBM-QUANTUM,IBM Quantum,SYN-T029,Synthetic control SYN-STACK-IBM 5,lateral-movement,2023-06-15
+IBM-QUANTUM,IBM Quantum,SYN-T030,Synthetic control SYN-STACK-IBM 6,command-and-control,2024-06-15
+IBM-QUANTUM,IBM Quantum,SYN-T031,Synthetic control SYN-STACK-IBM 7,collection,2025-04-15
+IBM-QUANTUM,IBM Quantum,SYN-T032,Synthetic control SYN-STACK-IBM 8,credential-access,2025-04-15
+IBM-QUANTUM,IBM Quantum,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-05-01
+IBM-SECURITY,IBM Security,SYN-T025,Synthetic control SYN-STACK-IBM 1,collection,2023-06-15
+IBM-SECURITY,IBM Security,SYN-T026,Synthetic control SYN-STACK-IBM 2,credential-access,2023-06-15
+IBM-SECURITY,IBM Security,SYN-T027,Synthetic control SYN-STACK-IBM 3,defense-evasion,2023-06-15
+IBM-SECURITY,IBM Security,SYN-T028,Synthetic control SYN-STACK-IBM 4,discovery,2023-06-15
+IBM-SECURITY,IBM Security,SYN-T029,Synthetic control SYN-STACK-IBM 5,lateral-movement,2023-06-15
+IBM-SECURITY,IBM Security,SYN-T030,Synthetic control SYN-STACK-IBM 6,command-and-control,2024-06-15
+IBM-SECURITY,IBM Security,SYN-T031,Synthetic control SYN-STACK-IBM 7,collection,2025-04-15
+IBM-SECURITY,IBM Security,SYN-T032,Synthetic control SYN-STACK-IBM 8,credential-access,2025-04-15
+IBM-TOKYO,IBM Research Tokyo,SYN-T025,Synthetic control SYN-STACK-IBM 1,collection,2023-06-15
+IBM-TOKYO,IBM Research Tokyo,SYN-T026,Synthetic control SYN-STACK-IBM 2,credential-access,2023-06-15
+IBM-TOKYO,IBM Research Tokyo,SYN-T027,Synthetic control SYN-STACK-IBM 3,defense-evasion,2023-06-15
+IBM-TOKYO,IBM Research Tokyo,SYN-T028,Synthetic control SYN-STACK-IBM 4,discovery,2023-06-15
+IBM-TOKYO,IBM Research Tokyo,SYN-T029,Synthetic control SYN-STACK-IBM 5,lateral-movement,2023-06-15
+IBM-TOKYO,IBM Research Tokyo,SYN-T030,Synthetic control SYN-STACK-IBM 6,command-and-control,2024-06-15
+IBM-TOKYO,IBM Research Tokyo,SYN-T031,Synthetic control SYN-STACK-IBM 7,collection,2025-04-15
+IBM-TOKYO,IBM Research Tokyo,SYN-T032,Synthetic control SYN-STACK-IBM 8,credential-access,2025-04-15
+IBM-XFORCE,IBM X-Force,SYN-T025,Synthetic control SYN-STACK-IBM 1,collection,2023-06-15
+IBM-XFORCE,IBM X-Force,SYN-T026,Synthetic control SYN-STACK-IBM 2,credential-access,2023-06-15
+IBM-XFORCE,IBM X-Force,SYN-T027,Synthetic control SYN-STACK-IBM 3,defense-evasion,2023-06-15
+IBM-XFORCE,IBM X-Force,SYN-T028,Synthetic control SYN-STACK-IBM 4,discovery,2023-06-15
+IBM-XFORCE,IBM X-Force,SYN-T029,Synthetic control SYN-STACK-IBM 5,lateral-movement,2023-06-15
+IBM-XFORCE,IBM X-Force,SYN-T030,Synthetic control SYN-STACK-IBM 6,command-and-control,2024-06-15
+IBM-XFORCE,IBM X-Force,SYN-T031,Synthetic control SYN-STACK-IBM 7,collection,2025-04-15
+IBM-XFORCE,IBM X-Force,SYN-T032,Synthetic control SYN-STACK-IBM 8,credential-access,2025-04-15
+IBM-YORKTOWN,IBM Research — Thomas J. Watson Research Center,SYN-T025,Synthetic control SYN-STACK-IBM 1,collection,2023-06-15
+IBM-YORKTOWN,IBM Research — Thomas J. Watson Research Center,SYN-T026,Synthetic control SYN-STACK-IBM 2,credential-access,2023-06-15
+IBM-YORKTOWN,IBM Research — Thomas J. Watson Research Center,SYN-T027,Synthetic control SYN-STACK-IBM 3,defense-evasion,2023-06-15
+IBM-YORKTOWN,IBM Research — Thomas J. Watson Research Center,SYN-T028,Synthetic control SYN-STACK-IBM 4,discovery,2023-06-15
+IBM-YORKTOWN,IBM Research — Thomas J. Watson Research Center,SYN-T029,Synthetic control SYN-STACK-IBM 5,lateral-movement,2023-06-15
+IBM-YORKTOWN,IBM Research — Thomas J. Watson Research Center,SYN-T030,Synthetic control SYN-STACK-IBM 6,command-and-control,2024-06-15
+IBM-YORKTOWN,IBM Research — Thomas J. Watson Research Center,SYN-T031,Synthetic control SYN-STACK-IBM 7,collection,2025-04-15
+IBM-YORKTOWN,IBM Research — Thomas J. Watson Research Center,SYN-T032,Synthetic control SYN-STACK-IBM 8,credential-access,2025-04-15
+IBM-YORKTOWN,IBM Research — Thomas J. Watson Research Center,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-05-01
+IBM-ZURICH,IBM Research Zurich,SYN-T025,Synthetic control SYN-STACK-IBM 1,collection,2023-06-15
+IBM-ZURICH,IBM Research Zurich,SYN-T026,Synthetic control SYN-STACK-IBM 2,credential-access,2023-06-15
+IBM-ZURICH,IBM Research Zurich,SYN-T027,Synthetic control SYN-STACK-IBM 3,defense-evasion,2023-06-15
+IBM-ZURICH,IBM Research Zurich,SYN-T028,Synthetic control SYN-STACK-IBM 4,discovery,2023-06-15
+IBM-ZURICH,IBM Research Zurich,SYN-T029,Synthetic control SYN-STACK-IBM 5,lateral-movement,2023-06-15
+IBM-ZURICH,IBM Research Zurich,SYN-T030,Synthetic control SYN-STACK-IBM 6,command-and-control,2024-06-15
+IBM-ZURICH,IBM Research Zurich,SYN-T031,Synthetic control SYN-STACK-IBM 7,collection,2025-04-15
+IBM-ZURICH,IBM Research Zurich,SYN-T032,Synthetic control SYN-STACK-IBM 8,credential-access,2025-04-15
+RES-BERKELEY,"University of California, Berkeley",SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-BERKELEY,"University of California, Berkeley",SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-BERKELEY,"University of California, Berkeley",SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-BERKELEY,"University of California, Berkeley",SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-BERKELEY,"University of California, Berkeley",SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-BERKELEY,"University of California, Berkeley",SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-BERKELEY,"University of California, Berkeley",SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2024-08-01
+RES-BERKELEY,"University of California, Berkeley",SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2024-08-01
+RES-BERKELEY,"University of California, Berkeley",SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-05-01
+RES-BERKELEY-CLTC,UC Berkeley Center for Long-Term Cybersecurity,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-BERKELEY-CLTC,UC Berkeley Center for Long-Term Cybersecurity,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-BERKELEY-CLTC,UC Berkeley Center for Long-Term Cybersecurity,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-BERKELEY-CLTC,UC Berkeley Center for Long-Term Cybersecurity,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-BERKELEY-CLTC,UC Berkeley Center for Long-Term Cybersecurity,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-BERKELEY-CLTC,UC Berkeley Center for Long-Term Cybersecurity,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-BERKELEY-CLTC,UC Berkeley Center for Long-Term Cybersecurity,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2024-08-01
+RES-BERKELEY-CLTC,UC Berkeley Center for Long-Term Cybersecurity,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2024-08-01
+RES-CALTECH,California Institute of Technology,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-CALTECH,California Institute of Technology,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-CALTECH,California Institute of Technology,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-CALTECH,California Institute of Technology,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-CALTECH,California Institute of Technology,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-CALTECH,California Institute of Technology,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-CALTECH,California Institute of Technology,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2024-08-01
+RES-CALTECH,California Institute of Technology,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2024-08-01
+RES-CAMBRIDGE,University of Cambridge,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-CAMBRIDGE,University of Cambridge,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-CAMBRIDGE,University of Cambridge,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-CAMBRIDGE,University of Cambridge,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-CAMBRIDGE,University of Cambridge,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-CAMBRIDGE,University of Cambridge,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-CAMBRIDGE,University of Cambridge,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2024-08-01
+RES-CAMBRIDGE,University of Cambridge,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2024-08-01
+RES-CMU-CYLAB,Carnegie Mellon University CyLab,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-CMU-CYLAB,Carnegie Mellon University CyLab,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-CMU-CYLAB,Carnegie Mellon University CyLab,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-CMU-CYLAB,Carnegie Mellon University CyLab,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-CMU-CYLAB,Carnegie Mellon University CyLab,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-CMU-CYLAB,Carnegie Mellon University CyLab,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-CMU-CYLAB,Carnegie Mellon University CyLab,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2024-08-01
+RES-CMU-CYLAB,Carnegie Mellon University CyLab,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2024-08-01
+RES-CMU-CYLAB,Carnegie Mellon University CyLab,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-05-01
+RES-COLUMBIA,Columbia University,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-COLUMBIA,Columbia University,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-COLUMBIA,Columbia University,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-COLUMBIA,Columbia University,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-COLUMBIA,Columbia University,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-COLUMBIA,Columbia University,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-COLUMBIA,Columbia University,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2024-08-01
+RES-COLUMBIA,Columbia University,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2024-08-01
+RES-CORNELL,Cornell University,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-CORNELL,Cornell University,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-CORNELL,Cornell University,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-CORNELL,Cornell University,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-CORNELL,Cornell University,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-CORNELL,Cornell University,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-CORNELL,Cornell University,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2024-08-01
+RES-CORNELL,Cornell University,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2024-08-01
+RES-COSIC,KU Leuven COSIC,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-COSIC,KU Leuven COSIC,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-COSIC,KU Leuven COSIC,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-COSIC,KU Leuven COSIC,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-COSIC,KU Leuven COSIC,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-COSIC,KU Leuven COSIC,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-COSIC,KU Leuven COSIC,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2024-08-01
+RES-COSIC,KU Leuven COSIC,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2024-08-01
+RES-DATA61,CSIRO's Data61,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-DATA61,CSIRO's Data61,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-DATA61,CSIRO's Data61,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-DATA61,CSIRO's Data61,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-DATA61,CSIRO's Data61,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-DATA61,CSIRO's Data61,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-DATA61,CSIRO's Data61,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2024-08-01
+RES-DATA61,CSIRO's Data61,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2024-08-01
+RES-DATA61,CSIRO's Data61,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-05-01
+RES-EPFL,EPFL,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-EPFL,EPFL,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-EPFL,EPFL,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-EPFL,EPFL,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-EPFL,EPFL,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-EPFL,EPFL,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-EPFL,EPFL,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2024-08-01
+RES-EPFL,EPFL,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2024-08-01
+RES-ETH,ETH Zurich,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-ETH,ETH Zurich,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-ETH,ETH Zurich,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-ETH,ETH Zurich,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-ETH,ETH Zurich,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-ETH,ETH Zurich,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-ETH,ETH Zurich,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2024-08-01
+RES-ETH,ETH Zurich,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2024-08-01
+RES-FRAUNHOFER,Fraunhofer AISEC,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-FRAUNHOFER,Fraunhofer AISEC,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-FRAUNHOFER,Fraunhofer AISEC,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-FRAUNHOFER,Fraunhofer AISEC,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-FRAUNHOFER,Fraunhofer AISEC,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-FRAUNHOFER,Fraunhofer AISEC,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-FRAUNHOFER,Fraunhofer AISEC,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2024-08-01
+RES-FRAUNHOFER,Fraunhofer AISEC,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2024-08-01
+RES-GATECH,Georgia Institute of Technology,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-GATECH,Georgia Institute of Technology,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-GATECH,Georgia Institute of Technology,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-GATECH,Georgia Institute of Technology,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-GATECH,Georgia Institute of Technology,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-GATECH,Georgia Institute of Technology,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-GATECH,Georgia Institute of Technology,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2024-08-01
+RES-GATECH,Georgia Institute of Technology,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2024-08-01
+RES-GATECH,Georgia Institute of Technology,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-05-01
+RES-HARVARD,Harvard University,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-HARVARD,Harvard University,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-HARVARD,Harvard University,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-HARVARD,Harvard University,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-HARVARD,Harvard University,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-HARVARD,Harvard University,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-HARVARD,Harvard University,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2024-08-01
+RES-HARVARD,Harvard University,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2024-08-01
+RES-IITD,Indian Institute of Technology Delhi,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-IITD,Indian Institute of Technology Delhi,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-IITD,Indian Institute of Technology Delhi,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-IITD,Indian Institute of Technology Delhi,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-IITD,Indian Institute of Technology Delhi,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-IITD,Indian Institute of Technology Delhi,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-IITD,Indian Institute of Technology Delhi,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2024-08-01
+RES-IITD,Indian Institute of Technology Delhi,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2024-08-01
+RES-INRIA,Inria,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-INRIA,Inria,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-INRIA,Inria,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-INRIA,Inria,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-INRIA,Inria,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-INRIA,Inria,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-INRIA,Inria,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2024-08-01
+RES-INRIA,Inria,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2024-08-01
+RES-KAIST,KAIST,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-KAIST,KAIST,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-KAIST,KAIST,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-KAIST,KAIST,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-KAIST,KAIST,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-KAIST,KAIST,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-KAIST,KAIST,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2024-08-01
+RES-KAIST,KAIST,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2024-08-01
+RES-KAIST,KAIST,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-05-01
+RES-MICHIGAN,University of Michigan,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-MICHIGAN,University of Michigan,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-MICHIGAN,University of Michigan,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-MICHIGAN,University of Michigan,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-MICHIGAN,University of Michigan,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-MICHIGAN,University of Michigan,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-MICHIGAN,University of Michigan,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-MICHIGAN,University of Michigan,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-MIT-CSAIL,MIT Computer Science and Artificial Intelligence Laboratory,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-MIT-CSAIL,MIT Computer Science and Artificial Intelligence Laboratory,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-MIT-CSAIL,MIT Computer Science and Artificial Intelligence Laboratory,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-MIT-CSAIL,MIT Computer Science and Artificial Intelligence Laboratory,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-MIT-CSAIL,MIT Computer Science and Artificial Intelligence Laboratory,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-MIT-CSAIL,MIT Computer Science and Artificial Intelligence Laboratory,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-MIT-CSAIL,MIT Computer Science and Artificial Intelligence Laboratory,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-MIT-CSAIL,MIT Computer Science and Artificial Intelligence Laboratory,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-MPI-SP,Max Planck Institute for Security and Privacy,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-MPI-SP,Max Planck Institute for Security and Privacy,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-MPI-SP,Max Planck Institute for Security and Privacy,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-MPI-SP,Max Planck Institute for Security and Privacy,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-MPI-SP,Max Planck Institute for Security and Privacy,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-MPI-SP,Max Planck Institute for Security and Privacy,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-MPI-SP,Max Planck Institute for Security and Privacy,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-MPI-SP,Max Planck Institute for Security and Privacy,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-NUS,National University of Singapore,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-NUS,National University of Singapore,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-NUS,National University of Singapore,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-NUS,National University of Singapore,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-NUS,National University of Singapore,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-NUS,National University of Singapore,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-NUS,National University of Singapore,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-NUS,National University of Singapore,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-NUS,National University of Singapore,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-05-01
+RES-NYU,New York University,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-NYU,New York University,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-NYU,New York University,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-NYU,New York University,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-NYU,New York University,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-NYU,New York University,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-NYU,New York University,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-NYU,New York University,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-OXFORD,University of Oxford,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-OXFORD,University of Oxford,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-OXFORD,University of Oxford,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-OXFORD,University of Oxford,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-OXFORD,University of Oxford,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-OXFORD,University of Oxford,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-OXFORD,University of Oxford,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-OXFORD,University of Oxford,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-OXFORD-GCI,Oxford Global Cyber Security Capacity Centre,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-OXFORD-GCI,Oxford Global Cyber Security Capacity Centre,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-OXFORD-GCI,Oxford Global Cyber Security Capacity Centre,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-OXFORD-GCI,Oxford Global Cyber Security Capacity Centre,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-OXFORD-GCI,Oxford Global Cyber Security Capacity Centre,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-OXFORD-GCI,Oxford Global Cyber Security Capacity Centre,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-OXFORD-GCI,Oxford Global Cyber Security Capacity Centre,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-OXFORD-GCI,Oxford Global Cyber Security Capacity Centre,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-PRINCETON,Princeton University,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-PRINCETON,Princeton University,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-PRINCETON,Princeton University,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-PRINCETON,Princeton University,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-PRINCETON,Princeton University,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-PRINCETON,Princeton University,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-PRINCETON,Princeton University,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-PRINCETON,Princeton University,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-PRINCETON,Princeton University,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-05-01
+RES-PRINCETON-CITP,Princeton Center for Information Technology Policy,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-PRINCETON-CITP,Princeton Center for Information Technology Policy,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-PRINCETON-CITP,Princeton Center for Information Technology Policy,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-PRINCETON-CITP,Princeton Center for Information Technology Policy,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-PRINCETON-CITP,Princeton Center for Information Technology Policy,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-PRINCETON-CITP,Princeton Center for Information Technology Policy,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-PRINCETON-CITP,Princeton Center for Information Technology Policy,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-PRINCETON-CITP,Princeton Center for Information Technology Policy,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-PURDUE,Purdue University CERIAS,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-PURDUE,Purdue University CERIAS,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-PURDUE,Purdue University CERIAS,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-PURDUE,Purdue University CERIAS,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-PURDUE,Purdue University CERIAS,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-PURDUE,Purdue University CERIAS,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-PURDUE,Purdue University CERIAS,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-PURDUE,Purdue University CERIAS,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-RUB,Ruhr University Bochum,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-RUB,Ruhr University Bochum,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-RUB,Ruhr University Bochum,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-RUB,Ruhr University Bochum,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-RUB,Ruhr University Bochum,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-RUB,Ruhr University Bochum,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-RUB,Ruhr University Bochum,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-RUB,Ruhr University Bochum,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-SRI,SRI International,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-SRI,SRI International,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-SRI,SRI International,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-SRI,SRI International,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-SRI,SRI International,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-SRI,SRI International,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-SRI,SRI International,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-SRI,SRI International,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-SRI,SRI International,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-05-01
+RES-STANFORD,Stanford University,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-STANFORD,Stanford University,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-STANFORD,Stanford University,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-STANFORD,Stanford University,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-STANFORD,Stanford University,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-STANFORD,Stanford University,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-STANFORD,Stanford University,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-STANFORD,Stanford University,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-TAMU,Texas A&M University,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-TAMU,Texas A&M University,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-TAMU,Texas A&M University,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-TAMU,Texas A&M University,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-TAMU,Texas A&M University,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-TAMU,Texas A&M University,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-TAMU,Texas A&M University,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-TAMU,Texas A&M University,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-TECHNION,Technion — Israel Institute of Technology,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-TECHNION,Technion — Israel Institute of Technology,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-TECHNION,Technion — Israel Institute of Technology,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-TECHNION,Technion — Israel Institute of Technology,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-TECHNION,Technion — Israel Institute of Technology,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-TECHNION,Technion — Israel Institute of Technology,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-TECHNION,Technion — Israel Institute of Technology,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-TECHNION,Technion — Israel Institute of Technology,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-TNO,TNO,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-TNO,TNO,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-TNO,TNO,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-TNO,TNO,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-TNO,TNO,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-TNO,TNO,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-TNO,TNO,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-TNO,TNO,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-TNO,TNO,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-05-01
+RES-TORONTO,University of Toronto,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-TORONTO,University of Toronto,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-TORONTO,University of Toronto,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-TORONTO,University of Toronto,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-TORONTO,University of Toronto,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-TORONTO,University of Toronto,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-TORONTO,University of Toronto,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-TORONTO,University of Toronto,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-TSINGHUA,Tsinghua University,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-TSINGHUA,Tsinghua University,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-TSINGHUA,Tsinghua University,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-TSINGHUA,Tsinghua University,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-TSINGHUA,Tsinghua University,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-TSINGHUA,Tsinghua University,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-TSINGHUA,Tsinghua University,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-TSINGHUA,Tsinghua University,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-U-TOKYO,University of Tokyo,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-U-TOKYO,University of Tokyo,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-U-TOKYO,University of Tokyo,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-U-TOKYO,University of Tokyo,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-U-TOKYO,University of Tokyo,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-U-TOKYO,University of Tokyo,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-U-TOKYO,University of Tokyo,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-U-TOKYO,University of Tokyo,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-UCL,University College London,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-UCL,University College London,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-UCL,University College London,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-UCL,University College London,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-UCL,University College London,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-UCL,University College London,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-UCL,University College London,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-UCL,University College London,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-UCL,University College London,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-05-01
+RES-UCSD,"University of California, San Diego",SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-UCSD,"University of California, San Diego",SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-UCSD,"University of California, San Diego",SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-UCSD,"University of California, San Diego",SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-UCSD,"University of California, San Diego",SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-UCSD,"University of California, San Diego",SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-UCSD,"University of California, San Diego",SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-UCSD,"University of California, San Diego",SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-UIUC,University of Illinois Urbana-Champaign,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-UIUC,University of Illinois Urbana-Champaign,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-UIUC,University of Illinois Urbana-Champaign,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-UIUC,University of Illinois Urbana-Champaign,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-UIUC,University of Illinois Urbana-Champaign,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-UIUC,University of Illinois Urbana-Champaign,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-UIUC,University of Illinois Urbana-Champaign,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-UIUC,University of Illinois Urbana-Champaign,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-UMD,University of Maryland,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-UMD,University of Maryland,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-UMD,University of Maryland,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-UMD,University of Maryland,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-UMD,University of Maryland,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-UMD,University of Maryland,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-UMD,University of Maryland,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-UMD,University of Maryland,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-UW,University of Washington,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-UW,University of Washington,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-UW,University of Washington,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-UW,University of Washington,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-UW,University of Washington,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-UW,University of Washington,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-UW,University of Washington,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-UW,University of Washington,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-UW,University of Washington,SYN-T007,Synthetic control SYN-STACK-CIVIL 7,collection,2025-05-01
+RES-WATERLOO,University of Waterloo,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-WATERLOO,University of Waterloo,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-WATERLOO,University of Waterloo,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-WATERLOO,University of Waterloo,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-WATERLOO,University of Waterloo,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-WATERLOO,University of Waterloo,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-WATERLOO,University of Waterloo,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-WATERLOO,University of Waterloo,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15
+RES-WEIZMANN,Weizmann Institute of Science,SYN-T033,Synthetic control SYN-STACK-RESEARCH 1,collection,2023-06-15
+RES-WEIZMANN,Weizmann Institute of Science,SYN-T034,Synthetic control SYN-STACK-RESEARCH 2,credential-access,2023-06-15
+RES-WEIZMANN,Weizmann Institute of Science,SYN-T035,Synthetic control SYN-STACK-RESEARCH 3,defense-evasion,2023-06-15
+RES-WEIZMANN,Weizmann Institute of Science,SYN-T036,Synthetic control SYN-STACK-RESEARCH 4,discovery,2023-06-15
+RES-WEIZMANN,Weizmann Institute of Science,SYN-T037,Synthetic control SYN-STACK-RESEARCH 5,lateral-movement,2023-06-15
+RES-WEIZMANN,Weizmann Institute of Science,SYN-T038,Synthetic control SYN-STACK-RESEARCH 6,command-and-control,2024-06-15
+RES-WEIZMANN,Weizmann Institute of Science,SYN-T039,Synthetic control SYN-STACK-RESEARCH 7,collection,2025-04-15
+RES-WEIZMANN,Weizmann Institute of Science,SYN-T040,Synthetic control SYN-STACK-RESEARCH 8,credential-access,2025-04-15

@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "synthetic-fixture",
+  "seed": 20261020,
+  "n_organizations": 106,
+  "counts": {
+    "federal-department": 15,
+    "federal-component": 18,
+    "national-laboratory": 17,
+    "ibm": 10,
+    "research-center": 46
+  },
+  "scope": {
+    "federal_departments": "All 15 U.S. cabinet departments.",
+    "federal_components": "Cyber-relevant components only. Not every bureau or field office.",
+    "national_laboratories": "The 17 U.S. Department of Energy national laboratories.",
+    "ibm": "Named IBM research laboratories and security units, as fictional deployment profiles.",
+    "research_centers": "A fixed list of universities and laboratories often used as external points of comparison."
+  },
+  "policy_profiles": {
+    "nss": "Selector is forced onto the ML-DSA-87 branch. Not a claim that the institution operates an NSS.",
+    "cnsa-aligned": "Same strict branch, tagged separately so a federal civilian fixture is not labeled nss.",
+    "commercial": "May step down to ML-DSA-65 only under the code's published rule.",
+    "academic": "Same selector rule as commercial."
+  },
+  "stack_ids": {
+    "meaning": "Planted consortium id for the observation-graph fixture. Not an alliance, contract, or threat actor.",
+    "values": [
+      "SYN-STACK-CIVIL",
+      "SYN-STACK-DEFENSE",
+      "SYN-STACK-LAB",
+      "SYN-STACK-IBM",
+      "SYN-STACK-RESEARCH"
+    ]
+  },
+  "statement": "Organization names are scenario labels for the class of institution a test row stands in for. No record in data/dummy is a measurement, feed, log, advisory, or policy from that organization. This project is not affiliated with and is not endorsed by any of them. benchmarks/results/dummy_evaluation.json is a fixture check. Do not cite it as an experimental result."
+}

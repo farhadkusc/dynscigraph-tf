@@ -1,6 +1,6 @@
 # Technical report
 
-**Version 0.2.0.** Author: Md Farhad Kabir.
+**Version 0.2.1.** Author: Md Farhad Kabir.
 
 ## Question
 
@@ -29,3 +29,7 @@ EPSS files are the publisher's daily gzip, not a resample. A CVE already in KEV 
 ## Numbers
 
 See `benchmarks/results/evaluation.json`. The README table is that file, rounded.
+
+## Synthetic fixtures
+
+`data/dummy/` replays the same cutoff code on a planted observation graph whose nodes are scenario labels (federal departments, DOE laboratories, IBM units, research centers). Identifiers are `SYN-T` and `SYN-VULN`, not ATT&CK or CVE ids. `benchmarks/results/dummy_evaluation.json` is the fixture check. It is not a second empirical table.

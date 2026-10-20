@@ -1,7 +1,8 @@
-"""DynSciGraph-TF research prototype, v0.2.0.
+"""DynSciGraph-TF research prototype, v0.2.1.
 
 Temporal link prediction on public MITRE ATT&CK relationship timestamps,
 and an EPSS-versus-CISA-KEV check on public score files.
+Synthetic institution fixtures live under data/dummy and are not measurements.
 """
 
-__version__ = "0.2.0"
+__version__ = "0.2.1"
