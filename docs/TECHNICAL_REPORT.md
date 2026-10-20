@@ -18,7 +18,7 @@ Cutoffs 2022-12-31, 2023-12-31, and 2024-12-31 were fixed as year ends. They wer
 
 ## KEV protocol
 
-EPSS files are the publisher's daily gzip, not a resample. A CVE already in KEV on the score date is removed before ranking. Addition dates come from the CISA catalog of 2026-10-16. The score is EPSS itself, so this row is a measurement of a public baseline, not a new model.
+EPSS files are the publisher's daily gzip. A CVE already in KEV on the score date is removed before ranking. Addition dates come from the CISA catalog of 2026-10-16. The score is the EPSS value from that file.
 
 ## Leakage controls
 
@@ -32,6 +32,6 @@ See `benchmarks/results/evaluation.json`. The README table is that file, rounded
 
 ## Synthetic fixtures
 
-`data/dummy/` replays the same cutoff code on a planted observation graph whose nodes are scenario labels (federal departments, DOE laboratories, IBM units, research centers). Identifiers are `SYN-T` and `SYN-VULN`, not ATT&CK or CVE ids. `benchmarks/results/dummy_evaluation.json` is the fixture check. It is not a second empirical table.
+`data/dummy/` replays the same cutoff code on a planted observation graph whose nodes are scenario labels (federal departments, DOE laboratories, IBM units, research centers). Identifiers are `SYN-T` and `SYN-VULN`. Output is `benchmarks/results/dummy_evaluation.json`.
 
 Grey Harbor is a separate six-technique graph. The fictional actor's held-out links are the ones its fictional tool already covers. `SYN-TH-00` is the unbridged negative. Blue-cell organization ids are not nodes in that graph.

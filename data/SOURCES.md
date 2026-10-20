@@ -16,4 +16,4 @@ ATT&CK is a MITRE knowledge base. Cite MITRE ATT&CK and keep the upstream licens
 
 Refresh the derived ATT&CK tables by downloading `enterprise-attack.json` from the `attack-stix-data` repository and rerunning the extractor described in `docs/TECHNICAL_REPORT.md`. Do not treat a newer file as comparable to the numbers in `benchmarks/results/evaluation.json` unless you rerun the benchmark and replace that file.
 
-`data/dummy/` is not a source. It is a synthetic fixture. See `data/dummy/README.md`.
+`data/dummy/` is the synthetic fixture. See `data/dummy/README.md`.

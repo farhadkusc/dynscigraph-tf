@@ -1,7 +1,6 @@
-"""Synthetic institution fixtures. Not a measurement.
+"""Synthetic institution fixtures.
 
-See data/dummy/README.md. Results go to benchmarks/results/dummy_evaluation.json
-and must not be cited next to the public-data evaluation.
+See data/dummy/README.md. Results go to benchmarks/results/dummy_evaluation.json.
 """
 
 from __future__ import annotations
@@ -21,10 +20,7 @@ from .metrics import average_precision, precision_at
 ROOT = Path(__file__).resolve().parents[2]
 DUMMY = ROOT / "data" / "dummy"
 
-STATEMENT = (
-    "Synthetic fixture. Organization names are scenario labels, not sources. "
-    "Do not cite this object as an experimental result."
-)
+STATEMENT = "Synthetic fixture. Organization names are scenario labels."
 
 
 def _read(name: str) -> list[dict]:

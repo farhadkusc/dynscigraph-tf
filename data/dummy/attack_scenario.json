@@ -4,12 +4,11 @@
   "title": "Grey Harbor",
   "as_of": "2026-04-08",
   "cutoff": "2026-03-31",
-  "statement": "Tabletop inject for tests. The adversary, the tool, the sites, and the events are fictional. Blue-cell identifiers are exercise roles, not breach reports. No listed organization was attacked. This file is not an incident report, an advisory, or a procedure.",
+  "statement": "Grey Harbor tabletop inject. Adversary SYN-ACTOR-HARBOR. Sites SYN-SITE-RIVER-SWITCH and SYN-SITE-LOCK-METER.",
   "adversary": {
     "id": "SYN-ACTOR-HARBOR",
     "display_name": "Harbor",
-    "fictional": true,
-    "not_a_real_group": true
+    "fictional": true
   },
   "tool_id": "SYN-TOOL-HARBOR",
   "tool_seen": "2025-05-01",
@@ -18,12 +17,12 @@
     {
       "id": "SYN-SITE-RIVER-SWITCH",
       "sector": "energy",
-      "description": "Fictional distribution cooperative. Not a real utility."
+      "description": "Distribution cooperative used in the exercise."
     },
     {
       "id": "SYN-SITE-LOCK-METER",
       "sector": "water",
-      "description": "Fictional treatment-plant meter network. Not a real utility."
+      "description": "Treatment-plant meter network used in the exercise."
     }
   ],
   "blue_cell": [

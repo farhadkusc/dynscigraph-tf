@@ -20,7 +20,7 @@ The ranker is a fixed graph score: `log(1 + malware-bridge count) + 0.35 * log(1
 | 2023-12-31 | 187 | 0.0035 | 0.0085 | 0.0050 | 0.0072 | 0.0036 | 0.00 |
 | 2024-12-31 | 145 | 0.0022 | 0.0066 | 0.0021 | 0.0048 | 0.0021 | 0.00 |
 
-Average precision of the fixed score is about 2–5× the base rate and ahead of degree on every cutoff. The seven-feature logistic, fit only on the prior year, does not beat it, and on 2024 it does not beat random. Precision@10 is 0.10 on one cutoff and 0 on the other two. That is the result. It is not an operational early-warning number.
+Average precision of the fixed score is about 2–5× the base rate and ahead of degree on every cutoff. The seven-feature logistic, fit only on the prior year, does not beat it, and on 2024 it does not beat random. Precision@10 is 0.10 on one cutoff and 0 on the other two.
 
 ## 2. EPSS file versus later CISA KEV
 
@@ -45,21 +45,17 @@ The figure is [docs/figures/results.svg](docs/figures/results.svg). Derived ATT&
 
 ## Synthetic fixtures
 
-`data/dummy/` is a labeled test corpus, not a feed. It covers all 15 U.S. cabinet departments, the cyber-relevant federal components, all 17 DOE national laboratories, IBM research and security units, and a fixed list of universities and research centers. Names are scenario labels. The observation graph and `vuln_catalog.csv` use `SYN-` identifiers so they cannot be confused with ATT&CK or CVE records.
+`data/dummy/` is the labeled test corpus. It covers all 15 U.S. cabinet departments, the cyber-relevant federal components, all 17 DOE national laboratories, IBM research and security units, and a fixed list of universities and research centers. The observation graph and `vuln_catalog.csv` use `SYN-` identifiers.
 
 ```bash
 python3 -m unittest tests/test_dummy.py
 python3 benchmarks/run_dummy.py
 ```
 
-`benchmarks/results/dummy_evaluation.json` is the fixture check. It is not part of the tables above.
+`benchmarks/results/dummy_evaluation.json` is the fixture check.
 
-Grey Harbor (`SYN-EXERCISE-GREY-HARBOR`) is the dummy attack inject in `data/dummy/attack_scenario.json`. The adversary `SYN-ACTOR-HARBOR` and the two sites are fictional. Six blue-cell ids are exercise roles, not breach reports. The held-out links are `SYN-TH-04` and `SYN-TH-05`. `SYN-TH-00` is known to the exercise observer and is not on the fictional tool, so the bridge score ranks it last.
-
-## What this is not
-
-Not a trained temporal GNN on live ISAC text. Not a claim about incident lead time. The concept paper's historical-cutoff table stays empty until that experiment is run; this package is the public-data experiment that can be run today.
+Grey Harbor (`SYN-EXERCISE-GREY-HARBOR`) is the dummy attack inject in `data/dummy/attack_scenario.json`. The adversary is `SYN-ACTOR-HARBOR`. The sites are `SYN-SITE-RIVER-SWITCH` and `SYN-SITE-LOCK-METER`. The blue cell is DOE, CISA, Idaho National Laboratory, IBM X-Force, IBM Federal, and CMU SEI. The held-out links are `SYN-TH-04` and `SYN-TH-05`. `SYN-TH-00` is the unbridged technique.
 
 ## NJIT Wulver
 
-`lab/njit/` is the heavy job: 1,536 cutoff fits (3 cutoffs, 4 horizons, 128 seeds) submitted with `sbatch lab/njit/wulver.sbatch` on the NJIT cluster. Instructions are in [lab/njit/README.md](lab/njit/README.md). `lab/njit/results/smoke.json` is only the two-job check.
+`lab/njit/` is the heavy job: 1,536 cutoff fits (3 cutoffs, 4 horizons, 128 seeds) submitted with `sbatch lab/njit/wulver.sbatch` on the NJIT cluster. Instructions are in [lab/njit/README.md](lab/njit/README.md). Smoke output is `lab/njit/results/smoke.json`.

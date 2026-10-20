@@ -18,13 +18,13 @@
     "research_centers": "A fixed list of universities and laboratories often used as external points of comparison."
   },
   "policy_profiles": {
-    "nss": "Selector is forced onto the ML-DSA-87 branch. Not a claim that the institution operates an NSS.",
-    "cnsa-aligned": "Same strict branch, tagged separately so a federal civilian fixture is not labeled nss.",
+    "nss": "Selector input that stays on ML-DSA-87.",
+    "cnsa-aligned": "Same strict branch, stored separately from nss.",
     "commercial": "May step down to ML-DSA-65 only under the code's published rule.",
     "academic": "Same selector rule as commercial."
   },
   "stack_ids": {
-    "meaning": "Planted consortium id for the observation-graph fixture. Not an alliance, contract, or threat actor.",
+    "meaning": "Planted consortium id for the observation-graph fixture.",
     "values": [
       "SYN-STACK-CIVIL",
       "SYN-STACK-DEFENSE",
@@ -34,5 +34,5 @@
     ]
   },
   "exercise": "SYN-EXERCISE-GREY-HARBOR",
-  "statement": "Organization names are scenario labels for the class of institution a test row stands in for. No record in data/dummy is a measurement, feed, log, advisory, or policy from that organization. This project is not affiliated with and is not endorsed by any of them. benchmarks/results/dummy_evaluation.json is a fixture check. Do not cite it as an experimental result."
+  "statement": "Organization names are scenario labels for the class of institution a test row stands in for."
 }

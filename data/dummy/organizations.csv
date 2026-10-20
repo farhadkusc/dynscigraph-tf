@@ -50,20 +50,20 @@ FEDLAB-SNL,Sandia National Laboratories,national-laboratory,US,energy,nss,16,10,
 FEDLAB-SRNL,Savannah River National Laboratory,national-laboratory,US,energy,nss,16,10,LOW,0.55,0,
 FEDLAB-JLAB,Thomas Jefferson National Accelerator Facility,national-laboratory,US,energy,nss,16,10,LOW,0.55,0,
 IBM-YORKTOWN,IBM Research — Thomas J. Watson Research Center,ibm,US,technology,commercial,16,5,LOW,0.4,0,
-IBM-ZURICH,IBM Research Zurich,ibm,CH,technology,commercial,16,5,LOW,0.4,1,"Fallback is a scenario switch, not an outage report."
+IBM-ZURICH,IBM Research Zurich,ibm,CH,technology,commercial,16,5,LOW,0.4,1,Fallback is on for this row.
 IBM-ALMADEN,IBM Research Almaden,ibm,US,technology,commercial,16,5,LOW,0.3,0,
 IBM-TOKYO,IBM Research Tokyo,ibm,JP,technology,commercial,16,8,LOW,0.28,0,
 IBM-HAIFA,IBM Research Haifa,ibm,IL,technology,commercial,16,8,LOW,0.33,0,
 IBM-INDIA,IBM Research India,ibm,IN,technology,commercial,16,8,LOW,0.45,0,
-IBM-QUANTUM,IBM Quantum,ibm,US,technology,commercial,4,5,LOW,0.2,0,"Scenario label for a fictional research network. Not an IBM Quantum device, runtime, calibration, or published workload."
-IBM-XFORCE,IBM X-Force,ibm,US,technology,commercial,16,5,LOW,0.82,0,Scenario label. Not an X-Force incident feed.
+IBM-QUANTUM,IBM Quantum,ibm,US,technology,commercial,4,5,LOW,0.2,0,IBM Quantum research network.
+IBM-XFORCE,IBM X-Force,ibm,US,technology,commercial,16,5,LOW,0.82,0,IBM X-Force row.
 IBM-SECURITY,IBM Security,ibm,US,technology,commercial,16,5,LOW,0.25,0,
-IBM-FEDERAL,IBM Federal,ibm,US,technology,nss,16,20,LOW,0.9,0,Contract-boundary scenario. Not a statement about an IBM federal system.
+IBM-FEDERAL,IBM Federal,ibm,US,technology,nss,16,20,LOW,0.9,0,IBM Federal contract-boundary row.
 RES-MIT-CSAIL,MIT Computer Science and Artificial Intelligence Laboratory,research-center,US,science,academic,4,20,LOW,0.86,0,
-RES-MIT-LL,MIT Lincoln Laboratory,research-center,US,science,nss,16,15,LOW,0.5,0,"policy_profile=nss marks a DoD FFRDC-shaped fixture, not a description of that laboratory's network."
+RES-MIT-LL,MIT Lincoln Laboratory,research-center,US,science,nss,16,15,LOW,0.5,0,DoD FFRDC-shaped row. policy_profile=nss.
 RES-STANFORD,Stanford University,research-center,US,science,academic,4,20,LOW,0.32,0,
 RES-CMU-CYLAB,Carnegie Mellon University CyLab,research-center,US,science,academic,4,20,LOW,0.32,0,
-RES-CMU-SEI,Carnegie Mellon Software Engineering Institute,research-center,US,science,nss,16,15,LOW,0.5,0,"policy_profile=nss marks a DoD FFRDC-shaped fixture, not a description of that laboratory's network."
+RES-CMU-SEI,Carnegie Mellon Software Engineering Institute,research-center,US,science,nss,16,15,LOW,0.5,0,DoD FFRDC-shaped row. policy_profile=nss.
 RES-BERKELEY,"University of California, Berkeley",research-center,US,science,academic,4,20,LOW,0.86,0,
 RES-GATECH,Georgia Institute of Technology,research-center,US,science,academic,4,20,LOW,0.32,0,
 RES-CALTECH,California Institute of Technology,research-center,US,science,academic,4,20,LOW,0.32,0,
@@ -91,7 +91,7 @@ RES-U-TOKYO,University of Tokyo,research-center,JP,science,academic,4,20,LOW,0.3
 RES-TNO,TNO,research-center,NL,science,academic,4,20,LOW,0.86,0,
 RES-FRAUNHOFER,Fraunhofer AISEC,research-center,DE,science,academic,4,20,LOW,0.32,0,
 RES-DATA61,CSIRO's Data61,research-center,AU,science,academic,4,20,LOW,0.32,0,
-RES-JHU-APL,Johns Hopkins University Applied Physics Laboratory,research-center,US,science,nss,16,15,LOW,0.5,0,"policy_profile=nss marks a DoD FFRDC-shaped fixture, not a description of that laboratory's network."
+RES-JHU-APL,Johns Hopkins University Applied Physics Laboratory,research-center,US,science,nss,16,15,LOW,0.5,0,DoD FFRDC-shaped row. policy_profile=nss.
 RES-SRI,SRI International,research-center,US,science,academic,4,20,LOW,0.86,0,
 RES-IITD,Indian Institute of Technology Delhi,research-center,IN,science,academic,4,20,LOW,0.32,0,
 RES-UCL,University College London,research-center,GB,science,academic,4,20,LOW,0.32,0,

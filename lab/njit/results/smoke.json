@@ -5,10 +5,9 @@
   "host": "hds-ssx0maqdcfqj",
   "ran_on_wulver": false,
   "purpose": "Sensitivity of the public-data cutoff ranker to horizon and to the logistic negative-sample seed.",
-  "not_a_measurement_of": "NJIT hardware, incident lead time, or the concept paper's pending historical table.",
   "n_jobs": 2,
   "workers": 2,
-  "elapsed_sec": 1.909,
+  "elapsed_sec": 1.653,
   "summary": [
     {
       "cutoff": "2024-12-31",

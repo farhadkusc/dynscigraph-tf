@@ -265,6 +265,6 @@ def run_attack_benchmark(cutoffs: tuple[str, ...] = ("2022-12-31", "2023-12-31",
         "task": "ATT&CK intrusion-set uses attack-pattern, next-year documentation",
         "source": "MITRE ATT&CK Enterprise STIX, relationship.created",
         "snapshot": "enterprise-attack collection fetched 2026-10-19 (v20 window through 2026-10)",
-        "disclaimer": "created is ATT&CK documentation time, not incident time. Not an operational detector.",
+        "disclaimer": "The timestamp is the ATT&CK relationship created field, the documentation date.",
         "runs": runs,
     }

@@ -11,4 +11,4 @@ repository-code: "https://github.com/farhadkusc/dynscigraph-tf"
 abstract: >-
   Retrospective link prediction on MITRE ATT&CK group-technique
   documentation dates, plus an unfitted EPSS ranking against later
-  CISA KEV additions. Public data only. Not an incident-time forecaster.
+  CISA KEV additions.

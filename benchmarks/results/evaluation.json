@@ -5,7 +5,7 @@
     "task": "ATT&CK intrusion-set uses attack-pattern, next-year documentation",
     "source": "MITRE ATT&CK Enterprise STIX, relationship.created",
     "snapshot": "enterprise-attack collection fetched 2026-10-19 (v20 window through 2026-10)",
-    "disclaimer": "created is ATT&CK documentation time, not incident time. Not an operational detector.",
+    "disclaimer": "The timestamp is the ATT&CK relationship created field, the documentation date.",
     "runs": [
       {
         "ap": 0.009788,
@@ -134,7 +134,7 @@
     ],
     "fetched": "2026-10-19",
     "kev_catalog": "2026.10.16",
-    "disclaimer": "EPSS is the score under test, not a model trained in this repository. Windows were fixed before looking at precision@k.",
+    "disclaimer": "EPSS score, unfitted. Windows fixed before precision@k.",
     "windows": [
       {
         "score_date": "2024-06-01",

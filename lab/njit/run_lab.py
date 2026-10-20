@@ -3,7 +3,7 @@
 
 The graph score does not use the seed. The logistic baseline does, because
 each seed draws a different negative sample. The lab profile is the run to
-submit on NJIT Wulver. Smoke is a two-job check and is not a Wulver result.
+submit on NJIT Wulver. Smoke is the two-job check.
 """
 
 from __future__ import annotations
@@ -118,7 +118,6 @@ def main() -> None:
         "host": socket.gethostname(),
         "ran_on_wulver": False,
         "purpose": "Sensitivity of the public-data cutoff ranker to horizon and to the logistic negative-sample seed.",
-        "not_a_measurement_of": "NJIT hardware, incident lead time, or the concept paper's pending historical table.",
         "n_jobs": len(rows),
         "workers": workers,
         "elapsed_sec": elapsed,

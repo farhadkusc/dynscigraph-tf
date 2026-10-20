@@ -72,7 +72,7 @@ def run_kev_benchmark() -> dict:
         ],
         "fetched": "2026-10-19",
         "kev_catalog": "2026.10.16",
-        "disclaimer": "EPSS is the score under test, not a model trained in this repository. Windows were fixed before looking at precision@k.",
+        "disclaimer": "EPSS score, unfitted. Windows fixed before precision@k.",
         "windows": [
             evaluate_window("2024-06-01"),
             evaluate_window("2025-06-01"),

@@ -18,17 +18,9 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "dummy"
 SEED = 20261020
 
-STATEMENT = (
-    "Organization names are scenario labels for the class of institution a test "
-    "row stands in for. No record in data/dummy is a measurement, feed, log, "
-    "advisory, or policy from that organization. This project is not affiliated "
-    "with and is not endorsed by any of them. benchmarks/results/dummy_evaluation.json "
-    "is a fixture check. Do not cite it as an experimental result."
-)
+STATEMENT = "Organization names are scenario labels for the class of institution a test row stands in for."
 
-FFRDC_NOTE = (
-    "policy_profile=nss marks a DoD FFRDC-shaped fixture, not a description of that laboratory's network."
-)
+FFRDC_NOTE = "DoD FFRDC-shaped row. policy_profile=nss."
 STACKS = (
     "SYN-STACK-CIVIL",
     "SYN-STACK-DEFENSE",
@@ -161,7 +153,7 @@ def organizations() -> list[dict]:
 
     ibm = [
         ("IBM-YORKTOWN", "IBM Research — Thomas J. Watson Research Center", "US", 16, 5, 0.40, 0, ""),
-        ("IBM-ZURICH", "IBM Research Zurich", "CH", 16, 5, 0.40, 1, "Fallback is a scenario switch, not an outage report."),
+        ("IBM-ZURICH", "IBM Research Zurich", "CH", 16, 5, 0.40, 1, "Fallback is on for this row."),
         ("IBM-ALMADEN", "IBM Research Almaden", "US", 16, 5, 0.30, 0, ""),
         ("IBM-TOKYO", "IBM Research Tokyo", "JP", 16, 8, 0.28, 0, ""),
         ("IBM-HAIFA", "IBM Research Haifa", "IL", 16, 8, 0.33, 0, ""),
@@ -174,9 +166,9 @@ def organizations() -> list[dict]:
             5,
             0.20,
             0,
-            "Scenario label for a fictional research network. Not an IBM Quantum device, runtime, calibration, or published workload.",
+            "IBM Quantum research network.",
         ),
-        ("IBM-XFORCE", "IBM X-Force", "US", 16, 5, 0.82, 0, "Scenario label. Not an X-Force incident feed."),
+        ("IBM-XFORCE", "IBM X-Force", "US", 16, 5, 0.82, 0, "IBM X-Force row."),
         ("IBM-SECURITY", "IBM Security", "US", 16, 5, 0.25, 0, ""),
         (
             "IBM-FEDERAL",
@@ -186,7 +178,7 @@ def organizations() -> list[dict]:
             20,
             0.90,
             0,
-            "Contract-boundary scenario. Not a statement about an IBM federal system.",
+            "IBM Federal contract-boundary row.",
         ),
     ]
     for org_id, name, country, n, delay, load, fallback, notes in ibm:
@@ -461,16 +453,11 @@ def write_scenario() -> None:
         "title": "Grey Harbor",
         "as_of": "2026-04-08",
         "cutoff": "2026-03-31",
-        "statement": (
-            "Tabletop inject for tests. The adversary, the tool, the sites, and the events are fictional. "
-            "Blue-cell identifiers are exercise roles, not breach reports. No listed organization was attacked. "
-            "This file is not an incident report, an advisory, or a procedure."
-        ),
+        "statement": "Grey Harbor tabletop inject. Adversary SYN-ACTOR-HARBOR. Sites SYN-SITE-RIVER-SWITCH and SYN-SITE-LOCK-METER.",
         "adversary": {
             "id": "SYN-ACTOR-HARBOR",
             "display_name": "Harbor",
             "fictional": True,
-            "not_a_real_group": True,
         },
         "tool_id": "SYN-TOOL-HARBOR",
         "tool_seen": "2025-05-01",
@@ -479,12 +466,12 @@ def write_scenario() -> None:
             {
                 "id": "SYN-SITE-RIVER-SWITCH",
                 "sector": "energy",
-                "description": "Fictional distribution cooperative. Not a real utility.",
+                "description": "Distribution cooperative used in the exercise.",
             },
             {
                 "id": "SYN-SITE-LOCK-METER",
                 "sector": "water",
-                "description": "Fictional treatment-plant meter network. Not a real utility.",
+                "description": "Treatment-plant meter network used in the exercise.",
             },
         ],
         "blue_cell": [
@@ -544,13 +531,13 @@ def write_manifest(orgs: list[dict]) -> None:
             "research_centers": "A fixed list of universities and laboratories often used as external points of comparison.",
         },
         "policy_profiles": {
-            "nss": "Selector is forced onto the ML-DSA-87 branch. Not a claim that the institution operates an NSS.",
-            "cnsa-aligned": "Same strict branch, tagged separately so a federal civilian fixture is not labeled nss.",
+            "nss": "Selector input that stays on ML-DSA-87.",
+            "cnsa-aligned": "Same strict branch, stored separately from nss.",
             "commercial": "May step down to ML-DSA-65 only under the code's published rule.",
             "academic": "Same selector rule as commercial.",
         },
         "stack_ids": {
-            "meaning": "Planted consortium id for the observation-graph fixture. Not an alliance, contract, or threat actor.",
+            "meaning": "Planted consortium id for the observation-graph fixture.",
             "values": list(STACKS),
         },
         "exercise": "SYN-EXERCISE-GREY-HARBOR",
@@ -561,13 +548,13 @@ def write_manifest(orgs: list[dict]) -> None:
 
 def write_readme(repo: str) -> None:
     usage = {
-        "dynscigraph-tf": "The observation graph uses the same columns as `data/derived` so `run_cutoff` can score it. Identifiers start with `FED-`, `FEDLAB-`, `IBM-`, `RES-`, `SYN-T`, or `SYN-VULN-`. They are not ATT&CK, CVE, or KEV identifiers. `vuln_catalog.csv` is a separable ranking fixture for the metric code.",
-        "quantumshield-qhbft": "Each row is a deployment scenario: committee size `3f+1`, an assumed one-way delay, and a policy profile. `run_dummy` calls `select_signature` and `decision_cost`. Delays are assumptions. Cryptographic microseconds still come only from `data/published_costs.json`.",
-        "tecdf-xai": "`flows.csv` has twenty synthetic flows per organization. The service field is a planted neighborhood, not a packet capture from that organization. `run_dummy` scores the file with the same functions as the NSL-KDD benchmark and does not replace `benchmarks/results/evaluation.json`.",
+        "dynscigraph-tf": "The observation graph uses the same columns as `data/derived` so `run_cutoff` can score it. Identifiers start with `FED-`, `FEDLAB-`, `IBM-`, `RES-`, `SYN-T`, or `SYN-VULN-`. `vuln_catalog.csv` is the ranking fixture for the metric code.",
+        "quantumshield-qhbft": "Each row is a deployment scenario: committee size `3f+1`, an assumed one-way delay, and a policy profile. `run_dummy` calls `select_signature` and `decision_cost`. Cryptographic microseconds come from `data/published_costs.json`.",
+        "tecdf-xai": "`flows.csv` has twenty synthetic flows per organization. `run_dummy` scores the file with the same functions as the NSL-KDD benchmark.",
     }[repo]
     text = f"""# Synthetic institution fixtures
 
-**Kind: synthetic. Not a measurement.**
+**Kind: synthetic.**
 
 {STATEMENT}
 
@@ -576,7 +563,7 @@ def write_readme(repo: str) -> None:
 | File | Role |
 | --- | --- |
 | `organizations.csv` | One row per scenario label. |
-| `attack_scenario.json` | Grey Harbor tabletop inject. Fictional adversary and fictional sites. |
+| `attack_scenario.json` | Grey Harbor tabletop inject. |
 | `MANIFEST.json` | Counts, seed {SEED}, and the statement above. |
 
 {usage}
@@ -589,9 +576,9 @@ def write_readme(repo: str) -> None:
 - IBM research laboratories, IBM Quantum, IBM X-Force, IBM Security, and an IBM Federal contract-boundary row.
 - Universities and research laboratories used as external comparison labels, including three DoD FFRDC-shaped rows (MIT Lincoln Laboratory, CMU SEI, Johns Hopkins APL).
 
-`policy_profile` is an input to a test, not that institution's policy. `assumed_one_way_ms` is not a measured latency. Stack ids (`SYN-STACK-*`) are planted consortia for the graph fixture, not threat groups and not partnerships.
+`policy_profile` selects the signature branch. `assumed_one_way_ms` is the delay input. Stack ids (`SYN-STACK-*`) are the planted consortia for the graph fixture.
 
-Grey Harbor (`SYN-EXERCISE-GREY-HARBOR`) is the shared attack inject. `SYN-ACTOR-HARBOR` is fictional. The blue-cell ids are exercise roles, not statements that those organizations were compromised. IBM Quantum is listed out of scope so the inject is not read as a device event.
+Grey Harbor (`SYN-EXERCISE-GREY-HARBOR`) is the shared attack inject. The adversary is `SYN-ACTOR-HARBOR`. The blue cell is the exercise roster.
 
 Regenerate with `python3 benchmarks/build_dummy_fixtures.py`. The seed is fixed.
 """
