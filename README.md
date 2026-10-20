@@ -2,7 +2,7 @@
 
 Temporal link prediction for documented cyber relationships, evaluated on public data.
 
-Author: **Md Farhad Kabir**. Package **0.2.4**.
+Author: **Md Farhad Kabir**. Package **0.2.4**. The research draft is [docs/PAPER.md](docs/PAPER.md). The same text is `docs/DynSciGraph_Concept_Summary_v3.docx`. Both are generated from `benchmarks/results/evaluation.json`.
 
 Two tasks, both retrospective. Nothing in a test window is used to build features for that window.
 
