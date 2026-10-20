@@ -12,7 +12,7 @@ The concept paper writes the forecast as \(P(E_{t+\Delta}\setminus E_t \mid G_1,
 2. A snapshot at cutoff \(T\) contains group→technique edges with `created` ≤ \(T\).
 3. Positives in the next year are edges with \(T <\) `created` ≤ \(T+365\) days whose group and technique both already appear in the snapshot. New techniques are out of the candidate set. They are a different task (cold start) and are not scored as misses.
 4. Features at \(T\): technique degree, group degree, collaborative-filtering weight, count of the group's pre-existing malware that use the technique, whether the group already uses the parent technique, the group's historical tactic share, and the technique's link count during the previous year.
-5. The reported score is the temporal encoder in `src/dynscigraph/tgnn.py`: yearly neighbor aggregation and a DistMult decoder fit on pairs dated on or before the cutoff. Static, LSTM, attention, degree, bridge, and logistic scores are stored beside it.
+5. The reported score is `log(1 + bridge) + a log(1 + degree) + b log(1 + decayed degree)`. `a`, `b`, and the decay constant are selected by average precision on the previous year. F1's threshold and the calibration error use the last 90 days of that year, which are left out of the probability fit.
 
 Cutoffs 2022-12-31, 2023-12-31, and 2024-12-31 were fixed as year ends. They were not picked by scanning Precision@10.
 

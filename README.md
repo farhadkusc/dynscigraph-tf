@@ -2,7 +2,7 @@
 
 Temporal link prediction for documented cyber relationships, evaluated on public data.
 
-Author: **Md Farhad Kabir**. Package **0.2.3**.
+Author: **Md Farhad Kabir**. Package **0.2.4**.
 
 Two tasks, both retrospective. Nothing in a test window is used to build features for that window.
 
@@ -12,25 +12,27 @@ Source: MITRE ATT&CK Enterprise STIX (`enterprise-attack.json`, fetched 2026-10-
 
 Question: for pairs that are absent on a cutoff, which ones does ATT&CK add in the next 365 days? Endpoints that do not exist yet at the cutoff are excluded. That is the cold-start the knowledge base actually has; it is reported as a smaller positive set, not hidden.
 
-The model is the temporal encoder in the concept paper. Each year aggregates group–technique neighbors and updates node states. A DistMult decoder is fit on pairs dated on or before the cutoff. The same cutoff also reports a one-step static encoder, an LSTM on yearly link counts, a one-head attention model on those counts, degree, the malware bridge, and a seven-feature logistic. Horizon 90 days is the horizon in the concept paper. Horizon 365 days is the same cutoff code run for a full year.
+The score of a missing pair is `log(1 + malware bridge) + a · log(1 + degree) + b · log(1 + decayed degree)`. The decayed degree sums earlier yearly link counts with weight `exp(−λ · age)`. The coefficients `a`, `b`, and `λ` are chosen by average precision on the year before the cutoff. The test horizon is not used for that choice. F1 uses a threshold chosen on the last 90 days of the training year. Calibration error is the weighted ten-bin gap on that same held-out slice. Degree, the malware bridge, the score without the decay term, a seven-feature logistic, and two yearly-count baselines are reported beside it.
 
 ### 90 days
 
-| Cutoff | Future links | Base rate | Temporal AP | Static AP | LSTM AP | Attention AP | Degree AP | P@10 | R@50 | CalErr |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2022-12-31 | 40 | 0.000863 | 0.000685 | 0.001062 | 0.001567 | 0.001515 | 0.001645 | 0.00 | 0.0000 | 0.0123 |
-| 2023-12-31 | 57 | 0.001057 | 0.002405 | 0.000751 | 0.001584 | 0.001803 | 0.001607 | 0.00 | 0.0000 | 0.0260 |
-| 2024-12-31 | 40 | 0.000609 | 0.000634 | 0.000532 | 0.001290 | 0.001353 | 0.001302 | 0.00 | 0.0000 | 0.0006 |
+| Cutoff | Future | Base rate | Selected | No decay | Bridge | Degree | Logistic | P@10 | R@50 | F1 | CalErr | Lead |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2022-12-31 | 40 | 0.000863 | 0.001841 | 0.001962 | 0.001717 | 0.001645 | 0.002664 | 0.00 | 0.0000 | 0.000000 | 0.0492 | |
+| 2023-12-31 | 57 | 0.001057 | 0.002702 | 0.002131 | 0.002131 | 0.001607 | 0.001459 | 0.00 | 0.0175 | 0.005951 | 0.0496 | 53 |
+| 2024-12-31 | 40 | 0.000609 | 0.001347 | 0.000726 | 0.000726 | 0.001302 | 0.000535 | 0.00 | 0.0000 | 0.002894 | 0.0483 | |
+
+Coefficients selected on the previous year: 2022 uses `a = 0.25`, `b = 1`, `λ = 2`; 2023 uses `a = 0`, `b = 0.5`, `λ = 0.5`; 2024 uses `a = 0`, `b = 1`, `λ = 1`.
 
 ### 365 days
 
-| Cutoff | Future links | Base rate | Temporal AP | Static AP | LSTM AP | Attention AP | Degree AP | P@10 | R@50 | CalErr | Lead time |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2022-12-31 | 94 | 0.002027 | 0.001637 | 0.002133 | 0.005616 | 0.004370 | 0.004899 | 0.00 | 0.0000 | 0.0123 | |
-| 2023-12-31 | 187 | 0.003468 | 0.006543 | 0.002205 | 0.008149 | 0.007270 | 0.007158 | 0.00 | 0.0053 | 0.0260 | 136 |
-| 2024-12-31 | 145 | 0.002207 | 0.002149 | 0.001763 | 0.005354 | 0.004638 | 0.004786 | 0.00 | 0.0000 | 0.0006 | |
+| Cutoff | Future | Base rate | Selected | No decay | Bridge | Degree | Logistic | P@10 | R@50 | F1 | CalErr | Lead |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2022-12-31 | 94 | 0.002027 | 0.009217 | 0.009837 | 0.008235 | 0.004899 | 0.003960 | 0.10 | 0.0213 | 0.017167 | 0.0492 | 224 |
+| 2023-12-31 | 187 | 0.003468 | 0.009252 | 0.005153 | 0.005153 | 0.007158 | 0.005025 | 0.00 | 0.0053 | 0.022337 | 0.0496 | 53 |
+| 2024-12-31 | 145 | 0.002207 | 0.006880 | 0.004489 | 0.004489 | 0.004786 | 0.002101 | 0.00 | 0.0069 | 0.013490 | 0.0483 | 192 |
 
-F1 at probability 0.5 is 0 on every cutoff. Lead time is the mean number of days from the cutoff to the edge timestamp for hits inside the top 50. Precision@10 is 0 on every cutoff. On the 90-day horizon the temporal encoder is ahead of the static encoder at the 2023 and 2024 cutoffs. On the 365-day horizon the LSTM and the degree score are ahead of the temporal encoder.
+On the 365-day horizon the selected score is ahead of degree at every cutoff and ahead of the logistic at every cutoff. Dropping the decay term raises 2022 average precision from 0.009217 to 0.009837 and lowers 2023 from 0.009252 to 0.005153 and 2024 from 0.006880 to 0.004489. Precision@10 is 0.10 on the 2022 cutoff and 0 on the other two. Recall@50 is 0.0213, 0.0053, and 0.0069. Lead time is the mean number of days from the cutoff to the edge timestamp for the hits inside the top 50.
 
 ## 2. EPSS file versus later CISA KEV
 

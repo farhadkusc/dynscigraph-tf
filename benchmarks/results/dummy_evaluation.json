@@ -1,7 +1,7 @@
 {
   "kind": "synthetic-fixture",
   "package": "dynscigraph-tf",
-  "package_version": "0.2.3",
+  "package_version": "0.2.4",
   "statement": "Synthetic fixture. Organization names are scenario labels.",
   "n_organizations": 106,
   "counts": {
@@ -12,77 +12,84 @@
     "research-center": 46
   },
   "observation_graph": {
-    "ap": 0.082062,
-    "p_at_10": 0.1,
-    "p_at_50": 0.04,
-    "r_at_50": 0.0128,
-    "f1": 0.0,
+    "ap": 0.733185,
+    "p_at_10": 1.0,
+    "p_at_50": 1.0,
+    "r_at_50": 0.3205,
+    "f1": 0.146861,
     "baselines": {
       "static_gnn": {
-        "ap": 0.039363,
-        "p_at_10": 0.1,
-        "p_at_50": 0.04,
-        "r_at_50": 0.0128,
-        "f1": 0.0
+        "ap": 0.733185,
+        "p_at_10": 1.0,
+        "p_at_50": 1.0,
+        "r_at_50": 0.3205,
+        "f1": 0.336449
       },
       "lstm_indicators": {
-        "ap": 0.100705,
+        "ap": 0.039363,
         "p_at_10": 0.1,
         "p_at_50": 0.04,
         "r_at_50": 0.0128,
         "f1": 0.084875
       },
       "transformer_indicators": {
-        "ap": 0.025492,
-        "p_at_10": 0.0,
-        "p_at_50": 0.0,
-        "r_at_50": 0.0,
-        "f1": 0.0
+        "ap": 0.039363,
+        "p_at_10": 0.1,
+        "p_at_50": 0.04,
+        "r_at_50": 0.0128,
+        "f1": 0.084875
       },
       "logistic_combination": {
         "ap": 0.87306,
         "p_at_10": 1.0,
         "p_at_50": 1.0,
         "r_at_50": 0.3205,
-        "f1": 0.901408
+        "f1": 0.653465
       },
       "technique_degree": {
         "ap": 0.034578,
         "p_at_10": 0.0,
         "p_at_50": 0.0,
         "r_at_50": 0.0,
-        "f1": 0.084875
+        "f1": 0.0
       },
       "malware_bridge": {
         "ap": 0.849558,
         "p_at_10": 1.0,
         "p_at_50": 1.0,
         "r_at_50": 0.3205,
-        "f1": 0.901408
+        "f1": 0.084875
       },
       "reactive_degree": {
         "ap": 0.034578,
         "p_at_10": 0.0,
         "p_at_50": 0.0,
         "r_at_50": 0.0,
-        "f1": 0.084875
+        "f1": 0.0
       },
       "random": {
         "ap": 0.04802,
         "p_at_10": 0.1,
         "p_at_50": 0.1,
         "r_at_50": 0.0321,
-        "f1": 0.078534
+        "f1": 0.063584
       }
     },
     "base_rate": 0.044318,
     "n_future": 156,
     "n_candidates": 3520,
     "n_train_pos": 190,
-    "lift_ap_vs_base": 1.85,
-    "lead_time_days": 121.0,
-    "cal_err": 0.05,
-    "model": "temporal-encoder",
+    "lift_ap_vs_base": 16.54,
+    "lead_time_days": 105.0,
+    "cal_err": 0.0,
+    "f1_threshold": 1.0,
+    "selection": {
+      "mix": 0.35,
+      "decay_weight": 0.0,
+      "lambda": 0.0,
+      "train_ap": 0.0
+    },
+    "model": "temporal-relational",
     "cutoff": "2024-12-31",
     "note": "Planted observation graph. Groups are scenario labels, not intrusion sets. Timestamps are fixture dates, not ATT&CK created dates."
   },
@@ -121,29 +128,29 @@
     "cutoff": "2026-03-31",
     "n_future": 2,
     "n_candidates": 3,
-    "ap": 0.583333,
+    "ap": 1.0,
     "base_rate": 0.666667,
     "baselines": {
       "static_gnn": {
-        "ap": 0.583333,
+        "ap": 1.0,
         "p_at_10": 0.6667,
         "p_at_50": 0.6667,
         "r_at_50": 1.0,
-        "f1": 0.0
+        "f1": 0.8
       },
       "lstm_indicators": {
         "ap": 0.583333,
         "p_at_10": 0.6667,
         "p_at_50": 0.6667,
         "r_at_50": 1.0,
-        "f1": 0.0
+        "f1": 0.8
       },
       "transformer_indicators": {
         "ap": 0.583333,
         "p_at_10": 0.6667,
         "p_at_50": 0.6667,
         "r_at_50": 1.0,
-        "f1": 0.0
+        "f1": 0.8
       },
       "logistic_combination": {
         "ap": 0.583333,
@@ -164,7 +171,7 @@
         "p_at_10": 0.6667,
         "p_at_50": 0.6667,
         "r_at_50": 1.0,
-        "f1": 1.0
+        "f1": 0.8
       },
       "reactive_degree": {
         "ap": 0.583333,
@@ -178,7 +185,7 @@
         "p_at_10": 0.6667,
         "p_at_50": 0.6667,
         "r_at_50": 1.0,
-        "f1": 0.666667
+        "f1": 0.8
       }
     },
     "held_out": [

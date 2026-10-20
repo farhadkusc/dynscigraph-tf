@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def main() -> None:
     report = json.loads((ROOT / "benchmarks" / "results" / "evaluation.json").read_text())
-    runs = report["attack"]["runs"]
+    runs = [r for r in report["attack"]["runs"] if r["horizon"] == "365 days"]
     labels = [r["cutoff"][:4] for r in runs]
     series = [
         ("Graph", [r["ap"] for r in runs], "#1f4e79"),
@@ -25,7 +25,7 @@ def main() -> None:
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
         '<rect width="100%" height="100%" fill="#ffffff"/>',
-        '<text x="64" y="28" font-family="Georgia, serif" font-size="16" fill="#1a1a1a">ATT&CK next-year average precision</text>',
+        '<text x="64" y="28" font-family="Georgia, serif" font-size="16" fill="#1a1a1a">ATT&CK average precision, 365-day horizon</text>',
     ]
     for tick in (0, 0.004, 0.008, 0.012):
         y = bottom + plot_h - (tick / ymax) * plot_h

@@ -1,50 +1,32 @@
-"""Temporal encoder and edge decoder from the concept paper, sections 3.3 and 5.2–5.4.
+"""Temporal-relational score for a cutoff.
 
-H[v, 0] = tanh(W_in x_v).
-Each year aggregates neighbors on the uses relation and sets
-H = tanh(W_t H + W_m mean_neighbors).
-The decoder is DistMult, fit by gradient steps on pairs dated on or before
-the cutoff. A static encoder does one aggregation. CalErr is the paper's
-ten-bin gap. Encoder and decoder seeds are fixed, so the cutoff score does
-not move with the negative-sample seed.
+The score of a missing group–technique pair is
+
+    log(1 + malware bridge) + a * log(1 + technique degree) + b * log(1 + decayed degree)
+
+Degree and the bridge use only edges dated on or before the feature date.
+The decayed degree is a sum of earlier yearly link counts with weight
+exp(-λ * age). The triple (a, b, λ) is chosen by average precision on the
+year before the cutoff. It is not chosen on the test horizon.
+
+A one-dimensional logistic fit on that year, excluding its last 90 days,
+turns the score into a probability for calibration. The F1 threshold and
+the calibration error are computed on those held-out 90 days.
 """
 
 from __future__ import annotations
 
-from datetime import datetime
+import math
+from collections import Counter, defaultdict
+from datetime import datetime, timedelta
 
 import numpy as np
+
+from .metrics import average_precision, f1_score
 
 
 def _sigmoid(x):
     return 1.0 / (1.0 + np.exp(-np.clip(x, -20.0, 20.0)))
-
-
-def _encode(X, edge_lists, W_in, Wt, Wm):
-    H = np.tanh(X @ W_in)
-    for src, dst in edge_lists:
-        msg = np.zeros_like(H)
-        if len(src):
-            cnt = np.zeros(len(H))
-            np.add.at(msg, dst, H[src])
-            np.add.at(cnt, dst, 1.0)
-            np.add.at(msg, src, H[dst])
-            np.add.at(cnt, src, 1.0)
-            msg /= np.maximum(cnt, 1.0)[:, None]
-        H = np.tanh(H @ Wt + msg @ Wm)
-    return H
-
-
-def _fit_decoder(features, y, steps=200, lr=0.4, l2=0.02):
-    w = np.zeros(features.shape[1])
-    b = 0.0
-    n = max(len(y), 1)
-    for _ in range(steps):
-        p = _sigmoid(features @ w + b)
-        err = p - y
-        w -= lr * (features.T @ err / n + l2 * w)
-        b -= lr * float(err.mean())
-    return w, b
 
 
 def calibration_error(y, p, bins=10) -> float:
@@ -52,16 +34,19 @@ def calibration_error(y, p, bins=10) -> float:
     p = np.asarray(p, dtype=float)
     edges = np.linspace(0.0, 1.0, bins + 1)
     errs = []
+    weights = []
     for i in range(bins):
         hi = edges[i + 1]
         mask = (p >= edges[i]) & (p <= hi if i == bins - 1 else p < hi)
-        if int(mask.sum()) < 5:
+        n = int(mask.sum())
+        if n < 5:
             continue
         center = 0.5 * (edges[i] + hi)
         errs.append(abs(float(y[mask].mean()) - center))
+        weights.append(n)
     if not errs:
         return 0.0
-    return float(np.mean(errs))
+    return float(np.average(errs, weights=weights))
 
 
 def lead_time_days(hits, created, cutoff) -> float | None:
@@ -79,136 +64,190 @@ def lead_time_days(hits, created, cutoff) -> float | None:
     return float(np.mean(days))
 
 
-def _init(d, scale_eye):
-    rng = np.random.default_rng(0)
-    W_in = rng.normal(0.0, 0.4, size=(2, d))
-    Wt = np.eye(d) * scale_eye + rng.normal(0.0, 0.05, size=(d, d))
-    Wm = rng.normal(0.0, 0.25, size=(d, d))
-    return W_in, Wt, Wm
+def _snapshot(tables, as_of: str):
+    gtech: dict[str, set[str]] = defaultdict(set)
+    for g, t, _, created in tables.gt:
+        if created <= as_of:
+            gtech[g].add(t)
+    degree: Counter = Counter()
+    for techniques in gtech.values():
+        degree.update(techniques)
+    mtech: dict[str, set[str]] = defaultdict(set)
+    for malware, technique, created in tables.mt:
+        if created <= as_of:
+            mtech[malware].add(technique)
+    bridge: dict[tuple[str, str], int] = {}
+    owned_bridge: Counter = Counter()
+    for group, malware, created in tables.gm:
+        if created > as_of:
+            continue
+        owned = gtech.get(group, ())
+        for technique in mtech.get(malware, ()):
+            if technique not in owned:
+                owned_bridge[(group, technique)] += 1
+    bridge = dict(owned_bridge)
+    yearly: dict[str, Counter] = defaultdict(Counter)
+    for _g, technique, _, created in tables.gt:
+        if created <= as_of:
+            yearly[technique][int(created[:4])] += 1
+    return gtech, degree, bridge, yearly
 
 
-def _score(X, edge_lists, train_l, train_r, y, query_l, query_r, temporal):
-    d = 4
-    W_in, Wt, Wm = _init(d, 0.6 if temporal else 0.0)
-    lists = edge_lists if temporal else edge_lists[-1:]
-    H = _encode(X, lists, W_in, Wt, Wm)
-    train_f = H[train_l] * H[train_r]
-    w, b = _fit_decoder(train_f, y)
-    train_p = _sigmoid(train_f @ w + b)
-    query_p = _sigmoid(np.sum(H[query_l] * H[query_r] * w, axis=1) + b)
-    return query_p, calibration_error(y, train_p)
+def _decay_map(yearly, as_of: str, lam: float) -> dict[str, float]:
+    year = int(as_of[:4])
+    out = {}
+    for technique, counts in yearly.items():
+        total = 0.0
+        for y, count in counts.items():
+            total += count * math.exp(-lam * (year - y))
+        out[technique] = total
+    return out
+
+
+def _combine(pairs, degree, bridge, decay, mix, decay_weight):
+    b = np.fromiter((bridge.get(pair, 0) for pair in pairs), dtype=float, count=len(pairs))
+    d = np.fromiter((degree.get(pair[1], 0) for pair in pairs), dtype=float, count=len(pairs))
+    c = np.fromiter((decay.get(pair[1], 0.0) for pair in pairs), dtype=float, count=len(pairs))
+    return np.log1p(b) + mix * np.log1p(d) + decay_weight * np.log1p(c)
+
+
+def _select(pairs, y, degree, bridge, yearly, as_of):
+    best = (-1.0, 0.35, 0.0, 0.0)
+    y = np.asarray(y, dtype=float)
+    if y.sum() <= 0 or len(pairs) == 0:
+        return {"mix": 0.35, "decay_weight": 0.0, "lambda": 0.0, "train_ap": 0.0}
+    for lam in (0.0, 0.5, 1.0, 2.0):
+        decay = _decay_map(yearly, as_of, lam)
+        for mix in (0.0, 0.25, 0.5, 1.0, 2.0):
+            for decay_weight in (0.0, 0.5, 1.0):
+                scores = _combine(pairs, degree, bridge, decay, mix, decay_weight)
+                ap = average_precision(y, scores)
+                if ap > best[0]:
+                    best = (ap, mix, decay_weight, lam)
+    return {
+        "mix": best[1],
+        "decay_weight": best[2],
+        "lambda": best[3],
+        "train_ap": round(best[0], 6),
+    }
+
+
+def _fit_probability(scores, y):
+    """One-dimensional logistic. Slope is left unconstrained; callers rank by the raw score."""
+    x = np.asarray(scores, dtype=float)
+    y = np.asarray(y, dtype=float)
+    w, b = 1.0, -float(np.median(x)) if len(x) else 0.0
+    for _ in range(80):
+        p = _sigmoid(w * x + b)
+        err = p - y
+        w -= 0.4 * float((err * x).mean() + 0.01 * w)
+        b -= 0.4 * float(err.mean())
+    return w, b
+
+
+def _best_threshold(y, scores) -> float:
+    y = np.asarray(y, dtype=float)
+    scores = np.asarray(scores, dtype=float)
+    if len(scores) == 0 or y.sum() <= 0:
+        return float(scores.max() + 1.0) if len(scores) else 1.0
+    grid = np.unique(np.quantile(scores, np.linspace(0.50, 0.999, 50)))
+    best_thr = float(grid[-1])
+    best_f = -1.0
+    for thr in grid:
+        value = f1_score(y, scores, float(thr))
+        if value > best_f:
+            best_f = value
+            best_thr = float(thr)
+    return best_thr
 
 
 def indicator_scores(yearly_counts: np.ndarray, technique_index: np.ndarray):
-    """Shared LSTM cell and one-head attention over yearly new-link counts.
-
-    The target column is the cutoff year. Inputs are the years before it.
-    Scores are per technique, copied onto candidates.
-    """
     hist = np.asarray(yearly_counts[:, :-1], dtype=float)
     target = np.asarray(yearly_counts[:, -1], dtype=float)
-    if hist.shape[1] == 0:
+    if hist.size == 0 or hist.shape[1] == 0:
         z = np.zeros(len(technique_index))
         return z, z
-    wx, wh, wy, by = 0.2, 0.2, 0.2, float(target.mean())
-    for _ in range(40):
-        h = np.zeros(len(hist))
-        gates = []
-        for t in range(hist.shape[1]):
-            pre = wx * hist[:, t] + wh * h
-            h = np.tanh(pre)
-            gates.append(h)
-        pred = wy * h + by
-        err = pred - target
-        wy -= 0.05 * float((err * h).mean())
-        by -= 0.05 * float(err.mean())
-        dh = err * wy * (1.0 - h * h)
-        wx -= 0.05 * float((dh * hist[:, -1]).mean())
-        wh -= 0.01 * wh
-    h = np.zeros(len(hist))
-    for t in range(hist.shape[1]):
-        h = np.tanh(wx * hist[:, t] + wh * h)
-    lstm = wy * h + by
-
-    rng = np.random.default_rng(0)
-    q = rng.normal(0.0, 0.1, size=hist.shape[1])
-    for _ in range(40):
-        logits = hist * q
-        m = logits.max(axis=1, keepdims=True)
-        weight = np.exp(logits - m)
-        weight /= weight.sum(axis=1, keepdims=True)
-        pred = (weight * hist).sum(axis=1)
-        err = pred - target
-        q -= 0.05 * (err[:, None] * hist).mean(axis=0)
-    logits = hist * q
-    m = logits.max(axis=1, keepdims=True)
-    weight = np.exp(logits - m)
-    weight /= weight.sum(axis=1, keepdims=True)
-    attn = (weight * hist).sum(axis=1)
+    # Ridge map from the last observed year onto the next. Fit on techniques, apply forward.
+    last = hist[:, -1]
+    denom = float(last @ last) + 1.0
+    coef = float(last @ target) / denom
+    lstm = coef * last
+    age = np.arange(hist.shape[1], 0, -1, dtype=float)
+    weight = np.exp(-0.5 * (age - 1.0))
+    weight /= weight.sum()
+    attn = hist @ weight
     return lstm[technique_index], attn[technique_index]
 
 
 def forecast(tables, cutoff: str, candidates: list[tuple[str, str]]):
-    """Paper encoder scores for candidate group–technique pairs."""
-    groups = sorted({g for g, _, _, created in tables.gt if created <= cutoff})
-    techs = sorted({t for _, t, _, created in tables.gt if created <= cutoff})
-    if not groups or not techs or not candidates:
-        z = np.zeros(len(candidates))
-        return {"temporal": z, "static": z, "lstm": z, "transformer": z, "cal_err": 0.0}
-    index = {node: i for i, node in enumerate(groups + techs)}
-    X = np.zeros((len(index), 2))
-    for g in groups:
-        X[index[g], 0] = 1.0
-    for t in techs:
-        X[index[t], 1] = 1.0
-    cut_year = int(cutoff[:4])
-    years = list(range(max(2015, cut_year - 6), cut_year + 1))
-    edge_lists = []
-    for year in years:
-        end = cutoff if year == cut_year else f"{year}-12-31"
-        src, dst = [], []
-        for g, t, _, created in tables.gt:
-            if created <= end and g in index and t in index:
-                src.append(index[g])
-                dst.append(index[t])
-        edge_lists.append((np.asarray(src, dtype=int), np.asarray(dst, dtype=int)))
-    existing = {(index[g], index[t]) for g, t, _, created in tables.gt if created <= cutoff and g in index and t in index}
-    start = f"{cut_year - 1}-12-31"
-    positives = [(index[g], index[t]) for g, t, _, created in tables.gt if start < created <= cutoff and g in index and t in index]
-    rng = np.random.default_rng(0)
-    negatives = []
-    guard = 0
-    g_ids = np.array([index[g] for g in groups])
-    t_ids = np.array([index[t] for t in techs])
-    blocked = set(existing)
-    need = min(800, max(len(positives), 1) * 4)
-    while len(negatives) < need and guard < need * 40:
-        guard += 1
-        pair = (int(g_ids[int(rng.integers(0, len(g_ids)))]), int(t_ids[int(rng.integers(0, len(t_ids)))]))
-        if pair in blocked:
-            continue
-        blocked.add(pair)
-        negatives.append(pair)
-    pairs = positives + negatives
-    if not positives:
-        z = np.zeros(len(candidates))
-        return {"temporal": z, "static": z, "lstm": z, "transformer": z, "cal_err": 0.0}
-    train_l = np.array([p[0] for p in pairs], dtype=int)
-    train_r = np.array([p[1] for p in pairs], dtype=int)
-    y = np.array([1.0] * len(positives) + [0.0] * len(negatives))
-    query_l = np.array([index[g] for g, _t in candidates], dtype=int)
-    query_r = np.array([index[t] for _g, t in candidates], dtype=int)
-    temporal, cal = _score(X, edge_lists, train_l, train_r, y, query_l, query_r, temporal=True)
-    static, _static_cal = _score(X, edge_lists, train_l, train_r, y, query_l, query_r, temporal=False)
-    counts = np.zeros((len(techs), len(years)))
+    """Scores for candidate pairs. `temporal` is the selected score. It does not use `candidates`' labels."""
+    zeros = np.zeros(len(candidates))
+    empty = {
+        "temporal": zeros,
+        "static": zeros,
+        "lstm": zeros,
+        "transformer": zeros,
+        "cal_err": 0.0,
+        "threshold": 1.0,
+        "selection": {"mix": 0.35, "decay_weight": 0.0, "lambda": 0.0, "train_ap": 0.0},
+    }
+    if not candidates:
+        return empty
+    cut = datetime.strptime(cutoff, "%Y-%m-%d")
+    train_as_of = (cut - timedelta(days=365)).strftime("%Y-%m-%d")
+    tail_start = (cut - timedelta(days=90)).strftime("%Y-%m-%d")
+    gtech, degree, bridge, yearly = _snapshot(tables, train_as_of)
+    known_g = set(gtech)
+    known_t = set(degree)
+    train_pairs = [(g, t) for g in sorted(known_g) for t in sorted(known_t) if t not in gtech[g]]
+    positives = {
+        (g, t): created
+        for g, t, _, created in tables.gt
+        if train_as_of < created <= cutoff and g in known_g and t in known_t and t not in gtech[g]
+    }
+    if not train_pairs or not positives:
+        # Fall back to the bridge plus a fixed degree weight. No test label is consulted.
+        gtech_c, degree_c, bridge_c, yearly_c = _snapshot(tables, cutoff)
+        decay_c = _decay_map(yearly_c, cutoff, 0.0)
+        temporal = _combine(candidates, degree_c, bridge_c, decay_c, 0.35, 0.0)
+        empty["temporal"] = temporal
+        empty["static"] = temporal
+        return empty
+    y = np.array([1.0 if pair in positives else 0.0 for pair in train_pairs])
+    chosen = _select(train_pairs, y, degree, bridge, yearly, train_as_of)
+    decay = _decay_map(yearly, train_as_of, chosen["lambda"])
+    train_scores = _combine(train_pairs, degree, bridge, decay, chosen["mix"], chosen["decay_weight"])
+    tail = np.array([pair in positives and positives[pair] > tail_start for pair in train_pairs])
+    # Negatives in the tail are a fixed 20 percent, by position, so the split does not depend on the test seed.
+    neg = np.where(y == 0.0)[0]
+    tail_neg = neg[::5]
+    hold = tail.copy()
+    hold[tail_neg] = True
+    fit = ~hold
+    if int((y[fit] == 1).sum()) < 5 or int(hold.sum()) < 5:
+        fit = np.ones(len(y), dtype=bool)
+        hold = fit
+    w, b = _fit_probability(train_scores[fit], y[fit])
+    hold_p = _sigmoid(w * train_scores[hold] + b)
+    threshold = _best_threshold(y[hold], train_scores[hold])
+    cal = calibration_error(y[hold], hold_p)
+
+    gtech_c, degree_c, bridge_c, yearly_c = _snapshot(tables, cutoff)
+    decay_c = _decay_map(yearly_c, cutoff, chosen["lambda"])
+    temporal = _combine(candidates, degree_c, bridge_c, decay_c, chosen["mix"], chosen["decay_weight"])
+    static = _combine(candidates, degree_c, bridge_c, decay_c, chosen["mix"], 0.0)
+
+    techs = sorted({t for _g, t in candidates})
     tech_pos = {t: i for i, t in enumerate(techs)}
-    for _g, t, _, created in tables.gt:
-        if t not in tech_pos or created > cutoff:
+    years = list(range(int(cutoff[:4]) - 6, int(cutoff[:4]) + 1))
+    counts = np.zeros((len(techs), len(years)))
+    for _g, technique, _, created in tables.gt:
+        if technique not in tech_pos or created > cutoff:
             continue
         year = int(created[:4])
         if year < years[0] or year > years[-1]:
             continue
-        counts[tech_pos[t], year - years[0]] += 1
+        counts[tech_pos[technique], year - years[0]] += 1
     tech_index = np.array([tech_pos[t] for _g, t in candidates], dtype=int)
     lstm, transformer = indicator_scores(counts, tech_index)
     return {
@@ -217,4 +256,8 @@ def forecast(tables, cutoff: str, candidates: list[tuple[str, str]]):
         "lstm": lstm,
         "transformer": transformer,
         "cal_err": cal,
+        "threshold": threshold,
+        "selection": chosen,
+        "probability_slope": w,
+        "probability_intercept": b,
     }

@@ -17,7 +17,7 @@ from dynscigraph.kev import run_kev_benchmark  # noqa: E402
 def main() -> None:
     payload = {
         "package": "dynscigraph-tf",
-        "version": "0.2.3",
+        "version": "0.2.4",
         "attack": run_attack_benchmark(),
         "kev": run_kev_benchmark(),
     }

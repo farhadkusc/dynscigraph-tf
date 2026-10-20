@@ -11,4 +11,4 @@ flowchart LR
   H --> I
 ```
 
-The encoder aggregates group–technique neighbors once per year and the decoder is DistMult, fit on pairs dated on or before the cutoff. Static, LSTM, and attention baselines use the same candidates.
+The score is a bridge count plus a time-decayed technique degree. Coefficients are selected on the previous year. The test horizon is not used.

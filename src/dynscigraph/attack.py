@@ -229,13 +229,19 @@ def _fit_and_score(tables, candidates, future, train_pos, cut_s, tr_s, seed) -> 
     rng_s = np.random.default_rng(seed + 1)
     random_scores = rng_s.random(len(candidates))
 
-    def pack(scores):
+    def pack(scores, threshold=None):
+        scores = np.asarray(scores, dtype=float)
+        if threshold is None:
+            rate = max(len(pos), 1) / max(len(candidates), 1)
+            k = min(len(scores), max(1, int(round(rate * len(scores)))))
+            order_k = np.argsort(-scores, kind="mergesort")
+            threshold = float(scores[order_k[k - 1]])
         return {
             "ap": round(average_precision(y_test, scores), 6),
             "p_at_10": round(precision_at(y_test, scores, 10), 4),
             "p_at_50": round(precision_at(y_test, scores, 50), 4),
             "r_at_50": round(recall_at(y_test, scores, 50), 4),
-            "f1": round(f1_score(y_test, scores), 6),
+            "f1": round(f1_score(y_test, scores, threshold), 6),
         }
 
     created = {}
@@ -244,7 +250,7 @@ def _fit_and_score(tables, candidates, future, train_pos, cut_s, tr_s, seed) -> 
             created[(g, t)] = stamp
     order = np.argsort(-np.asarray(graph_score, dtype=float), kind="mergesort")
     hits = [candidates[int(i)] for i in order[:50] if y_test[int(i)] == 1.0]
-    out = pack(graph_score)
+    out = pack(graph_score, threshold=float(paper.get("threshold", 0.5)))
     out["baselines"] = {
         "static_gnn": pack(paper["static"]),
         "lstm_indicators": pack(paper["lstm"]),
@@ -260,10 +266,11 @@ def _fit_and_score(tables, candidates, future, train_pos, cut_s, tr_s, seed) -> 
     out["n_candidates"] = int(len(candidates))
     out["n_train_pos"] = len(pos)
     out["lift_ap_vs_base"] = round(out["ap"] / out["base_rate"], 2) if out["base_rate"] else None
-    out["f1"] = out["f1"]
     out["lead_time_days"] = lead_time_days(hits, created, cut_s)
     out["cal_err"] = round(float(paper["cal_err"]), 6)
-    out["model"] = "temporal-encoder"
+    out["f1_threshold"] = paper.get("threshold")
+    out["selection"] = paper.get("selection")
+    out["model"] = "temporal-relational"
     return out
 
 
@@ -280,7 +287,7 @@ def run_attack_benchmark(cutoffs: tuple[str, ...] = ("2022-12-31", "2023-12-31",
         "task": "P(E_t+delta \\ E_t | G_1..G_t) on ATT&CK group-technique edges",
         "source": "MITRE ATT&CK Enterprise STIX, relationship.created",
         "snapshot": "enterprise-attack collection fetched 2026-10-19 (v20 window through 2026-10)",
-        "model": "temporal encoder, yearly uses-aggregation, trained DistMult decoder",
+        "model": "temporal-relational score, weights selected on the year before the cutoff",
         "horizons_days": [90, 365],
         "disclaimer": "The timestamp is the ATT&CK relationship created field, the documentation date.",
         "runs": runs,

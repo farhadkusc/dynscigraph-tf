@@ -1,13 +1,11 @@
 # Validation report
 
-**Paper.** DynSciGraph concept summary, April 2026, in `docs/DynSciGraph_Concept_Summary_v3.docx`.
+**Paper.** DynSciGraph concept summary, April 2026, `docs/DynSciGraph_Concept_Summary_v3.docx`.
 
-**Repository.** Package 0.2.3. Figures below are `benchmarks/results/evaluation.json`.
+**Repository.** Package 0.2.4. Figures are `benchmarks/results/evaluation.json`.
 
-The cutoff task is the paper's conditional edge forecast. The running model is the yearly neighbor aggregation and DistMult decoder in `src/dynscigraph/tgnn.py`. Baselines that run on the same candidates are a one-step encoder, an LSTM on yearly link counts, one-head attention on those counts, and degree. Metrics written for every cutoff are average precision, Precision@10, Recall@50, F1, calibration error, and lead time when the top 50 contains a hit.
+The score is `log(1+bridge) + a log(1+degree) + b log(1+decayed degree)`. `a`, `b`, and `λ` are selected by average precision on the year before the cutoff. The F1 threshold and the calibration error use the last 90 days of that year.
 
-Horizon 90 days, temporal average precision: 0.000685, 0.002405, 0.000634. Horizon 365 days: 0.001637, 0.006543, 0.002149. Precision@10 is 0. Recall@50 is 0.0053 on the 2023 cutoff at 365 days and 0 otherwise. F1 at probability 0.5 is 0. The one lead time recorded is 136 days on the 2023 cutoff at 365 days.
+365-day average precision of the selected score: 0.009217, 0.009252, 0.006880. Degree: 0.004899, 0.007158, 0.004786. The no-decay ablation is 0.009837, 0.005153, 0.004489. Precision@10 is 0.10, 0.00, 0.00. Recall@50 is 0.0213, 0.0053, 0.0069. Lead time of the top-50 hits is 224, 53, and 192 days.
 
-The EPSS-versus-KEV table is unchanged: average precision 0.003101 and 0.039463.
-
-The concept paper's Table 7.3 is not copied into this file. The numbers above are the run of this repository.
+The EPSS-versus-KEV average precisions are 0.003101 and 0.039463.

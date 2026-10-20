@@ -1,11 +1,11 @@
 {
   "package": "dynscigraph-tf",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "attack": {
     "task": "P(E_t+delta \\ E_t | G_1..G_t) on ATT&CK group-technique edges",
     "source": "MITRE ATT&CK Enterprise STIX, relationship.created",
     "snapshot": "enterprise-attack collection fetched 2026-10-19 (v20 window through 2026-10)",
-    "model": "temporal encoder, yearly uses-aggregation, trained DistMult decoder",
+    "model": "temporal-relational score, weights selected on the year before the cutoff",
     "horizons_days": [
       90,
       365
@@ -13,452 +13,494 @@
     "disclaimer": "The timestamp is the ATT&CK relationship created field, the documentation date.",
     "runs": [
       {
-        "ap": 0.000685,
+        "ap": 0.001841,
         "p_at_10": 0.0,
         "p_at_50": 0.0,
         "r_at_50": 0.0,
         "f1": 0.0,
         "baselines": {
           "static_gnn": {
-            "ap": 0.001062,
+            "ap": 0.001962,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
             "f1": 0.0
           },
           "lstm_indicators": {
-            "ap": 0.001567,
+            "ap": 0.001577,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.001724
+            "f1": 0.0
           },
           "transformer_indicators": {
-            "ap": 0.001515,
+            "ap": 0.001678,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.002835
+            "f1": 0.0
           },
           "logistic_combination": {
             "ap": 0.002664,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.0042
+            "f1": 0.0
           },
           "technique_degree": {
             "ap": 0.001645,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.001724
+            "f1": 0.0
           },
           "malware_bridge": {
             "ap": 0.001717,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.003359
+            "f1": 0.0
           },
           "reactive_degree": {
             "ap": 0.001645,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.001724
+            "f1": 0.0
           },
           "random": {
             "ap": 0.000977,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.000942
+            "f1": 0.0
           }
         },
         "base_rate": 0.000863,
         "n_future": 40,
         "n_candidates": 46376,
         "n_train_pos": 25,
-        "lift_ap_vs_base": 0.79,
+        "lift_ap_vs_base": 2.13,
         "lead_time_days": null,
-        "cal_err": 0.012252,
-        "model": "temporal-encoder",
+        "cal_err": 0.049217,
+        "f1_threshold": 4.168384504977334,
+        "selection": {
+          "mix": 0.25,
+          "decay_weight": 1.0,
+          "lambda": 2.0,
+          "train_ap": 0.020143
+        },
+        "model": "temporal-relational",
         "cutoff": "2022-12-31",
         "horizon": "90 days"
       },
       {
-        "ap": 0.002405,
+        "ap": 0.002702,
         "p_at_10": 0.0,
-        "p_at_50": 0.0,
-        "r_at_50": 0.0,
-        "f1": 0.0,
+        "p_at_50": 0.02,
+        "r_at_50": 0.0175,
+        "f1": 0.005951,
         "baselines": {
           "static_gnn": {
-            "ap": 0.000751,
+            "ap": 0.002131,
+            "p_at_10": 0.0,
+            "p_at_50": 0.0,
+            "r_at_50": 0.0,
+            "f1": 0.017544
+          },
+          "lstm_indicators": {
+            "ap": 0.001334,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
             "f1": 0.0
           },
-          "lstm_indicators": {
-            "ap": 0.001584,
-            "p_at_10": 0.0,
-            "p_at_50": 0.0,
-            "r_at_50": 0.0,
-            "f1": 0.002112
-          },
           "transformer_indicators": {
-            "ap": 0.001803,
+            "ap": 0.001657,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.003634
+            "f1": 0.0
           },
           "logistic_combination": {
             "ap": 0.001459,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.004151
+            "f1": 0.0
           },
           "technique_degree": {
             "ap": 0.001607,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.002112
+            "f1": 0.0
           },
           "malware_bridge": {
             "ap": 0.002131,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.006463
+            "f1": 0.017544
           },
           "reactive_degree": {
             "ap": 0.001607,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.002112
+            "f1": 0.0
           },
           "random": {
             "ap": 0.001095,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.001989
+            "f1": 0.0
           }
         },
         "base_rate": 0.001057,
         "n_future": 57,
         "n_candidates": 53923,
         "n_train_pos": 31,
-        "lift_ap_vs_base": 2.28,
-        "lead_time_days": null,
-        "cal_err": 0.026018,
-        "model": "temporal-encoder",
+        "lift_ap_vs_base": 2.56,
+        "lead_time_days": 53.0,
+        "cal_err": 0.049568,
+        "f1_threshold": 1.1916526747508918,
+        "selection": {
+          "mix": 0.0,
+          "decay_weight": 0.5,
+          "lambda": 0.5,
+          "train_ap": 0.010333
+        },
+        "model": "temporal-relational",
         "cutoff": "2023-12-31",
         "horizon": "90 days"
       },
       {
-        "ap": 0.000634,
+        "ap": 0.001347,
         "p_at_10": 0.0,
         "p_at_50": 0.0,
         "r_at_50": 0.0,
-        "f1": 0.0,
+        "f1": 0.002894,
         "baselines": {
           "static_gnn": {
-            "ap": 0.000532,
+            "ap": 0.000726,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
             "f1": 0.0
           },
           "lstm_indicators": {
-            "ap": 0.00129,
+            "ap": 0.000931,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.001217
+            "f1": 0.007722
           },
           "transformer_indicators": {
-            "ap": 0.001353,
+            "ap": 0.001715,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.001782
+            "f1": 0.009901
           },
           "logistic_combination": {
             "ap": 0.000535,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.000681
+            "f1": 0.0
           },
           "technique_degree": {
             "ap": 0.001302,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.001217
+            "f1": 0.0
           },
           "malware_bridge": {
             "ap": 0.000726,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.002135
+            "f1": 0.0
           },
           "reactive_degree": {
             "ap": 0.001302,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.001217
+            "f1": 0.0
           },
           "random": {
             "ap": 0.00061,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.001089
+            "f1": 0.0
           }
         },
         "base_rate": 0.000609,
         "n_future": 40,
         "n_candidates": 65689,
         "n_train_pos": 105,
-        "lift_ap_vs_base": 1.04,
+        "lift_ap_vs_base": 2.21,
         "lead_time_days": null,
-        "cal_err": 0.000585,
-        "model": "temporal-encoder",
+        "cal_err": 0.048328,
+        "f1_threshold": 2.0399802564456078,
+        "selection": {
+          "mix": 0.0,
+          "decay_weight": 1.0,
+          "lambda": 1.0,
+          "train_ap": 0.0094
+        },
+        "model": "temporal-relational",
         "cutoff": "2024-12-31",
         "horizon": "90 days"
       },
       {
-        "ap": 0.001637,
-        "p_at_10": 0.0,
-        "p_at_50": 0.0,
-        "r_at_50": 0.0,
-        "f1": 0.0,
+        "ap": 0.009217,
+        "p_at_10": 0.1,
+        "p_at_50": 0.04,
+        "r_at_50": 0.0213,
+        "f1": 0.017167,
         "baselines": {
           "static_gnn": {
-            "ap": 0.002133,
-            "p_at_10": 0.0,
-            "p_at_50": 0.0,
-            "r_at_50": 0.0,
-            "f1": 0.0
+            "ap": 0.009837,
+            "p_at_10": 0.1,
+            "p_at_50": 0.04,
+            "r_at_50": 0.0213,
+            "f1": 0.023857
           },
           "lstm_indicators": {
-            "ap": 0.005616,
+            "ap": 0.005543,
             "p_at_10": 0.0,
             "p_at_50": 0.04,
             "r_at_50": 0.0213,
-            "f1": 0.004046
+            "f1": 0.012945
           },
           "transformer_indicators": {
-            "ap": 0.00437,
+            "ap": 0.005692,
             "p_at_10": 0.0,
-            "p_at_50": 0.02,
-            "r_at_50": 0.0106,
-            "f1": 0.007247
+            "p_at_50": 0.04,
+            "r_at_50": 0.0213,
+            "f1": 0.013962
           },
           "logistic_combination": {
             "ap": 0.00396,
             "p_at_10": 0.0,
             "p_at_50": 0.02,
             "r_at_50": 0.0106,
-            "f1": 0.007307
+            "f1": 0.011952
           },
           "technique_degree": {
             "ap": 0.004899,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.004046
+            "f1": 0.01426
           },
           "malware_bridge": {
             "ap": 0.008235,
             "p_at_10": 0.1,
             "p_at_50": 0.02,
             "r_at_50": 0.0106,
-            "f1": 0.015991
+            "f1": 0.024691
           },
           "reactive_degree": {
             "ap": 0.004899,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.004046
+            "f1": 0.01426
           },
           "random": {
             "ap": 0.001852,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.002991
+            "f1": 0.003984
           }
         },
         "base_rate": 0.002027,
         "n_future": 94,
         "n_candidates": 46376,
         "n_train_pos": 408,
-        "lift_ap_vs_base": 0.81,
-        "lead_time_days": null,
-        "cal_err": 0.012252,
-        "model": "temporal-encoder",
+        "lift_ap_vs_base": 4.55,
+        "lead_time_days": 224.0,
+        "cal_err": 0.049217,
+        "f1_threshold": 4.168384504977334,
+        "selection": {
+          "mix": 0.25,
+          "decay_weight": 1.0,
+          "lambda": 2.0,
+          "train_ap": 0.020143
+        },
+        "model": "temporal-relational",
         "cutoff": "2022-12-31",
         "horizon": "365 days"
       },
       {
-        "ap": 0.006543,
+        "ap": 0.009252,
         "p_at_10": 0.0,
         "p_at_50": 0.02,
         "r_at_50": 0.0053,
-        "f1": 0.0,
+        "f1": 0.022337,
         "baselines": {
           "static_gnn": {
-            "ap": 0.002205,
+            "ap": 0.005153,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.0
+            "f1": 0.027634
           },
           "lstm_indicators": {
-            "ap": 0.008149,
+            "ap": 0.006949,
+            "p_at_10": 0.0,
+            "p_at_50": 0.02,
+            "r_at_50": 0.0053,
+            "f1": 0.031073
+          },
+          "transformer_indicators": {
+            "ap": 0.008029,
             "p_at_10": 0.0,
             "p_at_50": 0.04,
             "r_at_50": 0.0107,
-            "f1": 0.006912
-          },
-          "transformer_indicators": {
-            "ap": 0.00727,
-            "p_at_10": 0.0,
-            "p_at_50": 0.0,
-            "r_at_50": 0.0,
-            "f1": 0.012808
+            "f1": 0.025735
           },
           "logistic_combination": {
             "ap": 0.005025,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.011326
+            "f1": 0.0
           },
           "technique_degree": {
             "ap": 0.007158,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.006912
+            "f1": 0.019084
           },
           "malware_bridge": {
             "ap": 0.005153,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.019263
+            "f1": 0.027634
           },
           "reactive_degree": {
             "ap": 0.007158,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.006912
+            "f1": 0.019084
           },
           "random": {
             "ap": 0.003644,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.006745
+            "f1": 0.0
           }
         },
         "base_rate": 0.003468,
         "n_future": 187,
         "n_candidates": 53923,
         "n_train_pos": 305,
-        "lift_ap_vs_base": 1.89,
-        "lead_time_days": 136.0,
-        "cal_err": 0.026018,
-        "model": "temporal-encoder",
+        "lift_ap_vs_base": 2.67,
+        "lead_time_days": 53.0,
+        "cal_err": 0.049568,
+        "f1_threshold": 1.1916526747508918,
+        "selection": {
+          "mix": 0.0,
+          "decay_weight": 0.5,
+          "lambda": 0.5,
+          "train_ap": 0.010333
+        },
+        "model": "temporal-relational",
         "cutoff": "2023-12-31",
         "horizon": "365 days"
       },
       {
-        "ap": 0.002149,
+        "ap": 0.00688,
         "p_at_10": 0.0,
-        "p_at_50": 0.0,
-        "r_at_50": 0.0,
-        "f1": 0.0,
+        "p_at_50": 0.02,
+        "r_at_50": 0.0069,
+        "f1": 0.01349,
         "baselines": {
           "static_gnn": {
-            "ap": 0.001763,
+            "ap": 0.004489,
             "p_at_10": 0.0,
-            "p_at_50": 0.0,
-            "r_at_50": 0.0,
-            "f1": 0.0
+            "p_at_50": 0.04,
+            "r_at_50": 0.0138,
+            "f1": 0.016467
           },
           "lstm_indicators": {
-            "ap": 0.005354,
+            "ap": 0.004242,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.004405
+            "f1": 0.013319
           },
           "transformer_indicators": {
-            "ap": 0.004638,
+            "ap": 0.005619,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.00696
+            "f1": 0.016548
           },
           "logistic_combination": {
             "ap": 0.002101,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.004743
+            "f1": 0.002506
           },
           "technique_degree": {
             "ap": 0.004786,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.004405
+            "f1": 0.014337
           },
           "malware_bridge": {
             "ap": 0.004489,
             "p_at_10": 0.0,
             "p_at_50": 0.04,
             "r_at_50": 0.0138,
-            "f1": 0.016287
+            "f1": 0.016467
           },
           "reactive_degree": {
             "ap": 0.004786,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.004405
+            "f1": 0.014337
           },
           "random": {
             "ap": 0.002119,
             "p_at_10": 0.0,
             "p_at_50": 0.0,
             "r_at_50": 0.0,
-            "f1": 0.004281
+            "f1": 0.002506
           }
         },
         "base_rate": 0.002207,
         "n_future": 145,
         "n_candidates": 65689,
         "n_train_pos": 653,
-        "lift_ap_vs_base": 0.97,
-        "lead_time_days": null,
-        "cal_err": 0.000585,
-        "model": "temporal-encoder",
+        "lift_ap_vs_base": 3.12,
+        "lead_time_days": 192.0,
+        "cal_err": 0.048328,
+        "f1_threshold": 2.0399802564456078,
+        "selection": {
+          "mix": 0.0,
+          "decay_weight": 1.0,
+          "lambda": 1.0,
+          "train_ap": 0.0094
+        },
+        "model": "temporal-relational",
         "cutoff": "2024-12-31",
         "horizon": "365 days"
       }
