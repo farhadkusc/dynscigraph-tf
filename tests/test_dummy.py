@@ -52,6 +52,20 @@ class DummyFixtureTests(unittest.TestCase):
         self.assertGreater(len(syn_ids), 100)
         self.assertTrue(all(syn_id.startswith("SYN-VULN-") for syn_id in syn_ids))
 
+    def test_grey_harbor_ranks_the_bridged_links_first(self):
+        scenario = run_dummy()["attack_scenario"]
+        org_ids = {org["org_id"] for org in load_organizations()}
+        self.assertEqual(scenario["exercise_id"], "SYN-EXERCISE-GREY-HARBOR")
+        self.assertEqual(scenario["adversary_id"], "SYN-ACTOR-HARBOR")
+        self.assertNotIn(scenario["adversary_id"], org_ids)
+        self.assertEqual(scenario["n_future"], 2)
+        self.assertEqual(scenario["held_out"], ["SYN-TH-04", "SYN-TH-05"])
+        self.assertEqual(scenario["unbridged"], "SYN-TH-00")
+        self.assertGreater(scenario["ap"], scenario["baselines"]["technique_degree"]["ap"])
+        self.assertIn("IBM-QUANTUM", scenario["out_of_scope"])
+        for org_id in scenario["blue_cell"]:
+            self.assertIn(org_id, org_ids)
+
     def test_public_evaluation_is_untouched(self):
         public = json.loads((ROOT / "benchmarks" / "results" / "evaluation.json").read_text())
         self.assertEqual(public["package"], "dynscigraph-tf")
@@ -60,6 +74,7 @@ class DummyFixtureTests(unittest.TestCase):
         saved = json.loads((ROOT / "benchmarks" / "results" / "dummy_evaluation.json").read_text())
         self.assertEqual(saved["kind"], "synthetic-fixture")
         self.assertEqual(saved["n_organizations"], 106)
+        self.assertEqual(saved["attack_scenario"]["exercise_id"], "SYN-EXERCISE-GREY-HARBOR")
         self.assertNotIn("MITRE", saved["statement"])
 
 

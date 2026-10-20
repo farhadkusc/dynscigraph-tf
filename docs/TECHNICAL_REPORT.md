@@ -1,6 +1,6 @@
 # Technical report
 
-**Version 0.2.1.** Author: Md Farhad Kabir.
+**Version 0.2.2.** Author: Md Farhad Kabir.
 
 ## Question
 
@@ -33,3 +33,5 @@ See `benchmarks/results/evaluation.json`. The README table is that file, rounded
 ## Synthetic fixtures
 
 `data/dummy/` replays the same cutoff code on a planted observation graph whose nodes are scenario labels (federal departments, DOE laboratories, IBM units, research centers). Identifiers are `SYN-T` and `SYN-VULN`, not ATT&CK or CVE ids. `benchmarks/results/dummy_evaluation.json` is the fixture check. It is not a second empirical table.
+
+Grey Harbor is a separate six-technique graph. The fictional actor's held-out links are the ones its fictional tool already covers. `SYN-TH-00` is the unbridged negative. Blue-cell organization ids are not nodes in that graph.

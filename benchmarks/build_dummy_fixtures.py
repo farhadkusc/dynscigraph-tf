@@ -454,6 +454,78 @@ def write_flows(orgs: list[dict]) -> None:
     _write_csv(OUT / "flows.csv", rows, fields)
 
 
+def write_scenario() -> None:
+    scenario = {
+        "kind": "synthetic-exercise",
+        "exercise_id": "SYN-EXERCISE-GREY-HARBOR",
+        "title": "Grey Harbor",
+        "as_of": "2026-04-08",
+        "cutoff": "2026-03-31",
+        "statement": (
+            "Tabletop inject for tests. The adversary, the tool, the sites, and the events are fictional. "
+            "Blue-cell identifiers are exercise roles, not breach reports. No listed organization was attacked. "
+            "This file is not an incident report, an advisory, or a procedure."
+        ),
+        "adversary": {
+            "id": "SYN-ACTOR-HARBOR",
+            "display_name": "Harbor",
+            "fictional": True,
+            "not_a_real_group": True,
+        },
+        "tool_id": "SYN-TOOL-HARBOR",
+        "tool_seen": "2025-05-01",
+        "blue_observer_id": "SYN-CELL-BLUE",
+        "sites": [
+            {
+                "id": "SYN-SITE-RIVER-SWITCH",
+                "sector": "energy",
+                "description": "Fictional distribution cooperative. Not a real utility.",
+            },
+            {
+                "id": "SYN-SITE-LOCK-METER",
+                "sector": "water",
+                "description": "Fictional treatment-plant meter network. Not a real utility.",
+            },
+        ],
+        "blue_cell": [
+            "FED-DOE",
+            "FED-CISA",
+            "FEDLAB-INL",
+            "IBM-XFORCE",
+            "IBM-FEDERAL",
+            "RES-CMU-SEI",
+        ],
+        "out_of_scope": ["IBM-QUANTUM"],
+        "phases": [
+            {
+                "id": "PH0",
+                "name": "Quiet baseline",
+                "start": "2026-03-01",
+                "end": "2026-03-31",
+                "threat": "LOW",
+            },
+            {
+                "id": "PH1",
+                "name": "Inject",
+                "start": "2026-04-01",
+                "end": "2026-04-08",
+                "threat": "HIGH",
+                "service_spoof": "domain_u",
+                "signature_lock": "ML-DSA-87",
+            },
+        ],
+        "techniques": [
+            {"id": "SYN-TH-01", "name": "Fictional remote service", "tactic": "initial-access", "on_tool": True, "blue_seen": "2025-06-01", "actor_seen": "2025-07-01"},
+            {"id": "SYN-TH-02", "name": "Fictional credential use", "tactic": "credential-access", "on_tool": True, "blue_seen": "2025-06-01", "actor_seen": "2025-08-01"},
+            {"id": "SYN-TH-03", "name": "Fictional discovery", "tactic": "discovery", "on_tool": True, "blue_seen": "2025-06-01", "actor_seen": "2026-02-01"},
+            {"id": "SYN-TH-04", "name": "Fictional lateral movement", "tactic": "lateral-movement", "on_tool": True, "blue_seen": "2025-06-01", "actor_seen": "2026-04-08"},
+            {"id": "SYN-TH-05", "name": "Fictional collection", "tactic": "collection", "on_tool": True, "blue_seen": "2025-06-01", "actor_seen": "2026-04-08"},
+            {"id": "SYN-TH-00", "name": "Fictional impact", "tactic": "impact", "on_tool": False, "blue_seen": "2025-06-01", "actor_seen": None},
+        ],
+    }
+    (OUT / "attack_scenario.json").write_text(json.dumps(scenario, indent=2) + "\n")
+
+
 def write_manifest(orgs: list[dict]) -> None:
     counts: dict[str, int] = defaultdict(int)
     for org in orgs:
@@ -481,6 +553,7 @@ def write_manifest(orgs: list[dict]) -> None:
             "meaning": "Planted consortium id for the observation-graph fixture. Not an alliance, contract, or threat actor.",
             "values": list(STACKS),
         },
+        "exercise": "SYN-EXERCISE-GREY-HARBOR",
         "statement": STATEMENT,
     }
     (OUT / "MANIFEST.json").write_text(json.dumps(manifest, indent=2) + "\n")
@@ -503,6 +576,7 @@ def write_readme(repo: str) -> None:
 | File | Role |
 | --- | --- |
 | `organizations.csv` | One row per scenario label. |
+| `attack_scenario.json` | Grey Harbor tabletop inject. Fictional adversary and fictional sites. |
 | `MANIFEST.json` | Counts, seed {SEED}, and the statement above. |
 
 {usage}
@@ -517,6 +591,8 @@ def write_readme(repo: str) -> None:
 
 `policy_profile` is an input to a test, not that institution's policy. `assumed_one_way_ms` is not a measured latency. Stack ids (`SYN-STACK-*`) are planted consortia for the graph fixture, not threat groups and not partnerships.
 
+Grey Harbor (`SYN-EXERCISE-GREY-HARBOR`) is the shared attack inject. `SYN-ACTOR-HARBOR` is fictional. The blue-cell ids are exercise roles, not statements that those organizations were compromised. IBM Quantum is listed out of scope so the inject is not read as a device event.
+
 Regenerate with `python3 benchmarks/build_dummy_fixtures.py`. The seed is fixed.
 """
     (OUT / "README.md").write_text(text)
@@ -529,6 +605,7 @@ def main() -> None:
     write_organizations(orgs)
     write_manifest(orgs)
     write_readme(repo)
+    write_scenario()
     if repo == "dynscigraph-tf":
         write_graph(orgs)
     elif repo == "tecdf-xai":

@@ -2,7 +2,7 @@
 
 Temporal link prediction for documented cyber relationships, evaluated on public data.
 
-Author: **Md Farhad Kabir**. Package **0.2.1**.
+Author: **Md Farhad Kabir**. Package **0.2.2**.
 
 Two tasks, both retrospective. Nothing in a test window is used to build features for that window.
 
@@ -53,6 +53,8 @@ python3 benchmarks/run_dummy.py
 ```
 
 `benchmarks/results/dummy_evaluation.json` is the fixture check. It is not part of the tables above.
+
+Grey Harbor (`SYN-EXERCISE-GREY-HARBOR`) is the dummy attack inject in `data/dummy/attack_scenario.json`. The adversary `SYN-ACTOR-HARBOR` and the two sites are fictional. Six blue-cell ids are exercise roles, not breach reports. The held-out links are `SYN-TH-04` and `SYN-TH-05`. `SYN-TH-00` is known to the exercise observer and is not on the fictional tool, so the bridge score ranks it last.
 
 ## What this is not
 

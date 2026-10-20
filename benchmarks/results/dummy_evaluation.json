@@ -1,7 +1,7 @@
 {
   "kind": "synthetic-fixture",
   "package": "dynscigraph-tf",
-  "package_version": "0.2.1",
+  "package_version": "0.2.2",
   "statement": "Synthetic fixture. Organization names are scenario labels, not sources. Do not cite this object as an experimental result.",
   "n_organizations": 106,
   "counts": {
@@ -60,5 +60,63 @@
     "average_precision": 0.909841,
     "precision_at_10": 1.0,
     "note": "Separable synthetic catalog. Not EPSS and not CISA KEV."
+  },
+  "attack_scenario": {
+    "exercise_id": "SYN-EXERCISE-GREY-HARBOR",
+    "title": "Grey Harbor",
+    "kind": "synthetic-exercise",
+    "statement": "Tabletop inject for tests. The adversary, the tool, the sites, and the events are fictional. Blue-cell identifiers are exercise roles, not breach reports. No listed organization was attacked. This file is not an incident report, an advisory, or a procedure.",
+    "adversary_id": "SYN-ACTOR-HARBOR",
+    "blue_cell": [
+      "FED-DOE",
+      "FED-CISA",
+      "FEDLAB-INL",
+      "IBM-XFORCE",
+      "IBM-FEDERAL",
+      "RES-CMU-SEI"
+    ],
+    "out_of_scope": [
+      "IBM-QUANTUM"
+    ],
+    "sites": [
+      "SYN-SITE-RIVER-SWITCH",
+      "SYN-SITE-LOCK-METER"
+    ],
+    "cutoff": "2026-03-31",
+    "n_future": 2,
+    "n_candidates": 3,
+    "ap": 1.0,
+    "base_rate": 0.666667,
+    "baselines": {
+      "logistic_combination": {
+        "ap": 0.583333,
+        "p_at_10": 0.6667,
+        "p_at_50": 0.6667,
+        "r_at_50": 1.0
+      },
+      "technique_degree": {
+        "ap": 0.583333,
+        "p_at_10": 0.6667,
+        "p_at_50": 0.6667,
+        "r_at_50": 1.0
+      },
+      "malware_bridge": {
+        "ap": 1.0,
+        "p_at_10": 0.6667,
+        "p_at_50": 0.6667,
+        "r_at_50": 1.0
+      },
+      "random": {
+        "ap": 0.833333,
+        "p_at_10": 0.6667,
+        "p_at_50": 0.6667,
+        "r_at_50": 1.0
+      }
+    },
+    "held_out": [
+      "SYN-TH-04",
+      "SYN-TH-05"
+    ],
+    "unbridged": "SYN-TH-00"
   }
 }

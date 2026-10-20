@@ -33,5 +33,6 @@
       "SYN-STACK-RESEARCH"
     ]
   },
+  "exercise": "SYN-EXERCISE-GREY-HARBOR",
   "statement": "Organization names are scenario labels for the class of institution a test row stands in for. No record in data/dummy is a measurement, feed, log, advisory, or policy from that organization. This project is not affiliated with and is not endorsed by any of them. benchmarks/results/dummy_evaluation.json is a fixture check. Do not cite it as an experimental result."
 }

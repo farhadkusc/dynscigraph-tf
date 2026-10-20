@@ -7,6 +7,7 @@ and must not be cited next to the public-data evaluation.
 from __future__ import annotations
 
 import csv
+import json
 from collections import Counter
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -33,6 +34,47 @@ def _read(name: str) -> list[dict]:
 
 def load_organizations() -> list[dict]:
     return _read("organizations.csv")
+
+
+def load_scenario() -> dict:
+    return json.loads((DUMMY / "attack_scenario.json").read_text())
+
+
+def score_attack_scenario() -> dict:
+    """Grey Harbor: rank the fictional actor's held-out links on a six-technique graph."""
+    scenario = load_scenario()
+    actor = scenario["adversary"]["id"]
+    blue = scenario["blue_observer_id"]
+    tool = scenario["tool_id"]
+    seen = scenario["tool_seen"]
+    gt = []
+    mt = []
+    for tech in scenario["techniques"]:
+        gt.append((blue, tech["id"], tech["tactic"], tech["blue_seen"]))
+        if tech["actor_seen"]:
+            gt.append((actor, tech["id"], tech["tactic"], tech["actor_seen"]))
+        if tech["on_tool"]:
+            mt.append((tool, tech["id"], seen))
+    tables = GraphTables(gt, mt, [(actor, tool, seen)], {})
+    scored = run_cutoff(tables, scenario["cutoff"])
+    return {
+        "exercise_id": scenario["exercise_id"],
+        "title": scenario["title"],
+        "kind": scenario["kind"],
+        "statement": scenario["statement"],
+        "adversary_id": actor,
+        "blue_cell": scenario["blue_cell"],
+        "out_of_scope": scenario["out_of_scope"],
+        "sites": [site["id"] for site in scenario["sites"]],
+        "cutoff": scenario["cutoff"],
+        "n_future": scored["n_future"],
+        "n_candidates": scored["n_candidates"],
+        "ap": scored["ap"],
+        "base_rate": scored["base_rate"],
+        "baselines": scored["baselines"],
+        "held_out": ["SYN-TH-04", "SYN-TH-05"],
+        "unbridged": "SYN-TH-00",
+    }
 
 
 def load_dummy_tables() -> GraphTables:
@@ -89,4 +131,5 @@ def run_dummy() -> dict:
         "counts": dict(counts),
         "observation_graph": graph,
         "vulnerability_catalog": score_catalog(),
+        "attack_scenario": score_attack_scenario(),
     }
